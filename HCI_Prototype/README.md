@@ -5,6 +5,8 @@ Souvik Bagchi
 
 # Project Assignment #6
 
+## Please open the index.html to start
+
 ## TASK
 For this assignment, we want the user to complete their registration to vote. In doing this, the user must select that they are not registered to vote, input their information, read the reminders, and submit their relevant information. 
 
