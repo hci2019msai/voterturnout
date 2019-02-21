@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" src="vendor/css/maps_css.css">
         <title>Vote</title>
     </head>
     <body>
@@ -26,6 +27,7 @@
                     <a class="btn btn-full" href="#section-location">I am ready to vote</a>
                     <a class="btn btn-ghost" href="Information_Master.html">Show me what is at stake</a>
                 </div>
+                
             </div>
 
         </header>
@@ -37,14 +39,24 @@
                     Enter your location below, or indicate it on the map.
                 </p>
             </div>
-            <form method="post" action="#" class="location-form">
+            
                 <div class="row loc-entry">
                     <input type="text" name="location" id="location" placeholder="Your location" required>
                 </div>
-            </form>
-            <div class="row map-module">
-                <h3>INSERT MAP HERE</h3>
-            </div>
+<!--            MAPS HERE-->
+                            <div id="googleMap" style="width:100%;height:500px;">
+
+                    </div>
+                    
+
+                 <script src="js/maps_js.js">
+
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcfU04LcUNe2UiiabSyhFxrTbpkp2AOys&callback=myMap"></script>
+
+           
+            
         </section>
         <section class="section-steps">
             <div class="row">
@@ -111,3 +123,4 @@
                 </p>
             </div>
         </section>
+<script src="js/maps_js.js">
