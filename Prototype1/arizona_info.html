@@ -1,0 +1,410 @@
+<html>
+  <head>
+    <title>Information Master</title>
+    <link rel="stylesheet" type="text/css" href="MasterInfo.css"/>
+  </head>
+  <body>
+
+<!-- This is where the header begins -->
+        <div class="screen-header">
+          <a href="confirm_registration.html">
+              <img class="next-button" src="images/next.png"></a>
+          <a href="index.html">
+              <img class="back-button" src="images/back.png"></a>
+              <div class="headerText">Election Information</div>
+        </div>
+<!-- This is where the header ends -->
+
+    <div class="screen-Subheader">
+      <div class="subheaderText">Arizona</div>
+      <div class="subSubheaderText">Tucson</div>
+      <div class="subSubSubheaderText">Congressional District: AZ02 | State District: 09</div>
+    </div>
+
+<!-- This is where you list the tab sections you want, does not need to be
+connected to the header -->
+
+  <div class="tab">
+    <button class="tablinks" onclick="openSection(event, 'Projected_Results')">Projected Results</button>
+    <button class="tablinks" onclick="openSection(event, 'The_Issues')">The Issues</button>
+  </div>
+
+<!-- This is where you list the subTab sections you want, does NOT need to be
+connected to the original 'tab' div-->
+
+  <div id="Projected_Results" class="tabcontent">
+    <div class="tab">
+      <button class="tabSublinks" onclick="openSubSection(event, 'Federal')">Federal</button>
+      <button class="tabSublinks" onclick="openSubSection(event, 'State')">State</button>
+      <button class="tabSublinks" onclick="openSubSection(event, 'Local')">Local</button>
+  </div>
+
+<!-- This is where the Federal subTab content begins -->
+    <div id="Federal" class="tabSubcontent">
+
+
+<!-- Democratic Written Information Begins -->
+      <div class="WrittenWrapperLeft">
+
+<!-- Candidate Template Information Begins -->
+      <div class="bio">
+        <div id="DonaldTrump">
+          <div class="writtenHeader">Hillary Clinton</div>
+<!-- BioImage Layout -->
+          <div class="bioImageLeft">
+<!-- Copy & Paste Image Classess from Below Here -->
+            <div id="candidatesIconImage">
+              <div id="candidatesIconImageBoundary">
+                <img class="candidatesIconImageSizing" src=Candidate_Images/HillaryClinton.jpg>
+              </div>
+            </div>
+<!-- End Paste -->
+          </div>
+<!-- End BioImage Paste Here -->
+            <div class="writtenParagraph">
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+            </div>
+          </div>
+        </div>
+<!-- Candidate Information Ends -->
+
+<!-- Candidate Template Information Begins -->
+      <div class="bio">
+        <div id="KyrstenSinema">
+          <div class="writtenHeader">Krysten Sinema</div>
+<!-- BioImage Layout -->
+          <div class="bioImageLeft">
+<!-- Copy & Paste Image Classess from Below Here -->
+            <div id="candidatesIconImage">
+              <div id="candidatesIconImageBoundary">
+                <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Kyrsten.jpg>
+              </div>
+            </div>
+<!-- End Paste -->
+          </div>
+<!-- End BioImage Paste Here -->
+            <div class="writtenParagraph">
+              This is information copied from Sinema's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+            </div>
+          </div>
+        </div>
+<!-- Candidate Information Ends -->
+
+<!-- Candidate Template Information Begins -->
+      <div class="bio">
+        <div id="AnnKirkpatrick">
+          <div class="writtenHeader">Ann Kirkpatrick</div>
+<!-- BioImage Layout -->
+          <div class="bioImageLeft">
+<!-- Copy & Paste Image Classess from Below Here -->
+            <div id="candidatesIconImage">
+              <div id="candidatesIconImageBoundary">
+                <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Ann.jpg>
+              </div>
+            </div>
+<!-- End Paste -->
+          </div>
+<!-- End BioImage Paste Here -->
+            <div class="writtenParagraph">
+              This is information copied from Kirkpatrick's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+              This is information copied from Clinton's wikipedia page.
+            </div>
+          </div>
+        </div>
+<!-- Candidate Information Ends -->
+  </div>
+<!-- Written Information Ends -->
+
+
+<!-- Republican Written Information Begins -->
+      <div class="WrittenWrapperRight">
+        <div class="bio">
+        <div id="HillaryClinton">
+          <div class="writtenHeader">Hillary Clinton</div>
+          <div class="writtenParagraph">
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+          </div>
+        </div>
+        </div>
+        <div class="bio">
+        <div id="DonaldTrump">
+          <div class="writtenHeader">Donald Trump</div>
+          <div class="writtenParagraph">
+            This is information copied from Trump's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+          </div>
+        </div>
+        </div>
+        <div class="bio">
+        <div id="KyrstenSinema">
+          <div class="writtenHeader">Kyrsten Sinema</div>
+          <div class="writtenParagraph">
+            This is information copied from Sinema's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+            This is information copied from Clinton's wikipedia page.
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- Written Information Ends -->
+
+      <div class ="infoWrapper">
+        <div class="candidatesWrapper">
+<!-- Candidates Header -->
+          <div class="candidatesHeader">2016 Candidates</div>
+<!-- President SubSubTab -->
+          <div class="candidatesSubHeader">President</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Hillary Clinton</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/HillaryClinton.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">45%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">48%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Donald Trump</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/DonaldTrump.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+<!-- Senate SubSubTab -->
+          <div class="candidatesSubHeader">U.S. Senate (Arizona)</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Kyrsten Sinema</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Kyrsten.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">53%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">47%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Martha McSally</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Sally.jpeg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+<!-- House of Representatives SubSubTab -->
+          <div class="candidatesSubHeader">U.S. House of Representatives (AZ02)</div>
+          <div class="candidatesDisplay">
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Ann Kirkpatrick</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Ann.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Democrat</div>
+            </div>
+            <div id="candidatesPolling">
+              <div id="candidatesPollingLeftSubheader">61%</div>
+              <div id="DuckworthKirkPollingBar"></div>
+              <div id="candidatesPollingRightSubheader">39%</div>
+            </div>
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Lea M. Peterson</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Lea.jpeg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Republican</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Federal Closing Tab -->
+  </div>
+
+<!-- This is where the Federal subTab content ends -->
+
+
+
+<!--
+This is where the State subTab content begins
+-->
+  <div id="State" class="tabSubcontent">
+<!-- This is the ID that tells the inner HTML to display State-related information once clicked -->
+      <div class ="infoWrapper">
+<!-- This is the section wrapper that forms the main white background -->
+        <div class="candidatesWrapper">
+<!-- This creates a centered, smaller box within the infoWrapper -->
+          <div class="candidatesHeader">Candidates</div>
+<!-- This is the header for each candidatesWrapper -->
+
+<!--To create a new candidate entry, copy START here! -->
+          <div class="candidatesSubHeader">Governor</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">David Garcia</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/David.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">41.8%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">56%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Doug Ducey</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Doug.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+<!-- To finish creating a new candidate entry, copy END here-->
+
+          <div class="candidatesSubHeader">Secretary of State</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Katie Hobbs</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Katie.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">52%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">48%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Steve Gaynor</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Steve.jpeg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+          <div class="candidatesSubHeader">Superintendent of Public Instruction</div>
+          <div class="candidatesDisplay">
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Kathy Hoffman</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Kathy.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Democrat</div>
+            </div>
+            <div id="candidatesPolling">
+              <div id="candidatesPollingLeftSubheader">51%</div>
+              <div id="DuckworthKirkPollingBar"></div>
+              <div id="candidatesPollingRightSubheader">48%</div>
+            </div>
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Frank Riggs</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Arizona/Frank.png>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Republican</div>
+            </div>
+          </div>
+<!-- State Closing Tabs -->
+        </div>
+      </div>
+    </div>
+<!-- This is where the State subTab content ends -->
+
+<!-- This is where the local subTab content begins -->
+  <div id="Local" class="tabSubcontent">
+      <h3>Local</h3>
+      <p>This is a list of local candidates</p>
+  </div>
+<!-- This is where the local subTab content ends -->
+
+</div>
+
+<!-- This is where the Projected Results Tab Content ends -->
+
+<!-- This is where The Issues Tab Content begins -->
+
+  <div id="The_Issues" class="tabcontent">
+    <div class="tab">
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Education')">Education</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Social Justice')">Social Justice</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Economics_Taxation')">Economics & Taxation</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Health Care')">Health Care</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Human Rights')">Human Rights</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Immigration')">Immigration</button>
+    </div>
+    <div id="Education" class="tabSubcontent2">Content BOOM Content</div>
+    <div id="Social Justice" class="tabSubcontent2">Content Content BOOM</div>
+    <div id="Economics_Taxation" class="tabSubcontent2">BOOOM BOOM Content Content</div>
+    <div id="Health Care" class="tabSubcontent2">Content Content BANG</div>
+    <div id="Human Rights" class="tabSubcontent2">Content BANG Content</div>
+    <div id="Immigration" class="tabSubcontent2">BANG Content Content</div>
+  </div>
+
+<!-- This is where The Issues Tab Content ends -->
+
+<script src="tabs.js"></script>
+</body>
+</html>
