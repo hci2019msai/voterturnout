@@ -27,7 +27,7 @@
                     <a class="btn btn-full" href="#section-location">I am ready to vote</a>
                     <a class="btn btn-ghost" href="Information_Master.html">Show me what is at stake</a>
                 </div>
-                
+
             </div>
 
         </header>
@@ -37,18 +37,23 @@
                 <h2>Where are you located?</h2>
                 <p class="long-copy">
                     Enter your location below.
-                    
+
                 </p>
             </div>
-            
+            <!--
                 <div class="row loc-entry">
                     <input type="text" name="location" id="location" placeholder="Your location" required>
                 </div>
-            <div class="row btns">
-                    <a class="btn btn-full" href="#section-reg-check">Submit</a>
-                
-                    
-                </div>
+            -->
+            <script src="js/dropdown.js"></script>
+            <select id="state_dropdown" onchange="dropdown_change()">
+              <option value="AZ">Arizona</option>
+              <option value="IL" selected="selected">Illinois</option>
+              <option value="PA">Pennsylvania</option>
+            </select>
+            <div id = "loc_button" class="row btns">
+              <a class="btn btn-full" href="illinois_info.html">Submit</a>
+            </div>
 <!--            MAPS HERE-->
                             <div id="googleMap" style="width:90%;height:500px;  margin-left: 5%; text-align: center;">
                                 <script src="js/maps_js.js">
@@ -58,14 +63,14 @@
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcfU04LcUNe2UiiabSyhFxrTbpkp2AOys&callback=myMap"></script>
 
                     </div>
-                    
 
-                 
 
-           
-            
+
+
+
+
         </section>
-        
+
         <section class="section-reg-check" id="section-reg-check">
             <div class="row">
                 <h2>Are you registered?</h2>
