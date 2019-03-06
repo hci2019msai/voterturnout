@@ -1,0 +1,74 @@
+/* 
+Global Classes
+*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Body Classes
+*/
+
+#supercontainer {
+    margin: auto;
+    height: 1000px;
+    width: 1000px;
+}
+
+.meta_container {
+    display: grid;
+    grid-template-rows: 7% 86% 7%;
+    border: px solid black;
+    height: 100%;
+    width: 100%;
+    grid-gap: 1%;
+
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 70% 29%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    grid-gap: 1%;
+}
+
+.blank {
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.filler {
+    background-color: clear;
+    height: 100%;
+    width: 100%;
+}
+
+#googleMap {
+    height: 100%;
+    width: 100%;
+}
+
+.sampleBallotLookupContainer {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.lookup {
+    border-radius: 15px;
+    background-color: aliceblue
+}
+
+.header {
+    color: black;
+    font-family: Georgia;
+    margin-top: 30%;
+    margin-left: 5%;
+}
