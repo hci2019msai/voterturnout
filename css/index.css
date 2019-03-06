@@ -1,0 +1,122 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#filler_box {
+    background-color: rgba(1, 27, 198, 0.8);
+}
+
+#filler_box2 {
+    background-color: firebrick;
+}
+
+#filler_boxClear {
+    background-color: clear;
+    
+}
+
+#introduction_optionsWrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+
+#moreInfo_links_updatesWrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border: 5px solid white;
+}
+
+#introductionsWrapper {
+    display: grid;
+    grid-template-rows: 30% 10% 20% 10% 30%;
+    padding: 3px;
+    border: 5px solid white;
+    background: -webkit-linear-gradient(-45deg, #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+
+}
+
+.title {
+    color: white;
+    font-size: 3vmin;
+    font-family: Arial;
+}
+
+.subtitle {
+    color: rgba(245, 247, 247, 0.5);
+    font-size: 2vmin;
+    font-family: Arial;
+}
+
+.subtitle2 {
+    color: white;
+    font-size: 2vmin;
+    font-family: Arial;
+}
+
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#optionsWrapper {
+    display: grid;
+    background-color: rgba(64, 64, 64);
+    border: 5px solid white;
+    padding: 3px;
+    grid-template-columns: 50% 50%;
+}
+
+#optionsInfo {
+    display: grid;
+    grid-template-rows: 23% 7% 20% 15% 15% 10%;
+}
+
+.subheader {
+    color: azure;
+    font-size: 2vmin;
+    font-family: Arial;
+}
+
+.button2 {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+#optionsImage {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.optionsImage {
+    padding: 5px;
+    object-fit: cover;
+    width: 90%;
+    max-width: 220px;
+    max-height: 300px;
+}
+
+
+
+
+
