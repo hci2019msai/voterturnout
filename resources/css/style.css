@@ -182,6 +182,29 @@ input[type="submit"]:active {
     color: #fff;
 }
 
+.btn-no-emphasis{
+/*    padding-left: 1%;*/
+    margin: 2%;
+    border-radius: 200px;
+    width: 40%;
+}
+
+.btn-no-emphasis:hover,
+.btn-no-emphasis:active {
+    border: 1px solid #cf6d17;
+    color: #555;
+    
+}
+
+.btn-no-emphasis:link,
+.btn-no-emphasis:visited {
+    border: 1px solid #a3a3a3;
+    color: #a3a3a3;
+   
+}
+
+
+
 /* --------FORMS----------- */
 
 input[type="text"], input[type="email"], select, textarea {
@@ -354,4 +377,36 @@ header {
 
 .section-confirmation {
     height: 100vh;
+}
+
+/* -------------------------- */
+/* VOTING METHOD SELECT */
+/* -------------------------- */
+
+.section-vote-method-select {
+    background-color: #ffffff;
+    height: 100vh;
+    font-size: 200%;
+}
+
+/*
+.section-vote-method-select div:first-child {
+    margin: auto;
+    padding-top: 300px;
+}
+*/
+
+/*
+.section-vote-method-select div:last-child {
+    margin: auto;
+    padding-top: 50px;
+}
+*/
+.btns-last{
+    text-align: center;
+    color: #666;
+}
+
+.section-vote-method-select div:last-child a:hover {
+    color: #ffffff;
 }
