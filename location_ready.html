@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" src="vendor/css/maps_css.css">
+        <title>Vote</title>
+    </head>
+    <body>
+        <section  id="section-location">
+            <div class="row">
+                <h2>Where are you located?</h2>
+                <p class="long-copy">
+                    Enter your location below.
+
+                </p>
+            </div>
+          
+            <script src="js/dropdown.js"></script>
+            <select id="state_dropdown" onchange="dropdown_change()">
+              <option value="AZ">Arizona</option>
+              <option value="IL" selected="selected">Illinois</option>
+              <option value="PA">Pennsylvania</option>
+            </select>
+            <div id = "loc_button" class="row btns">
+              <a class="btn btn-full" href="votingmethodselection.html">Submit</a>
+            </div>
+<!--            MAPS HERE-->
+                            <div class = "map_class" id="googleMap" style="width:90%;height:500px;  margin-left: 5%; text-align: center;">
+                                <script src="js/maps_js.js">
+
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcfU04LcUNe2UiiabSyhFxrTbpkp2AOys&callback=myMap"></script>
+
+                    </div>
+        </section>
+    </body>
+</html>
