@@ -152,7 +152,7 @@ Beginning of 1B Toggled Content
     margin: auto;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 20% 20% 40% 20%
+    grid-template-rows: 10% 20% 60% 10%
 }
 
 .titleContainer1B {
@@ -177,5 +177,48 @@ Beginning of 1B Toggled Content
     font-size: 15px;
     color: white;
     margin-left: 2%;
+}
+
+.application1B {
+    background-color: slategrey;
+}
+
+.button1B {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 40%;
+    margin-top: 13%
+    
+}
+
+.button1B:hover {
+    background-color: white;
+    color: black;
+}
+}
+
+/* Beginning of 1C Toggled Content */
+
+#container1C {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: blue;
+
+}
+
+.blankbox {
+    color: blue;
 }
 
