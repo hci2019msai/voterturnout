@@ -6,6 +6,19 @@
         <link rel="stylesheet" href="css/calendar.css">
     </head>
     <body>
+      <div id="popupHandle" class="menuPopup">
+        <div class="popupContent">
+          <span class="closeX" onclick ="closePopup()">&times;</span>
+          <div class="voteRadioText">
+            <input type="radio" name="eventType" id="voteType" checked="checked"> Remind me to vote!</input>
+          </div>
+          <div class="mailRadioText">
+            <input type="radio" name="eventType" id="mailType"> Remind me to mail my ballot!</input>
+          </div>
+          <button onclick = 'submitPopup()'>Submit</button>
+        </div>
+      </div>
+      <script src="js/calendar.js"></script>
         <div class="col span-4-of-5">
             <div class="row title">
                         <h1>Key Voting Dates</h1>
@@ -62,108 +75,108 @@
                     </div>
             </div>
             <div class="row days 1-of-5">
-                    <div class="col span-1-of-7 rb empty" onclick="createEvent(1)">
+                    <div class="col span-1-of-7 rb empty">
                         <p>&#160;</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(2)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>1</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(3)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>2</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(4)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>3</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(5)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>4</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(6)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>5</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(7)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>6</p>
                     </div>
             </div>
             <div class="row days 2-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(8)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>7</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(9)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>8</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(10)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>9</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(11)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>10</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(12)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>11</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(13)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>12</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(14)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>13</p>
                     </div>
             </div>
             <div class="row days 3-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(15)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>14</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(16)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>15</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(17)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>16</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(18)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>17</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(19)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>18</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(20)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>19</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(21)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>20</p>
                     </div>
             </div>
             <div class="row days 4-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(22)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>21</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(23)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>22</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(24)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>23</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(25)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>24</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(26)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>25</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(27)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>26</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(28)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>27</p>
                     </div>
             </div>
             <div class="row days 5-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(29)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>28</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(30)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>29</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(31)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>30</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>31</p>
                     </div>
                     <div class="col span-1-of-7 lb rb empty">
@@ -214,105 +227,105 @@
                     <div class="col span-1-of-7 lb rb empty">
                         <p>&#160;</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb empty" onclick="createEvent(1)">
+                    <div class="col span-1-of-7 lb rb empty" onclick="makeCalE(this)">
                         <p>&#160;</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(2)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>1</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(3)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>2</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(4)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>3</p>
                     </div>
             </div>
             <div class="row days 2-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(5)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>4</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(6)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>5</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(7)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>6</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(8)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>7</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(9)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>8</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(10)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>9</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(11)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>10</p>
                     </div>
             </div>
             <div class="row days 3-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(12)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>11</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(13)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>12</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(14)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>13</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(15)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>14</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(16)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>15</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(17)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>16</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(18)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>17</p>
                     </div>
             </div>
             <div class="row days 4-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(19)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>18</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(20)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>19</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(21)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>20</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(22)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>21</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(23)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>22</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(24)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>23</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="createEvent(25)">
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>24</p>
                     </div>
             </div>
             <div class="row days 5-of-5">
-                    <div class="col span-1-of-7 rb" onclick="createEvent(26)">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>25</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(27)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>26</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(28)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>27</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(29)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>28</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="createEvent(30)">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>29</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb">
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>30</p>
                     </div>
                     <div class="col span-1-of-7 lb empty">
