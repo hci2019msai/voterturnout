@@ -1,0 +1,318 @@
+<html>
+  <head>
+    <title>Information Master</title>
+    <link rel="stylesheet" type="text/css" href="MasterInfo.css"/>
+  </head>
+  <body>
+
+<!-- This is where the header begins -->
+        <div class="screen-header">
+          <a href="confirm_registration.html">
+              <img class="next-button" src="images/next.png"></a>
+          <a href="index.html">
+              <img class="back-button" src="images/back.png"></a>
+              <div class="headerText">Election Information</div>
+        </div>
+<!-- This is where the header ends -->
+
+    <div class="screen-Subheader">
+      <div class="subheaderText">Illinois</div>
+      <div class="subSubheaderText">Evanston</div>
+      <div class="subSubSubheaderText">CD09/SD18</div>
+    </div>
+
+<!-- This is where you list the tab sections you want, does not need to be
+connected to the header -->
+
+  <div class="tab">
+    <button class="tablinks" onclick="openSection(event, 'Projected_Results')">Projected Results</button>
+    <button class="tablinks" onclick="openSection(event, 'The_Issues')">The Issues</button>
+  </div>
+
+<!-- This is where you list the subTab sections you want, does NOT need to be
+connected to the original 'tab' div-->
+
+  <div id="Projected_Results" class="tabcontent">
+    <div class="tab">
+      <button class="tabSublinks" onclick="openSubSection(event, 'Federal')">Federal</button>
+      <button class="tabSublinks" onclick="openSubSection(event, 'State')">State</button>
+      <button class="tabSublinks" onclick="openSubSection(event, 'Local')">Local</button>
+  </div>
+
+<!-- This is where the Federal subTab content begins -->
+    <div id="Federal" class="tabSubcontent">
+      <div class ="infoWrapper">
+        <div class="candidatesWrapper">
+          <div class="candidatesHeader">Candidates</div>
+          <div class="candidatesSubHeader">President</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Hillary Clinton</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/HillaryClinton.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">51%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">49%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Donald Trump</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/DonaldTrump.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+          <div class="candidatesSubHeader">U.S. Senate (IL)</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Tammy Duckworth</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/TammyDuckworth.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">60%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">40%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Mark Kirk</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/MarkKirk.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+          <div class="candidatesSubHeader">U.S. House of Representatives (IL09)</div>
+          <div class="candidatesDisplay">
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Jan Schakowsky</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Jan.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Democrat</div>
+            </div>
+            <div id="candidatesPolling">
+              <div id="candidatesPollingLeftSubheader">67%</div>
+              <div id="DuckworthKirkPollingBar"></div>
+              <div id="candidatesPollingRightSubheader">33%</div>
+            </div>
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Joan LaSonde</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/JoanLasonde.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Republican</div>
+            </div>
+      </div>
+      </div>
+    </div>
+    <div class="detailsWrapper">Content</div>
+  </div>
+
+<!-- This is where the Federal subTab content ends -->
+
+
+
+<!--
+This is where the State subTab content begins
+-->
+  <div id="State" class="tabSubcontent">
+<!-- This is the ID that tells the inner HTML to display State-related information once clicked -->
+      <div class ="infoWrapper">
+<!-- This is the section wrapper that forms the main white background -->
+        <div class="candidatesWrapper">
+<!-- This creates a centered, smaller box within the infoWrapper -->
+          <div class="candidatesHeader">Candidates</div>
+<!-- This is the header for each candidatesWrapper -->
+
+<!--To create a new candidate entry, copy START here! -->
+          <div class="candidatesSubHeader">Governor</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">JB Pritzker</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/HillaryClinton.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">51%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">49%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Bruce Rauner</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/DonaldTrump.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+<!-- To finish creating a new candidate entry, copy END here-->
+
+          <div class="candidatesSubHeader">Lieutenant Governor</div>
+            <div class="candidatesDisplay">
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Juliana Stratton</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/TammyDuckworth.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Democrat</div>
+              </div>
+              <div id="candidatesPolling">
+                <div id="candidatesPollingLeftSubheader">60%</div>
+                <div id="DuckworthKirkPollingBar"></div>
+                <div id="candidatesPollingRightSubheader">40%</div>
+              </div>
+              <div id="candidatesIcon">
+                <div id="candidatesIconHeader">Evelyn Sanguinetti</div>
+                <div id="candidatesIconImage">
+                  <div id="candidatesIconImageBoundary">
+                    <img class="candidatesIconImageSizing" src=Candidate_Images/MarkKirk.jpg>
+                  </div>
+                </div>
+                <div id="candidatesIconSubheader">Republican</div>
+              </div>
+            </div>
+          <div class="candidatesSubHeader">IL Attorney General</div>
+          <div class="candidatesDisplay">
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Kwame Raoul</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/Jan.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Democrat</div>
+            </div>
+            <div id="candidatesPolling">
+              <div id="candidatesPollingLeftSubheader">57%</div>
+              <div id="DuckworthKirkPollingBar"></div>
+              <div id="candidatesPollingRightSubheader">43%</div>
+            </div>
+            <div id="candidatesIcon">
+              <div id="candidatesIconHeader">Erika Harold</div>
+              <div id="candidatesIconImage">
+                <div id="candidatesIconImageBoundary">
+                  <img class="candidatesIconImageSizing" src=Candidate_Images/JoanLasonde.jpg>
+                </div>
+              </div>
+              <div id="candidatesIconSubheader">Republican</div>
+            </div>
+      </div>
+      <div class="candidatesSubHeader">IL Secretary of State</div>
+      <div class="candidatesDisplay">
+        <div id="candidatesIcon">
+          <div id="candidatesIconHeader">Jesse White</div>
+          <div id="candidatesIconImage">
+            <div id="candidatesIconImageBoundary">
+              <img class="candidatesIconImageSizing" src=Candidate_Images/Jan.jpg>
+            </div>
+          </div>
+          <div id="candidatesIconSubheader">Democrat</div>
+        </div>
+        <div id="candidatesPolling">
+          <div id="candidatesPollingLeftSubheader">70%</div>
+          <div id="DuckworthKirkPollingBar"></div>
+          <div id="candidatesPollingRightSubheader">30%</div>
+        </div>
+        <div id="candidatesIcon">
+          <div id="candidatesIconHeader">Jason Hellend</div>
+          <div id="candidatesIconImage">
+            <div id="candidatesIconImageBoundary">
+              <img class="candidatesIconImageSizing" src=Candidate_Images/JoanLasonde.jpg>
+            </div>
+          </div>
+          <div id="candidatesIconSubheader">Republican</div>
+        </div>
+      </div>
+        <div class="candidatesSubHeader">IL Comptroller</div>
+        <div class="candidatesDisplay">
+          <div id="candidatesIcon">
+            <div id="candidatesIconHeader">Susana Mendoza</div>
+            <div id="candidatesIconImage">
+              <div id="candidatesIconImageBoundary">
+                <img class="candidatesIconImageSizing" src=Candidate_Images/Jan.jpg>
+              </div>
+            </div>
+            <div id="candidatesIconSubheader">Democrat</div>
+          </div>
+          <div id="candidatesPolling">
+            <div id="candidatesPollingLeftSubheader">60%</div>
+            <div id="DuckworthKirkPollingBar"></div>
+            <div id="candidatesPollingRightSubheader">40%</div>
+          </div>
+          <div id="candidatesIcon">
+            <div id="candidatesIconHeader">Darlene Senger</div>
+            <div id="candidatesIconImage">
+              <div id="candidatesIconImageBoundary">
+                <img class="candidatesIconImageSizing" src=Candidate_Images/JoanLasonde.jpg>
+              </div>
+            </div>
+            <div id="candidatesIconSubheader">Republican</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- This is where the State subTab content ends -->
+
+<!-- This is where the local subTab content begins -->
+  <div id="Local" class="tabSubcontent">
+      <h3>Local</h3>
+      <p>This is a list of local candidates</p>
+  </div>
+<!-- This is where the local subTab content ends -->
+
+</div>
+
+<!-- This is where the Projected Results Tab Content ends -->
+
+<!-- This is where The Issues Tab Content begins -->
+
+  <div id="The_Issues" class="tabcontent">
+    <div class="tab">
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Education')">Education</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Social Justice')">Social Justice</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Economics_Taxation')">Economics & Taxation</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Health Care')">Health Care</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Human Rights')">Human Rights</button>
+      <button class="tabSublinks2" onclick="openSubSection2(event, 'Immigration')">Immigration</button>
+    </div>
+    <div id="Education" class="tabSubcontent2">Content BOOM Content</div>
+    <div id="Social Justice" class="tabSubcontent2">Content Content BOOM</div>
+    <div id="Economics_Taxation" class="tabSubcontent2">BOOOM BOOM Content Content</div>
+    <div id="Health Care" class="tabSubcontent2">Content Content BANG</div>
+    <div id="Human Rights" class="tabSubcontent2">Content BANG Content</div>
+    <div id="Immigration" class="tabSubcontent2">BANG Content Content</div>
+  </div>
+
+<!-- This is where The Issues Tab Content ends -->
+
+<script src="tabs.js"></script>
+</body>
+</html>

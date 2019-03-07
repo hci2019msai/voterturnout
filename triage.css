@@ -1,0 +1,172 @@
+/*
+  Global Classes
+  */
+
+body {
+    background-image: url("images/neutral_gray.png");
+  }
+
+/*
+Header Classes & IDs
+*/
+
+.screen-header {
+  /* experiments */
+  border: 5px solid blue;
+  border-radius: 16px;
+  border-style: groove;
+  padding: 0em 1em;
+  width: 95%;
+  height: 70px;
+  margin: auto;
+  background-color: clear;
+}
+
+.headerText {
+  color: white;
+  font-size: 50px;
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.back-button {
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid red;
+  border-style: groove;
+  border-radius: 16px;
+}
+
+.next-button {
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  float: right;
+  margin-top: 10px;
+}
+
+.screen-Subheader {
+  border: 5px solid blue;
+  border-radius: 16px;
+  border-style: groove;
+  width: 90%;
+  height: 110px;
+  margin: auto;
+  background-color: clear;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.subheaderText {
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*
+Questions CSS
+*/
+
+.questionsWrapper {
+  border: 5px solid blue;
+  border-radius: 20px;
+  width: 60%;
+  height: 800px;
+  margin: auto;
+  background-color: white;
+}
+
+.questionsHeader {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.individualQuestionsWrapper {
+  border: 5px solid blue;
+  border-radius: 20px;
+  width: 70%;
+  height: 100px;
+  margin: auto;
+  background-color: white;
+}
+
+/* Checkboxes */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
