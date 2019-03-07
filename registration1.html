@@ -66,17 +66,17 @@
                 <div class="tab">
                       <button class="tablinks" onclick="openSection(event, 'Drivers License')" id="defaultOpen">Driver's License</button>
                     
-                      <button class="tablinks" onclick="openSection(event, 'Paris')">Paris</button>
+                      <button class="tablinks" onclick="openSection(event, 'Citizenship')">Citizenship</button>
                     
-                      <button class="tablinks" onclick="openSection(event, 'Tokyo')">Tokyo</button>
+                      <button class="tablinks" onclick="openSection(event, 'Application Type')">Application Type</button>
                     
-                        <button class="tablinks" onclick="openSection(event, 'New York')">New York</button>
+                        <button class="tablinks" onclick="openSection(event, 'Personal Information')">Personal Information</button>
                     
-                        <button class="tablinks" onclick="openSection(event, 'New York2')">New York2</button>
+                        <button class="tablinks" onclick="openSection(event, 'Previous Address')">Previous Address</button>
                     
-                        <button class="tablinks" onclick="openSection(event, 'New York3')">New York3</button>
+                        <button class="tablinks" onclick="openSection(event, 'Email')">Email</button>
                     
-                        <button class="tablinks" onclick="openSection(event, 'New York4')">New York4</button>
+                        <button class="tablinks" onclick="openSection(event, 'Review')">Review</button>
                 </div>
 
                     <div id="Drivers License" class="tabcontent" style="display: none">
@@ -86,41 +86,94 @@
                         <input type="checkbox" id="applicationCheck"> No
                     </div>
 
-                    <div id="Paris" class="tabcontent"
+                    <div id="Citizenship" class="tabcontent"
                     style="display: none">
-                      <h3>Paris</h3>
-                      <p>Paris is the capital of France.</p> 
+                      <div class="tabHeader">Citizenship</div>
+                      <div class="tabText">Are you a citizen of the United States?</div>
+                        <input type="checkbox" id="applicationCheck" autofocus> Yes
+                        <input type="checkbox" id="applicationCheck"> No
                     </div>
 
-                    <div id="Tokyo" class="tabcontent"
+                    <div id="Application Type" class="tabcontent"
                          style="display: none">
-                      <h3>Tokyo</h3>
-                      <p>Tokyo is the capital of Japan.</p>
+                      <div class="tabHeader">Application Type</div>
+                      <div class="tabText">What would you like to accomplish?</div>
+                        <input type="checkbox" id="applicationCheck2" autofocus> Register to Vote as a New Voter
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Address
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Name
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Name and Address
                     </div>
                 
-                    <div id="New York" class="tabcontent"
+                    <div id="Personal Information" class="tabcontent"
                          style="display: none">
-                      <h3>New York</h3>
-                      <p>New York is a city in America.</p>
+                      <div class="tabHeader">Personal Information</div>
+                      <div class="tabText">General Identification Information</div>
+                        <div class="subtabHeader">Driver's License No. or State ID No.</div>
+                        <div class="IDNO">
+                        <input type="text" size="4" maxlength="3">
+                        <input type="text" size="4" maxlength="3">
+                        <input type="text" size="4" maxlength="3"></div>
+                        <div class="subtabHeader">Date of Birth</div>
+                        <div class="IDNO2">
+                        <input type="text" size="3" maxlength="2"> -
+                        <input type="text" size="3" maxlength="2"> -
+                            <input type="text" size="3" maxlength="2"></div>
+                        <div class="subtabHeader">First Name/Last Name</div>
+                        <div class="IDNO">
+                        <input type="text" size="18" maxlength="20">
+                        </div>
+                        <div class="subtabHeader">Current Address</div>
+                        <div class=IDNO3>
+                            <input type="text" size=20 maxlength=25 placeholder="Street">
+                            <input type="text" size=15 maxlength=20 placeholder="City">
+                            <select name="states">
+                                <option value="IL">IL</option>
+                                <option value="OH">OH</option>
+                                <option value="PA">PA</option>
+                                <option value="WI">WI</option>
+                            </select>
+                             <input type="text" size=6 maxlength="5" placeholder="ZIP">
+                        </div>
+                        
+                        
                     </div>
                 
-                    <div id="New York2" class="tabcontent"
+                    <div id="Previous Address" class="tabcontent"
                          style="display: none">
-                      <h3>New York2</h3>
-                      <p>New York2 is a city in America2.</p>
+                      <div class="tabHeader">Previous Address</div>
+                      <div class="tabText">Please enter your previous address below.</div>
+                         <div class="subtabHeader">Address</div>
+                        <div class=IDNO3>
+                            <input type="text" size=20 maxlength=25 placeholder="Street">
+                            <input type="text" size=15 maxlength=20 placeholder="City">
+                            <select name="states">
+                                <option value="IL">IL</option>
+                                <option value="OH">OH</option>
+                                <option value="PA">PA</option>
+                                <option value="WI">WI</option>
+                            </select>
+                             <input type="text" size=6 maxlength="5" placeholder="ZIP">
+                        </div>
+                        
                     </div>
                 
-                    <div id="New York3" class="tabcontent"
+                    <div id="Email" class="tabcontent"
                          style="display: none">
-                      <h3>New York3</h3>
-                      <p>New York3 is a city in America2.</p>
+                      <div class="tabHeader">Email Address</div>
+                      <div class="tabText">Please enter your email address below.</div>
+                        <div class="IDNO4">
+                        <input type="text" size="25" maxlength="30">
+                        </div>
                     </div>
                 
-                    <div id="New York4" class="tabcontent"
+                    <div id="Review" class="tabcontent"
                          style="display: none">
-                      <h3>New York4</h3>
-                      <p>New York2 is a city in America2.</p>
+                      <div class="tabHeader">Email Address</div>
+                      <div class="tabText">Please review all of the information you have submitted to make sure it is correct. When you have done this, click next to proceed.</div>
+                    <a href="calendar.html"> 
+                        <div class="button1C">Next</div></a>
                     </div>
+               
                 
             </div>
             <div class="filler"></div>
