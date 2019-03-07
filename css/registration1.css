@@ -28,6 +28,10 @@ Body Template Classes
     grid-template-rows: 16% 15% 45% 18%;
 }
 
+.blanktest {
+    background-color: blue;
+}
+
 .blank {
     background-color: beige;
     height: 100%;
@@ -203,9 +207,8 @@ Beginning of 1B Toggled Content
     background-color: white;
     color: black;
 }
-}
 
-/* Beginning of 1C Toggled Content */
+/* Fuck HTML */
 
 #container1C {
     height: 100%;
@@ -213,12 +216,74 @@ Beginning of 1B Toggled Content
     margin: auto;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 50% 50%;
-    background-color: blue;
-
+    grid-template-rows: 10% 80% 10%;
+    background-color: clear;
 }
 
-.blankbox {
-    color: blue;
+.application1C {
+    background-color: slategray;
 }
 
+.tab {
+  float: left;
+  background-color: deepskyblue;
+  width: 15%;
+  height: 10%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 20px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+    color: black;
+    
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+    height: 100%;
+  border-left: none;
+}
+
+.tabHeader {
+    color: white;
+    font-family: georgia;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.tabText {
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#applicationCheck {
+    margin-left: 50%;
+    margin-top: 2%;
+}
