@@ -19,7 +19,7 @@
         </div>
       </div>
       <script src="js/calendar.js"></script>
-        <div class="col span-4-of-5">
+        <div class="col span-3-of-5">
             <div class="row title">
                         <h1>Key Voting Dates</h1>
                         <p class="instruct">Click on a day to schedule your voting!</p>
@@ -147,36 +147,36 @@
                     <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>21</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>22</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>23</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>24</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>25</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>26</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb" onclick="makeCalE(this)">
                         <p>27</p>
                     </div>
             </div>
             <div class="row days 5-of-5">
-                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>28</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>29</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>30</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>31</p>
                     </div>
                     <div class="col span-1-of-7 lb rb empty">
@@ -230,10 +230,10 @@
                     <div class="col span-1-of-7 lb rb empty" onclick="makeCalE(this)">
                         <p>&#160;</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>1</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>2</p>
                     </div>
                     <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
@@ -244,8 +244,8 @@
                     <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
                         <p>4</p>
                     </div>
-                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
-                        <p>5</p>
+                    <div id="election-day" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>5<br>Election Day</p>
                     </div>
                     <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>6</p>
@@ -259,8 +259,8 @@
                     <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
                         <p>9</p>
                     </div>
-                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
-                        <p>10</p>
+                    <div id="ab-deadline" class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>10<br>Mail-In Due</p>
                     </div>
             </div>
             <div class="row days 3-of-5">
@@ -333,6 +333,20 @@
                     </div>
             </div>
         </div>
+        </div>
+<div class="col span-1-of-5 leg-section">
+            <div class="row legend">
+                <h2>Legend</h2>
+            </div>
+            <div class="row">
+                <button class="leg early-legend">Early Voting Period</button>
+            </div>
+            <div class="row">
+                <button class="leg deadline-legend">Absentee Ballot Deadline</button>
+            </div>
+            <div class="row">
+                <button class="leg voting-legend">Election Day</button>
+            </div>
         </div>
     </body>
 </html>

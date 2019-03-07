@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
+        <link rel="stylesheet" href="css/calendar.css">
+        <script src="js/calendar.js"></script>
+    </head>
+    <body class="reminder">
+        <div class="row topline">
+            <h1>Create a reminder to vote!</h1>
+        </div>
+        <div class="row explanation">
+            <p>Click on a button below to add a reminder to the calendar.</p>
+        </div>
+        <div class="row options">
+            <div class="col span-1-of-2 left">
+                <button onclick="createReminder('Mail Absentee')">Mail Absentee Ballot</button>
+            </div>
+            <div class="col span-1-of-2 right">
+                <button onclick="createReminder('Vote In Person')">Vote In Person</button>
+            </div>
+        </div>
+    </body>
+</html>
