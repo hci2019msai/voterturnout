@@ -18,7 +18,7 @@ Body Template Classes
 
 }
 
-.main_container {
+#main_container {
     height: 100%;
     width: 100%;
     margin: auto;
@@ -81,3 +81,101 @@ Body Template Classes
     font-size: 18px;
     color: white;
 }
+
+.button1A {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 28%
+}
+
+.button1A:hover {
+    background-color: white;
+    color: black;
+}
+
+.button2A {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 18%
+
+}
+
+.button2A:hover {
+    background-color: white;
+    color: black;
+}
+
+.button3A {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 18%;
+}
+
+.button3A:hover {
+    background-color: white;
+    color: black;
+}
+
+/*
+Beginning of 1B Toggled Content
+*/
+
+/* Class & ID names can't start w/ numbers */
+
+#container1B {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 20% 20% 40% 20%
+}
+
+.titleContainer1B {
+    background-color: deepskyblue;
+    width: 100%;
+    height: 100%;
+}
+
+.title1B {
+    font-family: georgia;
+    text-align: left;
+    margin-top: 1%;
+    font-size: 20px;
+    color: white;
+    margin-left: 1%;
+}
+
+.subtitle1B {
+    font-family: arial;
+    text-align: left;
+    margin-top: 1%;
+    font-size: 15px;
+    color: white;
+    margin-left: 2%;
+}
+
