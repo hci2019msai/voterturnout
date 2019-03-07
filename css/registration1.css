@@ -208,7 +208,7 @@ Beginning of 1B Toggled Content
     color: black;
 }
 
-/* Fuck HTML */
+/* 1C Toggle Content Begins Here */
 
 #container1C {
     height: 100%;
@@ -283,7 +283,41 @@ Beginning of 1B Toggled Content
     margin-top: 5%;
 }
 
+.subtabHeader {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+    margin-top: 3%;
+}
+
 #applicationCheck {
     margin-left: 50%;
     margin-top: 2%;
+}
+
+#applicationCheck2 {
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.IDNO {
+    margin-left: 43%;
+    margin-top: 1%;
+}
+
+.IDNO2 {
+    margin-left: 43%;
+    margin-top: 1%;
+}
+
+.IDNO3 {
+    margin-left: 29%;
+    margin-top: 1%;
+}
+
+.IDNO4 {
+    margin-left: 40%;
+    margin-top: 1%;
 }
