@@ -4,14 +4,14 @@ Body Template Classes
 
 #supercontainer {
     margin: auto;
-    height: 1000px;
+    height: 700px;
     width: 1000px;
 }
 
 .meta_container {
     display: grid;
     grid-template-rows: 7% 86% 7%;
-    border: px solid black;
+   
     height: 100%;
     width: 100%;
     grid-gap: 1%;
@@ -21,10 +21,11 @@ Body Template Classes
 .main_container {
     height: 100%;
     width: 100%;
-    background-color: beige;
-    border: 1px solid black;
     margin: auto;
     box-sizing: border-box;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-rows: 16% 15% 45% 18%;
 }
 
 .blank {
@@ -38,4 +39,45 @@ Body Template Classes
     background-color: clear;
     height: 100%;
     width: 100%;
+}
+
+.titleContainer {
+    background-color: skyblue;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.title {
+    font-family: georgia;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+#questions1Container {
+    background-color: clear;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 7% 26% 26% 26% 7%
+}
+
+.questions1A {
+    background-color: deepskyblue;
+}
+
+.questions2A {
+    background-color: deepskyblue;
+}
+
+.questions3A {
+    background-color: deepskyblue;
+}
+
+.questionsText {
+    font-family: arial;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 18px;
+    color: white;
 }
