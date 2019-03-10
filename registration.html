@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Java Script --> 
     <script src="js/index.js"></script>
-    <script src="#"></script>
+    <script src="js/registration.js"></script>
 </head>
 <body>
 <!-- Sidebar Navigation Content --> 
@@ -27,14 +27,34 @@
 <div class="headerContainer">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
 <div id="question">What best applies to you?</div>
-    <div class="question1Container">
-    <div class="animated lightSpeedIn delay-1s" id="answer1A">
+    <div id="question1Container">
+    <div class="animated lightSpeedIn delay-1s" id="answer1A" onclick="question1Atoggle()">
         <div id="filler"></div>I have never registered to vote.</div>
-    <div class="animated lightSpeedIn delay-1s" id="answer1A">
+    <div class="animated lightSpeedIn delay-2s" id="answer1B" onclick="question1Btoggle()">
         <div id="filler"></div>I don't know if I'm registered to vote.</div>
-    <div class="animated lightSpeedIn delay-1s" id="answer1A">
+    <div class="animated lightSpeedIn delay-3s" id="answer1C">
         <div id="filler"></div>I want to request an absentee ballot.</div>
     </div>
+<div id="question1A2" style="display: none">
+    <div id="question">Are you a U.S. citizen?</div>
+    <div id="question1A2Container">
+        <div id="answer1A2A" onclick="question1A2Atoggle()"><div id="filler"></div>Yes</div>
+        <div id="answer1A2B" onclick="question1A2Btoggle()"><div id="filler"></div>No</div>
+    </div>
+</div>
+<div id="question1A2A3" style="display: none">
+    <div class="question1A2A3">Will you be at least 17 years old on or before the date of the primary election, and turn 18 on or before the date of the General Election? </div>
+    <div id="question1A2A3Container">
+        <div id="answer1A2A3A"><div id="filler"></div>Yes</div>
+        <div id="answer1A2A3B"><div id="filler"></div>No</div>
+    </div>
+</div>
+<div id="warning1A2B" style="display: none">
+    <div class="warningBanner">!STOP!</div>
+    <div class="warningText">If you are not a U.S. citizen, you will not be able to vote.</div>
+    <a href="index.html">
+        <button class="warningButton">Return to Home Page</button></a>
+</div>
     
     
 
