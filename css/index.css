@@ -8,12 +8,20 @@ body {
     background-color: #0D81A6;
 }
 
+/* Color Codes 
+Lightest: #0E98BE
+Light: #0D81A6
+Dark: #083A5B
+Darkest: #061E3E */
+
 /* Still suffering from the specific height problem */
 .headerContainer {
     width: 100%;
     height: 70px;
     background-color: #0D81A6;
 }
+
+/* Sidenav CSS */
 
 .sidenav {
     height: 100%;
@@ -22,7 +30,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #061E3E;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -32,26 +40,35 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #0D81A6;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: 5vw;
+  margin-left: 10%;
+    margin-top: 5%;
 }
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
+  padding: 2%;
+}
+
+#whiteHamburger {
+    color: white;
+}
+
+#whiteHamburger:hover {
+    color: #083A5B;
 }
 
 @media screen and (max-height: 450px) {
@@ -59,7 +76,29 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-/* NOTE: Need an alternate image when media, w=400px. Image dimmensions, w=395px, h=500px */
+/* NOTE: Need an alternate image when media @ w=400px. Image dimmensions, w=395px, h=500px */
+
+.headerContainer {
+    height: 50px;
+    width: 100%;
+}
+
+.headerNotice {
+    margin-left: 45%;
+    color: white;
+    text-
+    font-family: Verdana;
+    font-weight: 900;
+    font-size: 2.5vw;
+    text-shadow: 2px 2px black;
+}
+
+#daysTill {
+    color: red;
+    font-size: 4vw;
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+}
 
 .backgroundContainer {
     height: 500px;
@@ -69,14 +108,15 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:center;
+    margin-top: 2%;
 }
 
-/* Content */
+/* Main Content */
 
 .contentContainer {
     min-height: 200px;
     background-color: #0D81A6;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -99,8 +139,8 @@ body {
     border-top: 7px solid white;
     background-color: #0D81A6;
     border-radius: 5px;
-    margin-top: -50px;
-    margin-bottom: 50px;
+    margin-top: -80px;
+    margin-bottom: 80px;
     
 }
 
@@ -115,10 +155,11 @@ body {
 }
 
 #goVoteButton {
+    width: 100%;
     margin-top: 10%;
-    margin-left: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    /* Having trouble centering the button within the div */ 
+    padding-top: 10%;
+    padding-bottom: 10%;
     border: 2px solid white;
     background-color: #0E98BE;
     color: white;
@@ -146,7 +187,7 @@ body {
     margin-top: 2%;
     font-family: Verdana;
     font-size: 2.1vw;
-    padding-left: 5%;
+    padding-left: %;
     padding-right: 5%;  
 }
 
@@ -177,14 +218,14 @@ body {
     font-family: Verdana;
     font-size: 2.1vw;
     padding-left: 5%;
-    padding-right: 5%;
 }
 
 #otherVoteButton {
     margin-top: 12%;
-    margin-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     border: 2px solid white;
     background-color: #0E98BE;
     color: white;
@@ -200,7 +241,7 @@ body {
 
 #moreInfoButton {
     margin-top: 12%;
-    margin-left: 2%;
+    margin-left: 9%;
     padding-top: 5%;
     padding-bottom: 5%;
     border: 2px solid white;
@@ -212,7 +253,8 @@ body {
 }
 
 #moreInfoButton:hover {
-    
+     background-color: white;
+    color: #0E98BE;
 }
 
 .footerContainer {
