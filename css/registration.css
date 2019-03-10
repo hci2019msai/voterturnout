@@ -1,0 +1,119 @@
+/*
+Global Variables
+*/ 
+
+body {
+    background-color: azure;
+    height: 100%;
+    background-color: #0D81A6;
+}
+
+/* Color Codes 
+Lightest: #0E98BE
+Light: #0D81A6
+Dark: #083A5B
+Darkest: #061E3E */
+
+/* Still suffering from the specific height problem */
+.headerContainer {
+    width: 100%;
+    height: 70px;
+    background-color: #0D81A6;
+}
+
+/* Sidenav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #061E3E;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+    margin-top: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0D81A6;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5vw;
+  margin-left: 10%;
+    margin-top: 5%;
+}
+
+#supercontainer {
+  transition: margin-left .5s;
+  padding: 2%;
+}
+
+#whiteHamburger {
+    color: white;
+    font-size: 3vw;
+}
+
+#whiteHamburger:hover {
+    color: #083A5B;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Main Content */ 
+
+#question {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    color: #083A5B;
+    text-align: center;
+    font-size: 35px;
+    font-family: verdana;
+}
+
+.filler {
+    height: 30%;
+}
+
+/* Question 1 */
+
+.question1Container {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    margin-top: 2%;
+}
+
+#answer1A {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+
+#answer1A:hover {
+    background-color: white;
+    color: #0E98BE;
+}
