@@ -79,16 +79,23 @@ Darkest: #061E3E */
 /* NOTE: Need an alternate image when media @ w=400px. Image dimmensions, w=395px, h=500px */
 
 .headerContainer {
-    height: 50px;
     width: 100%;
 }
 
+/* 
+NOTE: animation will not work if the div is a span for some reason. I think it has to do with the dimensions. 
+*/
+
+/*
+NOTE: positioning is messing up the notice banner in the header - the push sidenav bar doesn't affect the dimmensions given to the text resizing code for some reason, so it doesn't shit to accomodate the change AND there's a bit too much space between the hamburger menu & the banner because I can't have them on the same line. Doing 'margin-top' to a negative or positive doesn't work for some reason as well. Finally, when screen width is at maximum, the banner overlaps with the background image. 
+*/
+
 .headerNotice {
-    margin-left: 45%;
+    margin-left: 35%;
     color: white;
-    text-
+    text-align: right;
     font-family: Verdana;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 2.5vw;
     text-shadow: 2px 2px black;
 }
