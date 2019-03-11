@@ -308,9 +308,7 @@ Darkest: #061E3E */
 I don't seem to be able to directly edit the CSS surrounding the datalist & input tags. Not sure what's controlling those. 
 */ /*CSS-ing the Inputs*/
 
-datalist {
-    background-color: black;
-}
+
 
 
 
