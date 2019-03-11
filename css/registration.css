@@ -221,7 +221,7 @@ Darkest: #061E3E */
 }
 
 #answer1A2A3A {
-     background-color: #0E98BE;
+    background-color: #0E98BE;
     text-align: center;
     border: 1px solid white;
     font-family: verdana;
@@ -247,33 +247,74 @@ Darkest: #061E3E */
 #warning1A2B {
     height: 200px;
     width: 80%;
+    max-width: 400px;
     margin: auto;
-    background-color: #0E98BE;
+    background-color: #083A5B;
     margin-top: 2%;
-    border: 1px solid white;
     text-align: center;
 }
 
 .warningBanner {
     color: red;
     text-align: center;
-    font-size: 4vw;
+    font-size: 40px;;
     text-decoration: underline;
     text-shadow: 2px 2px black;
+    margin-top: 2%;
 }
 
 .warningText {
     color: white;
-    margin-top: 2%;
     text-align: center;
-    font-size: 18px;
 }
 
 .warningButton {
     padding: 10px 10px;
-    margin-top: 2%;
     font-size: 20px;
+    background-color: #0E98BE;
+    color: white;
+    border: none;
 }
+
+/* Data Entry 1A2A3A */
+
+#dataEntry1A2A3A {
+    margin-top: 2%;
+}
+
+.dataEntry1A2A3A {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    color: #083A5B;
+    text-align: center;
+    font-size: 35px;
+    font-family: verdana;
+}
+
+#dataEntry1A2A3AContainer {
+    height: 50px;
+}
+
+#dropDown1A2A3A {
+    background-color: #0E98BE;
+    text-align: center;
+    font-family: verdana;
+    color: white;
+    margin-top: 2%;
+}
+
+/* 
+I don't seem to be able to directly edit the CSS surrounding the datalist & input tags. Not sure what's controlling those. 
+*/ /*CSS-ing the Inputs*/
+
+datalist {
+    background-color: black;
+}
+
+
+
+
 
 
 

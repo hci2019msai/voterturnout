@@ -45,7 +45,7 @@ function question1A2Btoggle() {
     var question1A2A3 = document.getElementById("question1A2A3");
     if (warning1A2B.style.display === "none")
         {
-            warning1A2B.style.display = "grid"
+            warning1A2B.style.display = "grid";
             answer1A2B.style.backgroundColor = "white";
             answer1A2B.style.color = "#0E98BE";
             question1A2A3.style.display = "none";
@@ -56,5 +56,20 @@ function question1A2Btoggle() {
         warning1A2B.style.display = "none";
         answer1A2B.style.backgroundColor = "#0E98BE";
         answer1A2B.style.color = "white";
+    }
+}
+
+function stateToLicense() {
+    var x = document.getElementById("states");
+    state = x.options[x.selectedIndex].value;
+    
+    if (state === "Arizona") {
+        document.getElementById("stateName").innerHTML = "Arizona"
+    }
+    
+    var question1A2A3A4 = document.getElementById("question1A2A3A4");
+    if (question1A2A3A4.style.display === "none") {
+        question1A2A3A4.style.display = "grid";
+        document.getElementById("statename").innerHTML = x;
     }
 }
