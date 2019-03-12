@@ -22,6 +22,11 @@ Darkest: #061E3E */
     margin-top: -5%;
 }
 
+.aheader {
+    margin-top: 4vh;
+    float: left;
+}
+
 /* Sidenav CSS */
 
 .sidenav {
