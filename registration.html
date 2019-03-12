@@ -45,8 +45,8 @@
 <div id="question1A2A3" style="display: none">
     <div class="question1A2A3">Will you be at least 17 years old on or before the date of the primary election, and turn 18 on or before the date of the General Election? </div>
     <div id="question1A2A3Container">
-        <div id="answer1A2A3A"><div id="filler"></div>Yes</div>
-        <div id="answer1A2A3B"><div id="filler"></div>No</div>
+        <div id="answer1A2A3A" onclick="question1A2A3Atoggle()"><div id="filler"></div>Yes</div>
+        <div id="answer1A2A3B" onclick="question1A2A3Btoggle()"><div id="filler"></div>No</div>
     </div>
 </div>
 <div id="warning1A2B" style="display: none">
@@ -59,7 +59,7 @@
     <div class="dataEntry1A2A3A">Please enter your state of residence.</div>
     <div id="dataEntry1A2A3AContainer">
         <div id="dropDown1A2A3A">
-            <select name="states" onchange="stateToLicense()">
+            <select id="states" name="states" onchange="stateToLicense()">
                 <option value="Arizona">Arizona</option>
                 <option value="Illinois">Illinois</option>
                 <option value="Ohio">Ohio</option>
@@ -67,22 +67,68 @@
         </div>
     </div>
 </div>
-<div id="warning1A2A3B" style="display: none">
+<div id="ageWarning" style="display: none">
     <div class="warningBanner">!STOP!</div>
     <div class="warningText">If you are not of age you will not be able to vote in the election.</div>
     <a href="index.html">
         <button class="warningButton">Return to Home Page</button></a>
 </div>
-<div id="question1A2A3A4" style="display: none">
-    <div class="question1A2A3">Do you have a valid <b id="stateName">Illinois</b> driver's license?</div>
+<div id="question1A2A3A4" style="display: none;">
+    <p class="question1A2A3A4">Do you have a valid <b id="stateName">test</b> driver's license?</p>
     <div id="question1A2A3A4Container">
-        <div id="answer1A2A3A4A"><div id="filler"></div>Yes</div>
-        <div id="answer1A2A3A4B"><div id="filler"></div>No</div>
+        <div id="answer1A2A3A4A" onclick="question1A2A3A4Atoggle()"><div id="filler"></div>Yes</div>
+        <div id="answer1A2A3A4B" onclick="question1A2A3A4Btoggle()"><div id="filler"></div>No, but I have a valid license from another state.</div>
+        <div id="answer1A2A3A4C" onclick="question1A2A3A4Ctoggle()"><div id="filler"></div>No</div>
     </div>
 </div>
+<!-- Results of Question1A2A3A4 -->
+<div id="question1A2A3A4A5" style="display: none;">
+    <div class="question1A2A3A4A5">If you have confirmed all of this information, please press proceed. </div>
+        <a href="registrationForm.html"><button class="proceed">Proceed</button></a>
+    </div>
+<div id="licenseNext" style="display: none;">
+    <div class="nextBanner">ALL GOOD!</div>
+    <div class="warningText">Even if you don't have a local license, you can still vote locally! Just make sure to 
+    bring proof of residency to your polling location. Click Yes on the left to continue to register.</div>
+    <a href="FAQ.html #ProofOfResidency"><div class="OKButton">See Types of Proof of Residency</div></a>
+    </div>
+<div id="question1A2A3A4C5" style="display: none;">
+    <div class="question1A2A3A4C5">Do you have another form of identification, such as a passport or state ID? </div>
+    <div id="question1A2A3A4C5Container">
+        <div id="answer1A2A3A4C5A" onclick="question1A2A3A4C5Atoggle()"><div id="filler"></div>Yes</div>
+        <div id="answer1A2A3A4C5B" onclick="question1A2A3A4C5Btoggle()"><div id="filler"></div>No</div>
+    </div>
+    </div>
+<!-- Results of Question1A2A3A4A5 -->
+<!-- Results of Question1A2A3A4C5 -->
     
     
 
 </div> 
 </body>
 </html>
+<script>
+function stateToLicense() {
+    var x = document.getElementById("states");
+    state = x.options[x.selectedIndex].value;
+    
+    if (state === "Arizona") {
+        document.getElementById("stateName").innerHTML = "Arizonan"
+    }
+    
+    if (state === "Illinois") {
+        document.getElementById("stateName").innerHTML = "Illinois"
+    }
+    
+    if (state === "Ohio") {
+        document.getElementById("stateName").innerHTML = "Ohioan"
+    }
+    
+    var question1A2A3A4 = document.getElementById("question1A2A3A4");
+    if (question1A2A3A4.style.display === "none") {
+        question1A2A3A4.style.display = "grid";
+        document.getElementById("statename").innerHTML = x;
+    }
+    console.log("hi Atlas")
+}
+</script>

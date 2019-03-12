@@ -81,7 +81,6 @@ Darkest: #061E3E */
 /* Main Content */ 
 
 #question {
-    height: 50px;
     width: 100%;
     background-color: white;
     color: #083A5B;
@@ -201,12 +200,11 @@ Darkest: #061E3E */
 }
 
 .question1A2A3 {
-    height: 50px;
     width: 100%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 18px;
+    font-size: 2vh;
     font-family: verdana;
 }
 
@@ -254,6 +252,16 @@ Darkest: #061E3E */
     text-align: center;
 }
 
+#ageWarning {
+    height: 200px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #083A5B;
+    margin-top: 2%;
+    text-align: center;
+}
+
 .warningBanner {
     color: red;
     text-align: center;
@@ -288,7 +296,7 @@ Darkest: #061E3E */
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 35px;
+    font-size: 3vw;
     font-family: verdana;
 }
 
@@ -303,6 +311,165 @@ Darkest: #061E3E */
     color: white;
     margin-top: 2%;
 }
+
+.question1A2A3A4 {
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        color: #083A5B;
+        text-align: center;
+        font-size: 3vw;
+        font-family: verdana;
+}
+
+#question1A2A3A4Container {
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    margin-top: 2%;
+}
+
+#answer1A2A3A4A {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+#answer1A2A3A4A:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+
+#answer1A2A3A4B {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+#answer1A2A3A4B:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+
+#answer1A2A3A4C {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+#answer1A2A3A4C:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+
+/* Results of Question1A2A3A4 */
+#question1A2A3A4A5 {
+    margin-top: 2%;
+}
+.question1A2A3A4A5 {
+    width: 100%;
+    background-color: white;
+    color: #083A5B;
+    text-align: center;
+    font-size: 3vw;
+    font-family: verdana;
+}
+.proceed {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #0E98BE;
+    color: white;
+    text-decoration: underline;
+    border: none;
+    width: 30%;
+    margin-left: 36%;
+    margin-top: 2%;
+}
+.proceed:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+
+#licenseNext {
+    height: 200px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #083A5B;
+    margin-top: 2%;
+    text-align: center;
+}
+.nextBanner {
+    color: greenyellow;
+    text-align: center;
+    font-size: 40px;;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    margin-top: 2%;
+}
+.OKButton {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: #0E98BE;
+    color: white;
+    text-decoration: underline;
+    border: none;
+    width: 60%;
+    margin-left: 18%;
+}
+
+#question1A2A3A4C5 {
+    margin-top: 2%;
+}
+.question1A2A3A4C5 {
+    width: 100%;
+    background-color: white;
+    color: #083A5B;
+    text-align: center;
+    font-size: 3vw;
+    font-family: verdana;
+}
+#question1A2A3A4C5Container {
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    margin-top: 2%;
+}
+#answer1A2A3A4C5A {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+#answer1A2A3A4C5A:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+#answer1A2A3A4C5B {
+    background-color: #0E98BE;
+    text-align: center;
+    border: 1px solid white;
+    font-family: verdana;
+    color: white;
+}
+#answer1A2A3A4C5B:hover {
+    background-color: white;
+    color: #0E98BE;
+}
+/* Results of Question1A2A3A4A5 */
+/* Results of Question1A2A3A4C5 */
+
+
 
 /* 
 I don't seem to be able to directly edit the CSS surrounding the datalist & input tags. Not sure what's controlling those. 
