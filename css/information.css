@@ -105,6 +105,13 @@ Darkest: #061E3E */
     color: #083A5B;
 }
 
+.nextPage {
+    font-size: 4vw;
+    color: #083A5B;
+    text-decoration: underline;
+    margin-left: 25vw;
+}
+
 /* Tab Content */
 
 .blueBox {
@@ -552,145 +559,76 @@ Darkest: #061E3E */
     background-color: white;
 }
 
-#SupremeCourt {
-    height: 11vh;
-    width: 30%;
-    background-color: skyblue;
-    border-radius: 10px;
-    float: left;
-     border: 1px solid antiquewhite;
+#Infrastructure {
+        height: 11vh;
+        width: 30%;
+        background-color: #CD5C5C;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
 }
 
-#SupremeCourt:hover {
+#Infrastructure:hover {
     background-color: white;
 }
 
-#SupremeCourtNumber {
-    font-size: 2.5vw;
-    font-size: 2.5vh;
-    font-weight: 500;
-    color: black;
-}
-
-#SupremeCourtText {
-    font-size: 2vw;
-    font-size: 2vh;
-    font-weight: 200;
-    color: black;
-}
-
-#USTrade {
-    height: 8vh;
-    width: 30%;
-    background-color: lightskyblue;
-    border-radius: 10px;
-    float: left;
-     border: 1px solid antiquewhite;
+#SanctuaryCities {
+        height: 8vh;
+        width: 30%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
 }
 
 #USTrade:hover {
     background-color: white;
 }
 
-#USTradeNumber {
-    font-size: 2.5vw;
-    font-size: 2.5vh;
-    font-weight: 500;
-    color: black;
+#SalesTax {
+        height: 8vh;
+        width: 26%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
 }
 
-#USTradeText {
-    font-size: 2vw;
-    font-size: 2vh;
-    font-weight: 200;
-    color: black;
-}
-
-#Climate {
-    height: 8vh;
-    width: 26%;
-    background-color: lightskyblue;
-    border-radius: 10px;
-    float: left;
-     border: 1px solid antiquewhite;
-}
-
-#Climate:hover {
+#SalesTax:hover {
     background-color: white;
 }
 
-#ClimateNumber {
-    font-size: 2.3vw;
-    font-size: 2.3vh;
-    font-weight: 500;
-    color: black;
+#LGBTRights {
+        height: 11vh;
+        width: 16%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
 }
 
-#ClimateText {
-    font-size: 1.8vw;
-    font-size: 1.8vh;
-    font-weight: 200;
-    color: black;
-}
-
-#Mueller {
-    height: 11vh;
-    width: 16%;
-    background-color: lightskyblue;
-    border-radius: 10px;
-    float: left;
-     border: 1px solid antiquewhite;
-}
-
-#Mueller:hover {
+#LGBTRights:hover {
     background-color: white;
 }
 
-#MuellerNumber {
-    font-size: 2vw;
-    font-size: 2vh;
-    font-weight: 500;
-    color: black;
-}
-
-#MuellerText {
-    font-size: 1.5vw;
-    font-size: 1.5vh;
-    font-weight: 200;
-    color: black;
-}
-
-#Partisanship {
+#MinimumWage {
     height: 8vh;
     width: 24%;
-    background-color: lightcyan;
+    background-color: Salmon;
     border-radius: 10px;
     float: left;
      border: 1px solid antiquewhite;
 }
 
-#Partisanship:hover {
+#MinimumWage:hover {
     background-color: white;
 }
 
-#PartisanNumber {
-    font-size: 2vw;
-    font-size: 2vh;
-    font-weight: 500;
-    color: black;
-}
 
-#PartisanText {
-    font-size: 1.5vw;
-    font-size: 1.5vh;
-    font-weight: 200;
-    color: black;
-}
-
-#TheEconomy2 {
+#TheEconomy3 {
     height: 34vh;
     width: 20%;
-    background-color: azure;
+    background-color: lightpink;
     border-radius: 10px;
     float: right;
      border: 1px solid antiquewhite;
