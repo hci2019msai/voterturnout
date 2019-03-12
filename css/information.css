@@ -16,18 +16,10 @@ Darkest: #061E3E */
 /* Still suffering from the specific height problem */
 .headerContainer {
     width: 100%;
-    height: 8vw;
+    height: 3vw;
     min-height: 65px;
     max-height: 100px;
     background-color: #0D81A6;
-}
-
-.headerBanner {
-    color: white;
-    font-family: verdana;
-    font-size: 5vw;
-    margin-left: 20vw;
-    
 }
 
 /* Sidenav CSS */
@@ -91,7 +83,7 @@ Darkest: #061E3E */
 
 .mainContainer {
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     background-color: antiquewhite;
 }
 
@@ -108,9 +100,113 @@ Darkest: #061E3E */
 }
 
 .tabTitle {
-    font-size: 2vw;
-    margin-left: 40vw;
+    font-size: 4vw;
     color: #083A5B;
+}
+
+/* Tab Content */
+
+/* NOTE: All heights need to add up to 80vh, all widths */
+
+.issueMatrix {
+    
+}
+
+.blueBox {
+    height: 10vh;
+    width: 50%;
+    background-color: skyblue;
+    border-radius: 10px;
+    float: right;
+}
+
+.blueBoxTextContainer {
+    padding: .5vh;
+}
+
+.blueBoxNumber {
+    font: verdana;
+    color: white;
+    font-weight: 600;
+    font-size: 3.5vw;
+    font-size: 3.5vh;
+}
+
+.blueBoxText {
+    font: verdana;
+    color: white;
+    font-weight: 300;
+    font-size: 3vw;
+    font-size: 3vh;
+}
+
+.bigFont {
+    font: verdana;
+    font-size: 2.5vw;
+    color: white;
+    background-color: darkslategray;
+}
+
+/* Boxes */
+
+#HealthCare {
+    height: 30vh;
+    width: 60%;
+    background-color: #083A5B;
+    border-radius: 10px;
+    float: right;
+}
+
+#HealthCare:hover {
+    background-color: midnightblue;
+}
+
+#TheEconomy {
+    height: 30vh;
+    width: 40%;
+    background-color: #0D81A6;
+    border-radius: 10px;
+    float: right;
+}
+
+#TheEconomy:hover {
+    background-color: midnightblue;
+}
+
+#Immigration {
+    height: 18vh;
+    width: 40%;
+    background-color: #0D81A6;
+    border-radius: 10px;
+    float: right;
+}
+
+#Immigration:hover {
+    background-color: midnightblue;
+}
+
+#GunPolicy {
+    height: 18vh;
+    width: 30%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    float: right;
+}
+
+#GunPolicy:hover {
+    background-color: midnightblue;
+}
+
+#WomensRights {
+    height: 18vh;
+    width: 30%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    float: right;
+}
+
+#WomensRights:hover {
+    background-color: midnightblue;
 }
 
 /* Footer */
@@ -120,4 +216,3 @@ Darkest: #061E3E */
     height: 5vw;
     background-color: #0D81A6;
 }
-
