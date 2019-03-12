@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/information.js"></script>
 </head>
 
 <body>
@@ -86,6 +87,7 @@
             <div id="ForeignAffairsText">Foreign Affairs</div>
             </div>
           </div>
+        <div id="TheEconomy2"></div>
         <div id="IncomeInequality">
             <div class="blueBoxTextContainer">
                 <div id="SupremeCourtNumber">900K tweets</div>
@@ -131,13 +133,112 @@
   <div id="state" class="tab-pane fade">
 <!-- ALL STATE ISSUES CONTENT GOES HERE --> 
       
-      
-    <h3>State Issues</h3>
-    <p>Some content in menu 1.</p>
-      
+      <!-- Codes for Red Pallette 
+            #800000 - Darkest
+            #8B0000
+            #B22222
+            #DC143C
+            #CD5C5C
+            #F08080
+            #E9967A
+            Salmon
+            Lightsalmon - Lightest
+      --> 
+      <!--Pre-Toggle-->
+<div id="toggleContainer" style="display: block">
+    <select class="states">
+        <option>Illinois</option>
+        <option>Ohio</option>
+    </select><br>
+      <button onclick="toggleStateContent()" class=toggleButton>Submit</button>     
+</div>
+      <!--Post-Toggle-->
+<div id="PostToggle" style="display: none">
+<button onclick="toggleChoices()" class="toggleButton2">Return to State Choices</button>
+<div class="issueMatrix">
+        <div id="SocialJusticeReform">
+          <div class="blueBoxTextContainer">
+            <div class="blueBoxNumber">1.2M tweets</div>
+            <div class="blueBoxText">Social Justice Reform</div>
+            </div>
+          </div>
+        <div id="Education">
+          <div class="blueBoxTextContainer">
+            <div class="blueBoxNumber">900K tweets</div>
+            <div class="blueBoxText">Education</div>
+            </div>
+          </div>
+        <div id="Corruption">
+          <div class="blueBoxTextContainer">
+            <div id="CorruptionNumber">800K tweets</div>
+            <div id="CorruptionText">Corruption</div>
+            </div>
+          </div>
+        <div id="DebtCrisis">
+          <div class="blueBoxTextContainer">
+            <div id="CorruptionNumber">600K tweets</div>
+            <div id="CorruptionText">Debt Crisis</div>
+            </div>
+          </div>
+        <div id="WomensRights2">
+          <div class="blueBoxTextContainer">
+            <div id="CorruptionNumber">500K tweets</div>
+            <div id="CorruptionText">Women's Rights</div>
+            </div>
+          </div>
+        <div id="CleanEnergy">
+          <div class="blueBoxTextContainer">
+            <div id="ForeignAffairsNumber">350K</div>
+            <div id="ForeignAffairsText">Clean Energy</div>
+            </div>
+          </div>
+        <div id="RightToWork">
+          <div class="blueBoxTextContainer">
+            <div id="ForeignAffairsNumber">200K tweets</div>
+            <div id="ForeignAffairsText">Right to Work</div>
+            </div>
+          </div>
+        <div id="TheEconomy2"></div>
+        <div id="Drug Legalization">
+            <div class="blueBoxTextContainer">
+                <div id="SupremeCourtNumber">90K</div>
+                <div id="SupremeCourtText">Drug Legalization</div>
+            </div>
+          </div>
+        <div id="SupremeCourt">
+          <div class="blueBoxTextContainer">
+                <div id="SupremeCourtNumber">750K tweets</div>
+                <div id="SupremeCourtText">Supreme Court</div>
+            </div>
+          </div>
+        <div id="Mueller">
+            <div class="blueBoxTextContainer">
+                <div id="MuellerNumber">225K tweets</div>
+                <div id="MuellerText">Mueller Investigation</div>
+            </div>
+          </div>
+        <div id="USTrade">
+          <div class="blueBoxTextContainer">
+                <div id="USTradeNumber">450K tweets</div>
+                <div id="USTradeText">U.S. Trade Policy</div>
+            </div>
+          </div>
+        <div id="Climate">
+          <div class="blueBoxTextContainer">
+                <div id="USTradeNumber">400K tweets</div>
+                <div id="USTradeText">Climate Policy</div>
+            </div>
+          </div>
+        <div id="Partisanship">
+          <div class="blueBoxTextContainer">
+                <div id="PartisanNumber">200K tweets</div>
+                <div id="PartisanText">Partisanship</div>
+            </div>
+          </div>
+      </div>
       
   </div>
-
+</div>
 
   <div id="local" class="tab-pane fade">
 <!-- ALL LOCAL ISSUES CONTENT GOES HERE --> 
