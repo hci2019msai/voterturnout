@@ -28,15 +28,17 @@
     <div class="timeline">
         <div class="container left">
             <div class="content">
-                <h2>First Step</h2>
-                <p>Lorem ipsum...</p>
+                <h3>Enter your zip code.</h3>
+                <span id="zip"><form><input size="6" class=zip type=text maxlength="5" placeholder="#####" required><button onclick="revealNameStep()" class="Submit">Submit</button></form></span>
             </div>
         </div>
+        <div id="NameContainer" style="display: grid">
         <div class="container right">
             <div class="content">
-                <h2>Second Step</h2>
-                <p>Lorem ipsum...</p>
+                <h3>Enter your first and last name. </h3>
+                <div class="nameEntry"><form action="/action_page.php"><input size="10" class="name" type=text maxlength="20" placeholder="first name" required><br><input size="10" class="name" type=text maxlength="20" placeholder="last name" required><br><button onclick="revealBirth()" class="SubmitBr">Submit</button></form></div>
             </div>
+        </div>
         </div>
         <div class="container left">
             <div class="content">

@@ -79,11 +79,12 @@ Darkest: #061E3E */
 .subheader {
     width: 100%;
     background-color: white;
-    font-size: 3vh;
+    font-size: 4vh;
     color: #061E3E;
     text-align: center;
     font-family: verdana;
     border-radius: 14px;
+    margin-top: 10px;
 }
 
 .timeline {
@@ -107,7 +108,9 @@ Darkest: #061E3E */
     position: relative;
     background-color: inherit;
     width: 50%;
-    border: 1px solid white;
+    border-radius: 10px;
+    font-family: verdana;
+    font-size: 2vw;
 }
 
 .container::after {
@@ -121,6 +124,7 @@ Darkest: #061E3E */
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+    
 }
 
 .left {
@@ -208,10 +212,35 @@ Darkest: #061E3E */
 .Submit {
     background-color: #0D81A6;
     color: white;
+    margin-left: 1vw;
+    height: 3vh;
 }
+
+.SubmitBr {background-color: #0D81A6;
+    color: white;
+    height: 3vh;}
+.SubmitBr:hover {background-color: white;
+    color: #0D81A6;
+    border: 1px solid black;}
 
 .Submit:hover {
     background-color: white;
     color: #0D81A6;
-    
+    border: 1px solid black;
+}
+
+.zip {
+    height: 3vh;
+}
+
+#zip {
+    text-align: center;
+}
+
+.name {
+    height: 3vh;
+}
+
+.nameEntry {
+    text-align: center;
 }
