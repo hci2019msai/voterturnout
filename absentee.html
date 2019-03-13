@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/absentee.css">
     <!-- JS (no onchange functions!) --> 
     <script src="js/index.js"></script>
+    <script src="js/absentee.js"></script>
 </head>
 <body>
 <!-- Sidebar Navigation Content --> 
@@ -28,25 +29,44 @@
     <div class="timeline">
         <div class="container left">
             <div class="content">
-                <h3>Enter your zip code.</h3>
-                <span id="zip"><form><input size="6" class=zip type=text maxlength="5" placeholder="#####" required><button onclick="revealNameStep()" class="Submit">Submit</button></form></span>
+                <h3>Enter your old zip code.</h3>
+                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
             </div>
         </div>
-        <div id="NameContainer" style="display: grid">
-        <div class="container right">
-            <div class="content">
-                <h3>Enter your first and last name. </h3>
-                <div class="nameEntry"><form action="/action_page.php"><input size="10" class="name" type=text maxlength="20" placeholder="first name" required><br><input size="10" class="name" type=text maxlength="20" placeholder="last name" required><br><button onclick="revealBirth()" class="SubmitBr">Submit</button></form></div>
+        <div id="NameContainer" style="display: none">
+            <div class="container right">
+                <div class="content">
+                    <h3>Enter your first and last name.</h3>
+                    <div class="centerDiv">First Name: <input size="15" class="textInput" type=text maxlength="20" placeholder="Noah" required><br>Last Name: <input size="15" class="textInput" type=text maxlength="20" placeholder="Caldwell-Gatsos" required><br><button onclick="revealBirth()" class="SubmitBr">Submit</button></div>
+                </div>
             </div>
         </div>
+        <div id="BirthContainer" style="display: none">
+            <div class="container left">
+                <div class="content">
+                    <h3>Enter your date of birth.</h3>
+                    <div class="centerDiv">Month: <input size="3" class="textInput" type="text" maxlength="2" placeholder="08" required> Day: <input size="3" class="textInput" type="text" maxlength="2" placeholder="16" required> Year: <input class="textInput" type="text" maxlength="4" placeholder="1995" size=5 required><br><button class="SubmitBr" onclick="revealMail()">Submit</button></div>
+                </div>
+            </div>
         </div>
-        <div class="container left">
-            <div class="content">
-                <h2>Third Step</h2>
-                <p>Lorem ipsum...</p>
+        <div id="MailContainer" style="display: none">
+            <div class="container right">
+                <div class="content">
+                    <h3>Enter your current mailing address.</h3>
+                    <div class="centerDiv">Street: <input size="20" class="textInput" type="text" maxlength="25" placeholder="1103 Emerson Street" required><br>Street: <input size="20" class="textInput" type="text" maxlength="20" placeholder="N/A" required><br>City: <input size="15" class="textInput" type="text" maxlength="20" placeholder="Evanston" required> State: <select><option>IL</option></select><br>Zip: <input size="6" class="textInput" type="text" maxlength="6" placeholder="25056" required><br><button class="SubmitBr" onclick="revealLicense()">Submit</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="LicenseContainer" style="display: none">
+            <div class="container left">
+                <div class="content">
+                    <h3>Enter your ID number.</h3>
+                    <div class="centerDiv">ID Type: <input size="15" class="textInput" type="text" maxlength="16" placeholder="Driver's License" required><br>Number: <input size="10" class="textInput" type="text" maxlength="9" placeholder="333888938" required><br><button class="SubmitBr" onclick="revealNext()">Submit</button></div>
+                </div>
             </div>
         </div>
     </div>
+    <a href="sampleConfirmation.html"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
 </div>
 </body> 
 <script></script>
