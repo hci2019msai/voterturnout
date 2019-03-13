@@ -16,10 +16,10 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Front Page</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="information.html">Why Vote?</a>
         <a href="registration.html">Registration</a>
-        <a href="#">FAQs</a>
+        <a href="FAQ.html">FAQs</a>
 </div>
 
 <!-- Content --> 
@@ -30,10 +30,10 @@
     <div id="question1Container">
     <div class="animated lightSpeedIn delay-1s" id="answer1A" onclick="question1Atoggle()">
         <div id="filler"></div>I have never registered to vote.</div>
-    <div class="animated lightSpeedIn delay-2s" id="answer1B" onclick="question1Btoggle()">
-        <div id="filler"></div>I don't know if I'm registered to vote.</div>
-    <div class="animated lightSpeedIn delay-3s" id="answer1C">
-        <div id="filler"></div>I want to request an absentee ballot.</div>
+    <a href="checkRegistration.html"><div class="animated lightSpeedIn delay-2s" id="answer1B" onclick="question1Btoggle()">
+        <div id="filler"></div>I don't know if I'm registered to vote.</div></a>
+    <a href="absentee.html"><div class="animated lightSpeedIn delay-3s" id="answer1C">
+        <div id="filler"></div>I want to request an absentee ballot.</div></a>
     </div>
 <div id="question1A2" style="display: none">
     <div id="question">Are you a U.S. citizen?</div>
@@ -101,10 +101,8 @@
     </div>
 <!-- Results of Question1A2A3A4A5 -->
 <!-- Results of Question1A2A3A4C5 -->
-    
-    
-
 </div> 
+<div class="footer"></div>
 </body>
 </html>
 <script>
@@ -128,6 +126,9 @@ function stateToLicense() {
     if (question1A2A3A4.style.display === "none") {
         question1A2A3A4.style.display = "grid";
         document.getElementById("statename").innerHTML = x;
+        question1A2A3A4C5.style.display = "none";
+        licenseNext.style.display = "none";
+        question1A2A3A4A5.style.display = "none";
     }
     console.log("hi Atlas")
 }
