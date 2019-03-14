@@ -233,3 +233,12 @@ Rightwards Arrow: &#10513;
     align-content: center;
     text-align: center;
 }
+
+.reminder-calendar{
+    width: 5%;
+    height: 55%;
+}
+
+#show-confirmation{
+    display: none;
+}
