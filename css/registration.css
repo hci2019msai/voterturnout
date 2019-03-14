@@ -1,13 +1,13 @@
 /*
 Global Variables
-*/ 
+*/
 
 body {
     height: 100%;
     background-color: #0D81A6;
 }
 
-/* Color Codes 
+/* Color Codes
 Lightest: #0E98BE
 Light: #0D81A6
 Dark: #083A5B
@@ -70,7 +70,7 @@ Darkest: #061E3E */
   .sidenav a {font-size: 18px;}
 }
 
-/* Main Content */ 
+/* Main Content */
 
 #question {
     width: 98%;
@@ -78,7 +78,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 5vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -100,7 +100,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -118,7 +118,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -135,7 +135,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -170,7 +170,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -190,7 +190,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -211,7 +211,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 3vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -236,10 +236,10 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
-    
+
 }
 #answer1A2A3A:hover {
     background-color: white;
@@ -257,7 +257,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -274,7 +274,7 @@ Darkest: #061E3E */
     border: 3px solid white;
     border-radius: 30px;
     background-color: #083A5B;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     margin-top: 2%;
     text-align: center;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
@@ -288,7 +288,7 @@ Darkest: #061E3E */
     border: 3px solid white;
     border-radius: 30px;
     background-color: #083A5B;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     margin-top: 2%;
     text-align: center;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
@@ -334,7 +334,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 3.5vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -345,7 +345,7 @@ Darkest: #061E3E */
 
 #dropDown1A2A3A {
     text-align: center;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
 }
 
@@ -364,7 +364,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 3.5vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -388,7 +388,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -408,7 +408,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -428,7 +428,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -447,7 +447,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 4vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -485,12 +485,12 @@ Darkest: #061E3E */
     text-shadow: 2px 2px black;
     margin-top: 2%;
     padding: 10px;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
 }
 .warningText2 {
     color: white;
     text-align: center;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 2vh;
 }
 .OKButton {
@@ -502,7 +502,7 @@ Darkest: #061E3E */
     border: 3px solid white;
     border-radius: 30px;
     width: 60%;
-    margin-left: 18%;   
+    margin-left: 18%;
 }
 
 .OKButton:hover {
@@ -520,7 +520,7 @@ Darkest: #061E3E */
     color: #083A5B;
     text-align: center;
     font-size: 3vh;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     border-radius: 10px;
     padding: 10px;
 }
@@ -543,7 +543,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -562,7 +562,7 @@ Darkest: #061E3E */
     border-radius: 30px;
     border: 3px solid white;
     font-size: 2vw;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
     color: white;
     box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
@@ -578,21 +578,6 @@ Darkest: #061E3E */
     background-color: #0D81A6;
 }
 
-/* 
-I don't seem to be able to directly edit the CSS surrounding the datalist & input tags. Not sure what's controlling those. 
+/*
+I don't seem to be able to directly edit the CSS surrounding the datalist & input tags. Not sure what's controlling those.
 */ /*CSS-ing the Inputs*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,15 +1,14 @@
 /*
 Global Variables
-*/ 
+*/
 
 body {
-    background-color: #083A5B;
+    background-color: white;
     height: 100%;
-    background-color: #0D81A6;
-    font-family: verdana;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Color Codes 
+/* Color Codes
 Lightest: #0E98BE
 Light: #0D81A6
 Dark: #083A5B
@@ -19,7 +18,7 @@ Darkest: #061E3E */
 .headerContainer {
     width: 100%;
     height: 50px;
-    text-align: right;
+    text-align: center;
     margin-top: -5%;
 }
 
@@ -68,16 +67,16 @@ Darkest: #061E3E */
 
 #supercontainer {
   transition: margin-left .5s;
-  padding: 2%;
+/*  padding: 2%;*/
 }
 
 #whiteHamburger {
-    color: white;
+    color: #13214C;
     font-size: 3vw;
 }
 
 #whiteHamburger:hover {
-    color: #083A5B;
+    color: white;
 }
 
 @media screen and (max-height: 450px) {
@@ -87,58 +86,66 @@ Darkest: #061E3E */
 
 /* NOTE: Need an alternate image when media @ w=400px. Image dimmensions, w=395px, h=500px */
 
-/* 
-NOTE: animation will not work if the div is a span for some reason. I think it has to do with the dimensions. 
+/*
+NOTE: animation will not work if the div is a span for some reason. I think it has to do with the dimensions.
 */
 
 /*
-NOTE: positioning is messing up the notice banner in the header - the push sidenav bar doesn't affect the dimmensions given to the text resizing code for some reason, so it doesn't shit to accomodate the change AND there's a bit too much space between the hamburger menu & the banner because I can't have them on the same line. Doing 'margin-top' to a negative or positive doesn't work for some reason as well. Finally, when screen width is at maximum, the banner overlaps with the background image. 
+NOTE: positioning is messing up the notice banner in the header - the push sidenav bar doesn't affect the dimmensions given to the text resizing code for some reason, so it doesn't shit to accomodate the change AND there's a bit too much space between the hamburger menu & the banner because I can't have them on the same line. Doing 'margin-top' to a negative or positive doesn't work for some reason as well. Finally, when screen width is at maximum, the banner overlaps with the background image.
 UPDATE: adding style="display:inline-block" resolves the span conflict with the animation. However - I am no longer allowed to assign percentages to margin-left, and all must be done in pixels. It looks very bad (250px is what I've settled at). I am still unable to add either margin-top or margin-bottom.
 UPDATE2: the animation fix from update1 is the reason that percentages no longer work. Inline-block disables my ability to use percentages for my margin-left. New observations:
 - inline-flex still solves U1 problem. display: contents, inline do not, but restore my ability to manipulate percentages.
 DECISION: I can either have the odd whitespace, not manipulate percentages, or not do animations. Can't eat cake.
-UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID result in uncomfortable whitespace, but being able to control margins again allowed me to set a negative margin-top for the header container. 
+UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID result in uncomfortable whitespace, but being able to control margins again allowed me to set a negative margin-top for the header container.
 */
 
 .headerNotice {
-    margin-left: 250px;
-    color: white;
-    font-family: Verdana;
-    font-weight: 600;
-    font-size: 2.5vw;
-    text-shadow: 1px 1px black;
+  /*  margin-left: 250px;*/
+    color: #13214C;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.5vw;
+    /*position:absolute;
+    top: 80px;
+    right: 0;*/
 }
 
 #daysTill {
-    color: red;
-    font-size: 4vw;
-    text-shadow: 1px 1px black;
+    color: #B72E32;
+    font-size: 5vw;
 }
 
 .backgroundContainer {
-    height: 500px;
-    background-color: #083A5B;
-    margin: auto;
-    background-image: url(chicago.png);
+    height: 600px;
+    background-color: white;
+    /*background-image: url(election.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:center;
-    margin-top: 2%;
+    margin-top: 1%;*/
 }
 
 /* Main Content */
 
 .contentContainer {
-    min-height: 200px;
-    background-color: #0D81A6;
+    /*min-height: 200px;*/
+    /*background-color: #18374B;*/
     width: 100%;
-    margin: auto;
+    margin-top:120px;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-gap: 2%;
-    border-top: 5px solid #0D81A6;
-    border-bottom: 5px solid #0D81A6;
 }
+
+.imageContainer {
+  float: left;
+  width: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
 
 .filler {
     max-width: 400px;
@@ -149,12 +156,11 @@ UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID resul
 }
 
 .goVote {
-    border-top: 7px solid white;
-    background-color: #0D81A6;
-    border-radius: 5px;   
+    border-radius: 5px;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
     -webkit-transition: all 2s ease;
+    padding: 1%;
 }
 
 /* NOTE: For some reason, the hover animation for each of the sections spases out whenever the mouse approaches it from below. Changing just the margin-bottom does not affect this. Neither does changing the margin-top.
@@ -164,126 +170,118 @@ UPDATE: adding transition fixes this issue AND makes it look cooler. */
     color: white;
     text-align: center;
     margin-top: 2%;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 2.1vw;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 #goVoteButton {
-   margin-top: 12%;
+    /*margin-top: 5%;*/
+    width:100%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    border: 2px solid white;
-    background-color: #0E98BE;
+    background-color: #13214C;
     color: white;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5vw;
     border-radius: 5px;
-    margin-left: 20%;
+    border: 2px solid white;
 }
 
 #goVoteButton:hover {
     background-color: white;
-    color: #0E98BE;
+    color: #13214C;
+    border-radius: 5px;
+    border: 2px solid #13214C;
 }
 
 .whyVote {
     max-height: 150px;
-    border-top: 7px solid white;
-    background-color: #0D81A6;
-    border-radius: 5px;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
     -webkit-transition: all 2s ease;
+    padding: 1%;
 }
 
 #whyVoteHeader {
     color: white;
-    text-align: left;
+    text-align: center;
     margin-top: 2%;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 2.1vw;
-    padding-left: %;
-    padding-right: 5%;  
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #whyVoteButton {
-    margin-top: 12%;
+    width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     border: 2px solid white;
-    background-color: #0E98BE;
+    background-color: #13214C;
     color: white;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 1vw;
 }
 
 .moreInfo {
     max-height: 150px;
-    border-top: 7px solid white;
-    background-color: #0D81A6;
     border-radius: 5px;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
     -webkit-transition: all 2s ease;
+    padding: 1%;
 }
 
 #moreInfoHeader {
     color: white;
-    text-align: right;
+    text-align: center;
     margin-top: 2%;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 2.1vw;
-    padding-left: 5%;
 }
 
 #otherVoteButton {
-    margin-top: 12%;
+    width:100%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
     border: 2px solid white;
-    background-color: #0E98BE;
+    background-color: #13214C;
     color: white;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5vw;
     border-radius: 5px;
 }
 
 #otherVoteButton:hover {
      background-color: white;
-    color: #0E98BE;
+     color: #13214C;
+     border-radius: 5px;
+     border: 2px solid #13214C;
 }
 
 #moreInfoButton {
-    margin-top: 12%;
-    margin-left: 9%;
+    /*margin-left: 9%;*/
+    width:100%;
     padding-top: 5%;
     padding-bottom: 5%;
     border: 2px solid white;
-    background-color: #0E98BE;
+    background-color: #13214C;
     color: white;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5vw;
     border-radius: 5px;
     float: right;
 }
 
 #moreInfoButton:hover {
-     background-color: white;
-    color: #0E98BE;
+    background-color: white;
+    color: #13214C;
+    border-radius: 5px;
+    border: 2px solid #13214C;
 }
-
-.footerContainer {
-    height: 70px;
-    width: 100%;
-    background-color: #083A5B;
-    margin-top: 5%;
-}
-
-
-

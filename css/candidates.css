@@ -1,13 +1,13 @@
 /*
 Global Variables
-*/ 
+*/
 
 body {
     height: 1;
     background-color: antiquewhite;
 }
 
-/* Color Codes 
+/* Color Codes
 Lightest: #0E98BE
 Light: #0D81A6
 Dark: #083A5B
@@ -98,7 +98,7 @@ Darkest: #061E3E */
     color: #083A5B;
 }
 
-/* Flip Card */ 
+/* Flip Card */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -143,5 +143,3 @@ Darkest: #061E3E */
   color: white;
   transform: rotateY(180deg);
 }
-
-

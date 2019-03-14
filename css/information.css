@@ -1,13 +1,13 @@
 /*
 Global Variables
-*/ 
+*/
 
 body {
     height: 1;
     background-color: antiquewhite;
 }
 
-/* Color Codes 
+/* Color Codes
 Lightest: #0E98BE
 Light: #0D81A6
 Dark: #083A5B
@@ -96,7 +96,7 @@ Darkest: #061E3E */
 /* Bootstrap Tabs & Pills */
 
 .tabContainer {
-    
+
 }
 
 .tabTitle {
@@ -126,7 +126,7 @@ Darkest: #061E3E */
 }
 
 .blueBoxNumber {
-    font: verdana;
+    font: 'Lato', sans-serif;
     color: white;
     font-weight: 600;
     font-size: 3.5vw;
@@ -134,7 +134,7 @@ Darkest: #061E3E */
 }
 
 .blueBoxText {
-    font: verdana;
+    font: 'Lato', sans-serif;
     color: white;
     font-weight: 300;
     font-size: 3vw;
@@ -142,7 +142,7 @@ Darkest: #061E3E */
 }
 
 .bigFont {
-    font: verdana;
+    font: 'Lato', sans-serif;
     font-size: 2.5vw;
     background-color: lightgray;
 }
