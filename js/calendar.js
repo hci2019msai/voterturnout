@@ -98,11 +98,9 @@ function checkingdateasas(elem){
             elem.style.background = 'rgb(0,255,0)';
             maildate[Number(num)]=1;
         }else{
-            elem.style.background = 'rgb(57,128,152)';
+            elem.style.background = '#d6e3ff';
             maildate[Number(num)]=0;
         }
     }
-    
-
     
 }
