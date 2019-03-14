@@ -1,5 +1,4 @@
-body {
-    font-family: verdana;
+body .cal-body{
     align-content: center;
     text-align: center;
     margin-top: -15px;
@@ -7,7 +6,7 @@ body {
     padding: 0;
 }
 
-h1 {
+h1 .cal-headline{
     text-transform: uppercase;
     margin-top: 1%;
     margin-bottom: 0;
@@ -46,7 +45,6 @@ h1 {
 .calendar {
     border: 1px solid #c5c5c5;
     margin-top: 2%;
-/*    width: 100%;*/
 }
 
 h4 {
@@ -57,21 +55,19 @@ h4 {
 }
 
 .month-title {
-    background-color: #160245;
+    background-color: #13214C;
     color: #ffffff;
     vertical-align: middle;
     align-content: center;
     margin: 0;
     padding: 0;
-/*    width: auto;*/
 }
 
 .weekday-title {
     text-align: center;
     vertical-align: middle;
-    border-bottom: 2px solid #160245;
+    border-bottom: 2px solid #13214C;
     padding: 0;
-/*    width: auto;*/
 }
 
 .weekday-title p {
@@ -84,7 +80,7 @@ h4 {
     border-bottom: 1px solid #c5c5c5;
     padding: 0;
     margin: 0;
-/*    width: 100%;*/
+    text-align: center;
 }
 
 .days:last-of-type {
@@ -94,12 +90,6 @@ h4 {
 .rb {
     margin-right: 0;
 }
-
-/*
-.lb {
-    margin-left: 0;
-}
-*/
 
 .days .col:hover {
     background-color: rgb(228, 209, 255);
@@ -130,7 +120,6 @@ h4 {
   font-weight: bold;
 }
 
-
 .voteRadioText
 {
   color: rgb(170, 43, 43);
@@ -143,7 +132,6 @@ h4 {
   text-align: left;
   margin-bottom: 15px;
 }
-
 
 #early-voting1 {
     background: #9bffff;
@@ -185,7 +173,6 @@ h4 {
     background: #9bffff;
 }
 
-
 #ab-deadline {
     background-color: #ffb7c8;
 }
@@ -197,126 +184,6 @@ h4 {
 #election-day {
     background-color: #ffff8e;
 }
-
-
-/*
-li{
-    border: 1px solid #000;
-}
-*/
-/*
-.cal-container{
-    display: block;
-    height: 25%;
-    width: 70%;
-    margin-left: 15%;
-    border: 1px solid #000;
-    text-align: center;
-    align-content: center;
-    vertical-align: middle;
-}
-
-.cal-container:last-of-type{
-    margin-top: 10%;
-}
-
-.first-cal {
-    margin-bottom: 75px;
-}
-*/
-/*
-
-.month {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-    height: 30%;
-    background: #b5e0f0;
-    text-align: center;
-}
-
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.month .prev {
-  float: left;
-*/
-/*  padding-top: 10px;*/
-/*}*/
-
-/*
-.month .next {
-  float: right;
-*/
-/*  padding-top: 10px;*/
-/*
-}
-
-.weekdays {
-  margin: 0;
-*/
-/*  padding: 10px 0;*/
-/*
-  background-color: #ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-.days {
-    padding: 10px 0;
-    margin: 0;
-    height: 100%;
-}
-
-.days li {
-    float: left;
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-height: 10%;
-}
-*/
-/*
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-*/
-
-/* Add media queries for smaller screens */
-/*
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}*/
 
 /* The Modal (background) */
 .menuPopup {
