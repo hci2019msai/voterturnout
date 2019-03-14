@@ -18,34 +18,39 @@
 </head>
 
 <body>
-<!-- Side Navigation Bar Content --> 
+<!-- Side Navigation Bar Content -->
 <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Front Page</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
             <a href="information.html">Why Vote?</a>
             <a href="#">Registration</a>
             <a href="#">FAQs</a>
 </div>
-<!-- Content --> 
+<!-- Content -->
 <div id="supercontainer">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
 <div class="headerContainer">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+    <div id="headerText">
+      <a href="index.html"><img src="css/voterTurnout.png"></a>
     </div>
+</div>
 <div class="mainContainer">
-    <div class="tabContainer">
-        <span class="tabTitle">The Issues</span>
-        <a href="candidates.html">
-            <span class="nextPage">See the 2020 Candidates &#8674</span></a>
-        <ul class="nav nav-tabs nav-justified">
-          <li class="bigFont"><a data-toggle="tab" href="#federal">Federal Issues</a></li>
-          <li class="bigFont"><a data-toggle="tab" href="#state">State Issues</a></li>
-          <li class="bigFont"><a data-toggle="tab" href="#local">Local Issues</a></li>
-</ul>
+  <!--  <div class="tabContainer row">
+      <div class="col-md-7"></div>
+        <a href="candidates.html" class="col-md-5">
+            <span class="nextPage">See the 2020 Candidates &#8674; </span>
+        </a>
+    </div>-->
+    <div class="row" id="issuesNavContainer">
+        <div class="bigFont col-md-4"><a data-toggle="tab" href="#federal">Federal Issues</a></div>
+        <div class="bigFont col-md-4"><a data-toggle="tab" href="#state">State Issues</a></div>
+        <div class="bigFont col-md-4"><a data-toggle="tab" href="#local">Local Issues</a></div>
+    </div>
 
 <div class="tab-content">
   <div id="federal" class="tab-pane fade in active">
-<!-- ALL FEDERAL ISSUES CONTENT GOES HERE --> 
+<!-- ALL FEDERAL ISSUES CONTENT GOES HERE -->
       <div class="issueMatrix">
         <a href="issues/healthcare.html"><div id="HealthCare">
           <div class="blueBoxTextContainer">
@@ -127,20 +132,20 @@
             </div>
           </div>
       </div>
-      
 
-<!-- FED ISSUES END HERE --> 
+
+<!-- FED ISSUES END HERE -->
   </div>
 
   <div id="state" class="tab-pane fade">
-<!-- ALL STATE ISSUES CONTENT GOES HERE --> 
+<!-- ALL STATE ISSUES CONTENT GOES HERE -->
       <!--Pre-Toggle-->
 <div id="toggleContainer" style="display: block">
     <select class="states">
         <option>Illinois</option>
         <option>Ohio</option>
     </select><br>
-      <button onclick="toggleStateContent()" class=toggleButton>Submit</button>     
+      <button onclick="toggleStateContent()" class=toggleButton>Submit</button>
 </div>
       <!--Post-Toggle-->
 <div id="PostToggle" style="display: none">
@@ -226,34 +231,34 @@
             </div>
           </div>
       </div>
-      
+
   </div>
 </div>
 
   <div id="local" class="tab-pane fade">
-<!-- ALL LOCAL ISSUES CONTENT GOES HERE --> 
-      
-      
+<!-- ALL LOCAL ISSUES CONTENT GOES HERE -->
+
+
     <h3>Local Issues</h3>
     <p>Some content in menu 2.</p>
-      
-      
+
+
   </div>
 </div>
-        
-<!-- Tabbed Content Ends Here --> 
+
+<!-- Tabbed Content Ends Here -->
     </div>
 </div>
 </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

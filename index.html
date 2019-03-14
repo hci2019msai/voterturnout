@@ -16,8 +16,8 @@
 <!-- Side Navigation Bar Content -->
 <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Front Page</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
             <a href="information.html">Why Vote?</a>
             <a href="registration.html">Registration</a>
             <a href="#">FAQs</a>
@@ -26,11 +26,15 @@
 <!-- Actual Main Content -->
 
 <div id="supercontainer">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+      <span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
       <div class="headerContainer">
-          <span style="display: inline-block;" class="zoomInLeft delay-1s">
-              <span class="headerNotice">The Next General Election is in <span id=daysTill>11</span> Days</span></span>
-
+        <span style="display: inline-block;" class="zoomInLeft delay-1s">
+          <div id="headerText">
+            <a href="index.html">
+              <img src="css/voterTurnout.png">
+            </a>
+          </div>
+        </span>
       <div class="contentContainer">
         <div class="whyVote">
           <div class="imageContainer">
@@ -53,9 +57,11 @@
               <img src="css/questions.jpg" />
             </div>
               <!--<div id="moreInfoHeader">More Information</div>-->
-              <button id="moreInfoButton">FREQUENT QUESTIONS</button>
+              <a href="candidates.html">
+              <button id="moreInfoButton">VIEW CANDIDATES</button></a>
           </div>
       </div>
+      <div id="notice">The Next General Election is in <span id=days>11</span> Days</div>
     </div>
 
 
