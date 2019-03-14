@@ -111,7 +111,7 @@ h4 {
 }
 
 .days .voteday:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(170, 43, 43);
   font-weight: bold;
 }
 
@@ -121,7 +121,7 @@ h4 {
 }
 
 .voteday {
-  background-color: rgb(255, 0, 0) !important;
+  background-color: rgb(170, 43, 43) !important;
   font-weight: bold;
 }
 
@@ -130,9 +130,10 @@ h4 {
   font-weight: bold;
 }
 
+
 .voteRadioText
 {
-  color: rgb(255,0,0);
+  color: rgb(170, 43, 43);
   text-align: left;
 }
 
