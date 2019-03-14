@@ -28,6 +28,8 @@ h1 {
 
 .leg {
     margin-bottom: 15%;
+    float: left;
+    margin-left: 5%;
 }
 
 .early-legend {
@@ -120,12 +122,12 @@ h4 {
 }
 
 .voteday {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0) !important;
   font-weight: bold;
 }
 
 .mailday {
-  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 255, 0) !important;
   font-weight: bold;
 }
 
@@ -142,17 +144,61 @@ h4 {
   margin-bottom: 15px;
 }
 
-#early-voting {
-    background-color: #9bffff;
+
+#early-voting1 {
+    background: #9bffff;
 }
 
+#early-voting2 {
+    background: #9bffff;
+}
+
+#early-voting3 {
+    background: #9bffff;
+}
+
+#early-voting4 {
+    background: #9bffff;
+}
+
+#early-voting5 {
+    background: #9bffff;
+}
+
+#early-voting6 {
+    background: #9bffff;
+}
+
+#early-voting7 {
+    background: #9bffff;
+}
+
+#early-voting8 {
+    background: #9bffff;
+}
+
+#early-voting9 {
+    background: #9bffff;
+}
+
+#early-voting10 {
+    background: #9bffff;
+}
+
+
 #ab-deadline {
+    background-color: #ffb7c8;
+}
+
+#maildueonly5 {
     background-color: #ffb7c8;
 }
 
 #election-day {
     background-color: #ffff8e;
 }
+
+
 /*
 li{
     border: 1px solid #000;
@@ -309,3 +355,12 @@ height: 10%;
   text-decoration: none;
   cursor: pointer;
 }
+
+#maildueonly1{
+/*    margin: 0;*/
+    background: rgb(57,128,152);
+}
+
+
+
+
