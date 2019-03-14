@@ -7,3 +7,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("supercontainer").style.marginLeft= "0";
 }
+
+function calendarReminder(){
+// alert("buttonclicked");
+    document.getElementById("show-confirmation").style.display = "block";
+}
