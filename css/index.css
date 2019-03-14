@@ -62,6 +62,7 @@ Darkest: #061E3E */
   margin-top: 20px;
   display: block;
   transition: 0.3s;
+    text-align: left;
 }
 
 .sidenav a:hover {
