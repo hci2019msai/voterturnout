@@ -3,9 +3,10 @@ Global Variables
 */ 
 
 body {
-    background-color: azure;
+    background-color: #083A5B;
     height: 100%;
     background-color: #0D81A6;
+    font-family: verdana;
 }
 
 /* Color Codes 
@@ -111,7 +112,6 @@ UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID resul
 #daysTill {
     color: red;
     font-size: 4vw;
-    text-decoration: underline;
     text-shadow: 1px 1px black;
 }
 
@@ -160,36 +160,29 @@ UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID resul
 /* NOTE: For some reason, the hover animation for each of the sections spases out whenever the mouse approaches it from below. Changing just the margin-bottom does not affect this. Neither does changing the margin-top.
 UPDATE: adding transition fixes this issue AND makes it look cooler. */
 
-.goVote:hover {
-    margin-top: -80px;
-    margin-bottom: 80px;
-    -moz-transform:translate(0,-1.3em);
-     -o-transform:translate(0,-1.3em);
-     -webkit-transform:translate(0,-1.3em);
-}
-
 #goVoteHeader {
     color: white;
     text-align: center;
     margin-top: 2%;
     font-family: Verdana;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 #goVoteButton {
-    width: 100%;
-    margin-top: 10%;
-    /* Having trouble centering the button within the div */ 
-    padding-top: 10%;
-    padding-bottom: 10%;
+   margin-top: 12%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     border: 2px solid white;
     background-color: #0E98BE;
     color: white;
     font-family: Verdana;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 5px;
+    margin-left: 20%;
 }
 
 #goVoteButton:hover {
@@ -205,14 +198,6 @@ UPDATE: adding transition fixes this issue AND makes it look cooler. */
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
     -webkit-transition: all 2s ease;
-}
-
-.whyVote:hover {
-    margin-top: -80px;
-    margin-bottom: -80px;
-     -moz-transform:translate(0,-1.3em);
-     -o-transform:translate(0,-1.3em);
-     -webkit-transform:translate(0,-1.3em);
 }
 
 #whyVoteHeader {
@@ -233,8 +218,7 @@ UPDATE: adding transition fixes this issue AND makes it look cooler. */
     background-color: #0E98BE;
     color: white;
     font-family: Verdana;
-    font-size: 1.vw;
-    border-radius: 5px;
+    font-size: 1vw;
 }
 
 .moreInfo {
@@ -245,14 +229,6 @@ UPDATE: adding transition fixes this issue AND makes it look cooler. */
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
     -webkit-transition: all 2s ease;
-}
-
-.moreInfo:hover {
-    margin-top: -80px;
-    margin-bottom: 80px;
-    -moz-transform:translate(0,-1.3em);
-     -o-transform:translate(0,-1.3em);
-     -webkit-transform:translate(0,-1.3em);
 }
 
 #moreInfoHeader {
@@ -294,6 +270,7 @@ UPDATE: adding transition fixes this issue AND makes it look cooler. */
     font-family: Verdana;
     font-size: 1.5vw;
     border-radius: 5px;
+    float: right;
 }
 
 #moreInfoButton:hover {

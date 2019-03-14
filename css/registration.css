@@ -3,7 +3,6 @@ Global Variables
 */ 
 
 body {
-    background-color: azure;
     height: 100%;
     background-color: #0D81A6;
 }
@@ -13,12 +12,6 @@ Lightest: #0E98BE
 Light: #0D81A6
 Dark: #083A5B
 Darkest: #061E3E */
-
-/* Still suffering from the specific height problem */
-.headerContainer {
-    width: 100%;
-    background-color: #0D81A6;
-}
 
 /* Sidenav CSS */
 
@@ -80,22 +73,18 @@ Darkest: #061E3E */
 /* Main Content */ 
 
 #question {
-    width: 100%;
+    width: 98%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 35px;
+    font-size: 5vh;
     font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
-
-#filler {
-    height: 30%;
-}
-
 /* Question 1 */
 
 #question1Container {
-    height: 150px;
     width: 100%;
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -103,26 +92,17 @@ Darkest: #061E3E */
     margin-top: 2%;
 }
 
-.answer {
-    background-color: #0E98BE;
-    text-align: center;
-    border: 1px solid white;
-    font-family: verdana;
-    color: white;
-}
-
-#answer:hover {
-    background-color: white;
-    color: #0E98BE;
-}
-
 #answer1A {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
-       text-decoration: underline;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A:hover {
     background-color: white;
@@ -130,13 +110,17 @@ Darkest: #061E3E */
 }
 
 #answer1B {
+    text-decoration: none;
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
-    height: 150px;
-    text-decoration: underline;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1B:hover {
     background-color: white;
@@ -146,11 +130,14 @@ Darkest: #061E3E */
 #answer1C {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
-     height: 150px;
-    text-decoration: underline;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1C:hover {
     background-color: white;
@@ -164,8 +151,7 @@ Darkest: #061E3E */
 }
 
 #question1A2Container {
-    height: 150px;
-    width: 70%;
+    width: 50%;
     margin: auto;
     display: grid;
     grid-template-columns: 49% 49%;
@@ -176,9 +162,17 @@ Darkest: #061E3E */
 #answer1A2A {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A:hover {
     background-color: white;
@@ -188,9 +182,17 @@ Darkest: #061E3E */
 #answer1A2B {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2B:hover {
     background-color: white;
@@ -204,17 +206,18 @@ Darkest: #061E3E */
 }
 
 .question1A2A3 {
-    width: 100%;
+    width: 98%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 2vh;
+    font-size: 3vh;
     font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #question1A2A3Container {
-    height: 150px;
-    width: 70%;
+    width: 50%;
     margin: auto;
     display: grid;
     grid-template-columns: 49% 49%;
@@ -225,9 +228,18 @@ Darkest: #061E3E */
 #answer1A2A3A {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
+    
 }
 #answer1A2A3A:hover {
     background-color: white;
@@ -235,11 +247,19 @@ Darkest: #061E3E */
 }
 
 #answer1A2A3B {
-     background-color: #0E98BE;
+   background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3B:hover {
     background-color: white;
@@ -251,26 +271,33 @@ Darkest: #061E3E */
     width: 80%;
     max-width: 400px;
     margin: auto;
+    border: 3px solid white;
+    border-radius: 30px;
     background-color: #083A5B;
+    font-family: verdana;
     margin-top: 2%;
     text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 
 #ageWarning {
-    height: 200px;
+   height: 200px;
     width: 80%;
     max-width: 400px;
     margin: auto;
+    border: 3px solid white;
+    border-radius: 30px;
     background-color: #083A5B;
+    font-family: verdana;
     margin-top: 2%;
     text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 
 .warningBanner {
-    color: red;
+    color: firebrick;
     text-align: center;
     font-size: 40px;;
-    text-decoration: underline;
     text-shadow: 2px 2px black;
     margin-top: 2%;
 }
@@ -285,7 +312,14 @@ Darkest: #061E3E */
     font-size: 20px;
     background-color: #0E98BE;
     color: white;
-    border: none;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.warningButton:hover {
+    color: #0E98BE;
+    background-color: white;
+    border: 2px solid #0E98BE;
 }
 
 /* Data Entry 1A2A3A */
@@ -295,53 +329,68 @@ Darkest: #061E3E */
 }
 
 .dataEntry1A2A3A {
-    height: 50px;
-    width: 100%;
+    width: 98%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vh;
     font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #dataEntry1A2A3AContainer {
-    height: 50px;
-}
-
-#dropDown1A2A3A {
-    background-color: #0E98BE;
-    text-align: center;
-    font-family: verdana;
-    color: white;
     margin-top: 2%;
 }
 
+#dropDown1A2A3A {
+    text-align: center;
+    font-family: verdana;
+    color: white;
+}
+
+#states {
+    height: 50px;
+    font-size: 2vw;
+    background-color: #0E98BE;
+    color: white;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
 .question1A2A3A4 {
-        height: 50px;
-        width: 100%;
-        background-color: white;
-        color: #083A5B;
-        text-align: center;
-        font-size: 3vw;
-        font-family: verdana;
+    width: 98%;
+    background-color: white;
+    color: #083A5B;
+    text-align: center;
+    font-size: 3.5vh;
+    font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #question1A2A3A4Container {
-    height: 150px;
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-gap: 2%;
-    margin-top: 2%;
 }
 
 #answer1A2A3A4A {
-    background-color: #0E98BE;
+     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3A4A:hover {
     background-color: white;
@@ -349,11 +398,19 @@ Darkest: #061E3E */
 }
 
 #answer1A2A3A4B {
-    background-color: #0E98BE;
+     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3A4B:hover {
     background-color: white;
@@ -361,11 +418,19 @@ Darkest: #061E3E */
 }
 
 #answer1A2A3A4C {
-    background-color: #0E98BE;
+     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3A4C:hover {
     background-color: white;
@@ -377,20 +442,22 @@ Darkest: #061E3E */
     margin-top: 2%;
 }
 .question1A2A3A4A5 {
-    width: 100%;
+    width: 98%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vh;
     font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
 .proceed {
     padding: 10px 10px;
     font-size: 20px;
     background-color: #0E98BE;
     color: white;
-    text-decoration: underline;
-    border: none;
+    border: 3px solid white;
+    border-radius: 30px;
     width: 30%;
     margin-left: 36%;
     margin-top: 2%;
@@ -401,46 +468,63 @@ Darkest: #061E3E */
 }
 
 #licenseNext {
-    height: 200px;
     width: 80%;
     max-width: 400px;
     margin: auto;
     background-color: #083A5B;
     margin-top: 2%;
     text-align: center;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 .nextBanner {
     color: greenyellow;
     text-align: center;
     font-size: 40px;;
-    text-decoration: underline;
     text-shadow: 2px 2px black;
     margin-top: 2%;
+    padding: 10px;
+    font-family: verdana;
+}
+.warningText2 {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-size: 2vh;
 }
 .OKButton {
     padding: 10px 10px;
     font-size: 20px;
+    margin-top: 20px;
     background-color: #0E98BE;
     color: white;
-    text-decoration: underline;
-    border: none;
+    border: 3px solid white;
+    border-radius: 30px;
     width: 60%;
-    margin-left: 18%;
+    margin-left: 18%;   
+}
+
+.OKButton:hover {
+    color: #0E98BE;
+    border: 3px solid #0E98BE;
+    background-color: white;
 }
 
 #question1A2A3A4C5 {
     margin-top: 2%;
 }
 .question1A2A3A4C5 {
-    width: 100%;
+    width: 98%;
     background-color: white;
     color: #083A5B;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3vh;
     font-family: verdana;
+    border-radius: 10px;
+    padding: 10px;
 }
 #question1A2A3A4C5Container {
-    height: 150px;
     width: 70%;
     margin: auto;
     display: grid;
@@ -451,9 +535,17 @@ Darkest: #061E3E */
 #answer1A2A3A4C5A {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3A4C5A:hover {
     background-color: white;
@@ -462,9 +554,17 @@ Darkest: #061E3E */
 #answer1A2A3A4C5B {
     background-color: #0E98BE;
     text-align: center;
-    border: 1px solid white;
+    margin: auto;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 3px solid white;
+    font-size: 2vw;
     font-family: verdana;
     color: white;
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
 }
 #answer1A2A3A4C5B:hover {
     background-color: white;

@@ -62,7 +62,7 @@ Darkest: #061E3E */
 
 #whiteHamburger {
     color: white;
-    font-size: 40px;
+    font-size: 5vh;
 }
 
 #whiteHamburger:hover {
@@ -79,12 +79,13 @@ Darkest: #061E3E */
 .subheader {
     width: 100%;
     background-color: white;
-    font-size: 4vh;
-    color: #061E3E;
+    font-size: 4.5vh;
+    color: #083A5B;
     text-align: center;
     font-family: verdana;
     border-radius: 14px;
     margin-top: 10px;
+    padding: 10px;
 }
 
 .timeline {
@@ -120,7 +121,7 @@ Darkest: #061E3E */
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid firebrick;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -174,6 +175,9 @@ Darkest: #061E3E */
   background-color: white;
   position: relative;
   border-radius: 6px;
+    color: #0D81A6; 
+    margin-bottom: 40px;
+    margin-top:
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -212,14 +216,25 @@ Darkest: #061E3E */
 .Submit {
     background-color: #0D81A6;
     color: white;
-    margin-left: 1vw;
-    height: 3vh;
+    margin-left: 2vw;
+    height: 5vh;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
-.SubmitBr {background-color: #0D81A6;
+h3 {
+    color: #0D81A6;
+    font-family: verdana;
+}
+
+.SubmitBr {
+     background-color: #0D81A6;
     color: white;
-    height: 3vh;
-    margin-top: 2%;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    height: 5vh;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 .SubmitBr:hover {background-color: white;
     color: #0D81A6;
@@ -232,22 +247,23 @@ Darkest: #061E3E */
 }
 
 .textInput {
-    height: 3vh;
+    height: 4vh;
     margin-top: 1%;
+    border: 2px solid #0D81A6;
+    border-radius: 10px;
 }
 
 .centerDiv {
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 2vw;
 }
 
 .bigSubmit {
-    background-color: #FF9F55;
+    background-color: firebrick;
     width: 40vw;
     padding: 20px;
     font-size: 3vh;
     font-family: verdana;
-    text-decoration: underline;
     color: white;
     border-radius: 15px;
     margin-left: 29%;
@@ -256,6 +272,6 @@ Darkest: #061E3E */
 
 .bigSubmit:hover {
     background-color: white;
-    color: #FF9F55;
-    border: 3px solid #FF9F55;
+    color: firebrick;
+    border: 3px solid firebrick;
 }
