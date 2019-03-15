@@ -15,7 +15,7 @@
 <!-- Sidebar Navigation Content --> 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Front Page</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="information.html">Why Vote?</a>
         <a href="registration.html">Registration</a>
@@ -23,14 +23,21 @@
 </div>
 
 <!-- Content --> 
-<div id="supercontainer">
-<div class="headerContainer">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
+     <span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+      <div class="headerContainer">
+        <span style="display: inline-block;" class="zoomInLeft delay-1s">
+          <div id="headerText">
+            <a href="index.html">
+              <img src="css/voterTurnout.png">
+            </a>
+          </div>
+        </span>
+    </div>
 <div id="question">What best applies to you?</div>
     <div id="question1Container">
-    <div id="answer1A" onclick="question1Atoggle()">I have never registered to vote.</div>
-    <a href="checkRegistration.html" style="text-decoration: none;"><div id="answer1B">I don't know if I'm registered to vote.</div></a>
-    <a href="absentee.html" style="text-decoration: none;"><div id="answer1C">I want to request an absentee ballot.</div></a>
+    <div id="answer1A" onclick="question1Atoggle()">I have never<br> registered to vote.</div>
+    <a href="checkRegistration.html" style="text-decoration: none;"><div id="answer1B">I don't know if<br> I'm registered to vote.</div></a>
+    <a href="absentee.html" style="text-decoration: none;"><div id="answer1C">I want to request <br>an absentee ballot.</div></a>
     </div>
 <div id="question1A2" style="display: none">
     <div id="question">Are you a U.S. citizen?</div>
@@ -57,6 +64,7 @@
     <div id="dataEntry1A2A3AContainer">
         <div id="dropDown1A2A3A">
             <select id="states" name="states" onchange="stateToLicense()">
+                <option value="---">---</option>
                 <option value="Arizona">Arizona</option>
                 <option value="Illinois">Illinois</option>
                 <option value="Ohio">Ohio</option>
@@ -98,7 +106,6 @@
     </div>
 <!-- Results of Question1A2A3A4A5 -->
 <!-- Results of Question1A2A3A4C5 -->
-</div> 
 <div class="footer"></div>
 </body>
 </html>
@@ -108,7 +115,7 @@ function stateToLicense() {
     state = x.options[x.selectedIndex].value;
     
     if (state === "Arizona") {
-        document.getElementById("stateName").innerHTML = "Arizonan"
+        document.getElementById("stateName").innerHTML = "Arizona"
     }
     
     if (state === "Illinois") {
@@ -116,7 +123,7 @@ function stateToLicense() {
     }
     
     if (state === "Ohio") {
-        document.getElementById("stateName").innerHTML = "Ohioan"
+        document.getElementById("stateName").innerHTML = "Ohio"
     }
     
     var question1A2A3A4 = document.getElementById("question1A2A3A4");
@@ -126,6 +133,9 @@ function stateToLicense() {
         question1A2A3A4C5.style.display = "none";
         licenseNext.style.display = "none";
         question1A2A3A4A5.style.display = "none";
+    }
+    if (state === "---") {
+        question1A2A3A4.style.display = "none";
     }
     console.log("hi Atlas")
 }

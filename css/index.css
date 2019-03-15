@@ -9,15 +9,14 @@ body {
     margin:0px;
 }
 
-/* Color Codes
-Lightest: #0E98BE
-Light: #0D81A6
-Dark: #083A5B
-Darkest: #061E3E 
+/*
 
 Kelly's Blue: #13214C;
 - Buttons, Headers, etc. 
 Kelly's Lighter Blue: #d6e3ff;
+Font: Lato;
+
+*/
 
 /* Still suffering from the specific height problem */
 .headerContainer {

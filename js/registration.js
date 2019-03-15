@@ -8,24 +8,24 @@ function question1Atoggle() {
     if (question1A2.style.display === "none") {
     question1A2.style.display = "grid";
     answer1A.style.backgroundColor = "white";
-    answer1A.style.color = "#0E98BE";
+    answer1A.style.color = "#13214C";
     }
     else {
         question1A2.style.display = "none";
-        answer1A.style.backgroundColor = "#0E98BE";
+        answer1A.style.backgroundColor = "#13214C";
         answer1A.style.color = "white";
         question1A2A3.style.display = "none";
         warning1A2B.style.display = "none";
         dataEntry1A2A3A.style.display = "none";
         ageWarning.style.display = "none";
         question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
         question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
         } }
@@ -39,26 +39,26 @@ function question1A2Atoggle() {
     if (question1A2A3.style.display === "none") {
         question1A2A3.style.display = "grid";
         answer1A2A.style.backgroundColor = "white";
-        answer1A2A.style.color = "#0E98BE";
+        answer1A2A.style.color = "#13214C";
         warning1A2B.style.display = "none";
-        answer1A2B.style.backgroundColor = "#0E98BE";
+        answer1A2B.style.backgroundColor = "#13214C";
         answer1A2B.style.color = "white";
         ageWarning.style.display = "none";
         dataEntry1A2A3A.style.display = "none";
         question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
         question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
     }
     else {
         question1A2A3.style.display = "none";
-        answer1A2A.style.backgroundColor = "#0E98BE";
+        answer1A2A.style.backgroundColor = "#13214C";
         answer1A2A.style.color = "white";
         dataEntry1A2A3A.style.display = "none";
         ageWarning.style.display = "none";
@@ -73,26 +73,26 @@ function question1A2Btoggle() {
         {
             warning1A2B.style.display = "grid";
             answer1A2B.style.backgroundColor = "white";
-            answer1A2B.style.color = "#0E98BE";
+            answer1A2B.style.color = "#13214C";
             question1A2A3.style.display = "none";
-            answer1A2A.style.backgroundColor = "#0E98BE";
+            answer1A2A.style.backgroundColor = "#13214C";
             answer1A2A.style.color = "white";
             ageWarning.style.display = "none";
             dataEntry1A2A3A.style.display = "none";
             question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
             licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
             question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
             question1A2A3A4.style.display = "none";
         }
     else {
         warning1A2B.style.display = "none";
-        answer1A2B.style.backgroundColor = "#0E98BE";
+        answer1A2B.style.backgroundColor = "#13214C";
         answer1A2B.style.color = "white";
         dataEntry1A2A3A.style.display = "none";
         ageWarning.style.display = "none";
@@ -106,25 +106,25 @@ function question1A2A3Atoggle() {
     var ageWarning = document.getElementById("ageWarning");
     if (dataEntry1A2A3A.style.display === "none") {
         answer1A2A3A.style.backgroundColor = "white";
-        answer1A2A3A.style.color = "#0E98BE";
-        answer1A2A3B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A.style.color = "#13214C";
+        answer1A2A3B.style.backgroundColor = "#13214C";
         answer1A2A3B.style.color = "white";
         dataEntry1A2A3A.style.display = "grid";
         ageWarning.style.display = "none";
         question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
         question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
     }
     else {
         dataEntry1A2A3A.style.display = "none";
-        answer1A2A3A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A.style.backgroundColor = "#13214C";
         answer1A2A3A.style.color = "white";
     }
 }
@@ -136,25 +136,25 @@ function question1A2A3Btoggle() {
     var ageWarning = document.getElementById("ageWarning");
     if (ageWarning.style.display === "none") {
         answer1A2A3B.style.backgroundColor = "white";
-        answer1A2A3B.style.color = "#0E98BE";
-        answer1A2A3A.style.backgroundColor = "#0E98BE";
+        answer1A2A3B.style.color = "#13214C";
+        answer1A2A3A.style.backgroundColor = "#13214C";
         answer1A2A3A.style.color = "white";
         ageWarning.style.display = "grid";
         dataEntry1A2A3A.style.display = "none";
         question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
         question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
     }
     else {
         ageWarning.style.display = "none";
-        answer1A2A3B.style.backgroundColor = "#0E98BE";
+        answer1A2A3B.style.backgroundColor = "#13214C";
         answer1A2A3B.style.color = "white";
     }
 }
@@ -169,10 +169,10 @@ function question1A2A3A4Atoggle() {
     
     if (question1A2A3A4A5.style.display === "none") {
         answer1A2A3A4A.style.backgroundColor = "white";
-        answer1A2A3A4A.style.color = "#0E98BE";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.color = "#13214C";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         question1A2A3A4A5.style.display = "grid";
         licenseNext.style.display = "none";
@@ -180,7 +180,7 @@ function question1A2A3A4Atoggle() {
     }
     else {
         question1A2A3A4A5.style.display = "none";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
     }
     
@@ -195,10 +195,10 @@ function question1A2A3A4Btoggle() {
     var question1A2A3A4C5 = document.getElementById("question1A2A3A4C5");
     if (licenseNext.style.display === "none") {
         answer1A2A3A4B.style.backgroundColor = "white";
-        answer1A2A3A4B.style.color = "#0E98BE";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.color = "#13214C";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
         licenseNext.style.display = "grid";
         question1A2A3A4A5.style.display = "none";
@@ -206,7 +206,7 @@ function question1A2A3A4Btoggle() {
     }
     else {
         licenseNext.style.display = "none";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
     }
 }
@@ -220,10 +220,10 @@ function question1A2A3A4Ctoggle() {
     var question1A2A3A4C5 = document.getElementById("question1A2A3A4C5");
      if (question1A2A3A4C5.style.display === "none") {
         answer1A2A3A4C.style.backgroundColor = "white";
-        answer1A2A3A4C.style.color = "#0E98BE";
-        answer1A2A3A4A.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.color = "#13214C";
+        answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
-        answer1A2A3A4B.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4B.style.backgroundColor = "#13214C";
         answer1A2A3A4B.style.color = "white";
         question1A2A3A4C5.style.display = "grid";
         licenseNext.style.display = "none";
@@ -231,7 +231,7 @@ function question1A2A3A4Ctoggle() {
     }
     else {
         question1A2A3A4C5.style.display = "none";
-        answer1A2A3A4C.style.backgroundColor = "#0E98BE";
+        answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
     }
 }
