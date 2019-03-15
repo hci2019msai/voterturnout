@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+
+<!-- Side Navigation Bar Content -->
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
+            <a href="information.html">Why Vote?</a>
+            <a href="registration.html">Registration</a>
+</div>
+
+<!-- Actual Main Content -->
+
+<div id="supercontainer">
+      <span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+      <div class="headerContainer">
+        <span style="display: inline-block;" class="zoomInLeft delay-1s">
+          <div id="headerText">
+            <a href="index.html">
+              <img src="css/voterTurnout.png">
+            </a>
+          </div>
+        </span>
+      <div class="contentContainer">
+        <div class="whyVote">
+          <div class="imageContainer">
+            <img src="css/survey.jpg" />
+          </div>
+              <!--<div id="whyVoteHeader">Why Vote?</div>-->
+            <a href="information.html">
+                <button id="otherVoteButton">SEE THE ISSUES</button></a>
+        </div>
+        <div class="goVote">
+          <div class="imageContainer">
+            <img src="css/voters.jpg" />
+          </div>
+            <!--  <div id="goVoteHeader">Are You Registered?</div>-->
+                  <a href="registration.html">
+              <button id="goVoteButton">REGISTER NOW!</button></a>
+          </div>
+          <div class="moreInfo">
+            <div class="imageContainer">
+              <img src="css/questions.jpg" />
+            </div>
+              <!--<div id="moreInfoHeader">More Information</div>-->
+              <a href="candidates.html">
+              <button id="moreInfoButton">VIEW CANDIDATES</button></a>
+          </div>
+      </div>
+      <div id="notice">The Next General Election is in <span id=days>11</span> Days</div>
+    </div>
+
+
+
+
+    </div>
+
+<!-- End of Main Content -->
+</body>
+
+<!-- JavaScript -->
+<script src="js/index.js"></script>
+</html>

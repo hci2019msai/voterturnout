@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Links -->
+        <link rel="stylesheet"
+        href="css/registration1.css">
+        <title>Map</title>
+       
+</head>
+
+<body>
+    <div id="supercontainer">
+    <div class="meta_container">
+        <div class="blank"></div>
+<!-- Beginning of Original Content --> 
+        <div id="main_container" style="display: grid">
+            <div class="filler"></div>
+            <div class="titleContainer">
+                <div class="title">What Best Applies to You?</div>
+            </div>
+            <div id="questions1Container">
+                <div class="filler"></div>
+                <div class="questions1A">
+                    <div class="questionsText">I am not registered to vote.
+                    <button onclick="toggletest()" class="button1A">Register Me!</button>
+                         <script src="js/registration1.js"></script>
+                    </div>
+                </div>
+                <div class="questions2A">
+                    <div class="questionsText">I am not sure if I am registered to vote.
+                    
+                    <button class="button2A">Check if I'm Registered!</button></div>
+                </div>
+                <div class="questions3A">
+                    <div class="questionsText">I want to request an absentee ballot.
+                    <button class="button3A">Start the Request Process</button>
+                    </div>
+                </div>
+                <div class="filler"></div>
+            </div>
+            <div class="filler"></div>
+        </div>
+<!-- Beginning of 1B Toggled Content -->
+        <div id="container1B" style="display: none">
+        <!-- This is all customizable -->
+            <div class="filler"></div>
+            <div class="titleContainer1B">
+                <div class="title1B">In Order to Vote in Illinois:</div>
+                <li class=subtitle1B>You must be a United States Citizen.</li>
+                <li class=subtitle1B>You must be 17 years old on or before the date of the Primary Election and turn 18 on or before the date of the General Election.</li>
+                <li class=subtitle1B>You may not claim the right to vote anywhere else.</li>
+            </div>
+            <div class="application1B">
+                <button onclick="activate1C()" class="button1B">Start the Application</button>
+            </div>
+            <div class="filler"></div>
+        </div>
+<!--Beginning of 1C Toggled Content -->
+        <div id="container1C" style="display: none">
+            <div class="filler"></div>
+            <div class="application1C">
+                <div class="tab">
+                      <button class="tablinks" onclick="openSection(event, 'Drivers License')" id="defaultOpen">Driver's License</button>
+                    
+                      <button class="tablinks" onclick="openSection(event, 'Citizenship')">Citizenship</button>
+                    
+                      <button class="tablinks" onclick="openSection(event, 'Application Type')">Application Type</button>
+                    
+                        <button class="tablinks" onclick="openSection(event, 'Personal Information')">Personal Information</button>
+                    
+                        <button class="tablinks" onclick="openSection(event, 'Previous Address')">Previous Address</button>
+                    
+                        <button class="tablinks" onclick="openSection(event, 'Email')">Email</button>
+                    
+                        <button class="tablinks" onclick="openSection(event, 'Review')">Review</button>
+                </div>
+
+                    <div id="Drivers License" class="tabcontent" style="display: none">
+                      <div class="tabHeader">Driver's License</div>
+                      <div class="tabText">Do you have a valid Illinois driver's license or State ID?</div>
+                        <input type="checkbox" id="applicationCheck" autofocus> Yes
+                        <input type="checkbox" id="applicationCheck"> No
+                    </div>
+
+                    <div id="Citizenship" class="tabcontent"
+                    style="display: none">
+                      <div class="tabHeader">Citizenship</div>
+                      <div class="tabText">Are you a citizen of the United States?</div>
+                        <input type="checkbox" id="applicationCheck" autofocus> Yes
+                        <input type="checkbox" id="applicationCheck"> No
+                    </div>
+
+                    <div id="Application Type" class="tabcontent"
+                         style="display: none">
+                      <div class="tabHeader">Application Type</div>
+                      <div class="tabText">What would you like to accomplish?</div>
+                        <input type="checkbox" id="applicationCheck2" autofocus> Register to Vote as a New Voter
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Address
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Name
+                        <input type="checkbox" id="applicationCheck2"> Change your Current Registration Name and Address
+                    </div>
+                
+                    <div id="Personal Information" class="tabcontent"
+                         style="display: none">
+                      <div class="tabHeader">Personal Information</div>
+                      <div class="tabText">General Identification Information</div>
+                        <div class="subtabHeader">Driver's License No. or State ID No.</div>
+                        <div class="IDNO">
+                        <input type="text" size="4" maxlength="3">
+                        <input type="text" size="4" maxlength="3">
+                        <input type="text" size="4" maxlength="3"></div>
+                        <div class="subtabHeader">Date of Birth</div>
+                        <div class="IDNO2">
+                        <input type="text" size="3" maxlength="2"> -
+                        <input type="text" size="3" maxlength="2"> -
+                            <input type="text" size="3" maxlength="2"></div>
+                        <div class="subtabHeader">First Name/Last Name</div>
+                        <div class="IDNO">
+                        <input type="text" size="18" maxlength="20">
+                        </div>
+                        <div class="subtabHeader">Current Address</div>
+                        <div class=IDNO3>
+                            <input type="text" size=20 maxlength=25 placeholder="Street">
+                            <input type="text" size=15 maxlength=20 placeholder="City">
+                            <select name="states">
+                                <option value="IL">IL</option>
+                                <option value="OH">OH</option>
+                                <option value="PA">PA</option>
+                                <option value="WI">WI</option>
+                            </select>
+                             <input type="text" size=6 maxlength="5" placeholder="ZIP">
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div id="Previous Address" class="tabcontent"
+                         style="display: none">
+                      <div class="tabHeader">Previous Address</div>
+                      <div class="tabText">Please enter your previous address below.</div>
+                         <div class="subtabHeader">Address</div>
+                        <div class=IDNO3>
+                            <input type="text" size=20 maxlength=25 placeholder="Street">
+                            <input type="text" size=15 maxlength=20 placeholder="City">
+                            <select name="states">
+                                <option value="IL">IL</option>
+                                <option value="OH">OH</option>
+                                <option value="PA">PA</option>
+                                <option value="WI">WI</option>
+                            </select>
+                             <input type="text" size=6 maxlength="5" placeholder="ZIP">
+                        </div>
+                        
+                    </div>
+                
+                    <div id="Email" class="tabcontent"
+                         style="display: none">
+                      <div class="tabHeader">Email Address</div>
+                      <div class="tabText">Please enter your email address below.</div>
+                        <div class="IDNO4">
+                        <input type="text" size="25" maxlength="30">
+                        </div>
+                    </div>
+                
+                    <div id="Review" class="tabcontent"
+                         style="display: none">
+                      <div class="tabHeader">Email Address</div>
+                      <div class="tabText">Please review all of the information you have submitted to make sure it is correct. When you have done this, click next to proceed.</div>
+                    <a href="calendar.html"> 
+                        <div class="button1C">Next</div></a>
+                    </div>
+               
+                
+            </div>
+            <div class="filler"></div>
+        </div>
+        <div class="blank"></div>
+    </div>
+    </div>
+   
+</body>
+</html>

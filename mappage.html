@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Meta Tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Links -->
+        <link rel="stylesheet"
+        href="css/mappage.css">
+        <title>Map</title>
+       
+    </head>
+
+<body>
+    <div id="supercontainer">
+    <div class="meta_container">
+    <div class="blank"></div>
+    <div class="main_container">
+        <div id="googleMap">
+        <script src="js/maps_js.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcfU04LcUNe2UiiabSyhFxrTbpkp2AOys&callback=myMap"></script>
+        </div>
+        <div class="sampleBallotLookupContainer">
+            <div class="filler"></div>
+            <div class="lookup">
+                <div class="header">ENTER YOUR LOCATION</div>
+                <div class="subheader">Enter your location to register to vote in your local precinct or lookup more information about your local politics.</div>
+                <input type="text" id="city" name="acity" placeholder="Your city" maxlength="20">
+                 <select id="state" name="astate">
+<option value="alaska">Alabama</option>
+<option value="arizona">Arizona</option>
+<option value="illinois">Illinois</option>
+
+<option value="massachusetts">Massachusetts</option>
+<option value="pennsylvania">Pennsylvania</option>
+    </select>
+                <input type="text" id="email" name="anemail" placeholder="Your email" maxlength="25">
+               <a href="decision1.html">
+                   <input type="submit" value="Submit"></a>
+                
+            </div>
+            <div class="filler"></div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    </div>
+    </div>
+        
+</body>
+</html>

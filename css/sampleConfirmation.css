@@ -1,0 +1,251 @@
+body{
+    background-color: #d6e3ff;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin:0px;
+}
+
+.bodyContainer {
+    height: 5vh;
+    width: 80%;
+    background-color: clear;
+    border: 3px solid #13214C;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+.bodyContainer1 {
+    height: 5vh;
+    width: 80%;
+    background-color: clear;
+    border: 3px solid #13214C;
+    margin: auto;
+    margin-top: 9vh;
+}
+
+.title {
+    font-size: 3vh;
+    text-align: left;
+    margin-left: 10vw;
+    color: white;
+    margin-top: -4vh;
+}
+
+.useButton {
+    font-size: 2vh;
+    padding: 10px;
+    width: 20%;
+    background-color: #13214C;
+    color: white;
+    border: 3px solid white;
+    margin-top: 3vh;
+    margin-right: 7vh;
+    margin-left: 34vh;
+    border-radius: 10px;
+
+}
+
+.useButton:hover {
+    background-color: white;
+    border: 3px solid #13214C;
+    color: #13214C;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#redX {
+    color: rgb(183, 46, 50);
+    font-size: 8vh;
+    margin-bottom: 3vh;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 80px;
+    margin-top: -55px;
+    background-color: #13214C;
+    text-align: right;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerText img {
+  width: 400px;
+  height: auto;
+}
+.aheader {
+    margin-top: 4vh;
+    float: left;
+}
+
+/* Sidenav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #13214C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  transition: 0.3s;
+    text-align: left;
+}
+
+.sidenav a:hover {
+  color: #d6e3ff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5vw;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+#supercontainer {
+  transition: margin-left .5s;
+/*  padding: 2%;*/
+}
+
+#whiteHamburger {
+    color: white;
+    margin-left: 20px;
+}
+
+#whiteHamburger:hover {
+    color: #d6e3ff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Body Content */
+.oldZipTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.oldZipInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.filler {
+    height: 1.2vh;
+}
+
+.nameTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.nameInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.birthTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.birthInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.addressTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.addressInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 1.9vh;
+    text-align: center;
+}
+
+.idTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.idInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 1.9vh;
+    text-align: center;
+}
+    
+
+
+
+
+
+
+

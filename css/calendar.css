@@ -1,0 +1,373 @@
+/* Sidenav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #13214C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  transition: 0.3s;
+    text-align: left;
+}
+
+.sidenav a:hover {
+  color: #0D81A6;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5vw;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+body .cal-body{
+    align-content: center;
+    text-align: center;
+    margin-top: -15px;
+    margin-left: 15%;
+    padding: 0;
+}
+
+h1 .cal-headline{
+    text-transform: uppercase;
+    margin-top: 1%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.instruct {
+    font-size: 150%;
+    margin-bottom: 0;
+}
+
+.leg-section {
+    margin-top: 9%;
+    margin-left: 5%;
+    border: 1px solid #c5c5c5;
+}
+
+.leg {
+    margin-bottom: 15%;
+    float: left;
+    margin-left: 5%;
+}
+
+.early-legend {
+    background-color: #9bffff;
+}
+
+.deadline-legend {
+    background-color: #ffb7c8;
+}
+
+.voting-legend {
+    background-color: #ffff8e;
+}
+
+.calendar {
+    border: 1px solid #c5c5c5;
+    margin-top: 2%;
+    width: 100%;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 1% 0;
+}
+
+.month-title {
+    background-color: #13214C;
+    color: #ffffff;
+    vertical-align: middle;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.weekday-title {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #13214C;
+    padding: 0;
+}
+
+.weekday-title p {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.days {
+    border-bottom: 1px solid #c5c5c5;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.days:last-of-type {
+    border-bottom: 0px solid #c5c5c5;
+}
+
+.rb {
+    margin-right: 0;
+}
+
+.days .col:hover {
+    background-color: #13214C;
+    color: white;
+    font-weight: bold;
+}
+
+.days .empty:hover {
+    background-color: #d6e3ff;
+}
+
+.days .voteday:hover {
+  background-color: rgb(170, 43, 43);
+  font-weight: bold;
+}
+
+.days .mailday:hover {
+  background-color: rgb(25, 111, 25);
+  font-weight: bold;
+}
+
+.voteday {
+  background-color: rgb(170, 43, 43) !important;
+  font-weight: bold;
+}
+
+.mailday {
+  background-color: rgb(25, 111, 25) !important;
+  font-weight: bold;
+}
+
+.voteRadioText
+{
+  color: rgb(170, 43, 43);
+  text-align: left;
+}
+
+.mailRadioText
+{
+  color: rgb(25, 111, 25);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+#early-voting1 {
+    background: #9bffff;
+}
+
+#early-voting2 {
+    background: #9bffff;
+}
+
+#early-voting3 {
+    background: #9bffff;
+}
+
+#early-voting4 {
+    background: #9bffff;
+}
+
+#early-voting5 {
+    background: #9bffff;
+}
+
+#early-voting6 {
+    background: #9bffff;
+}
+
+#early-voting7 {
+    background: #9bffff;
+}
+
+#early-voting8 {
+    background: #9bffff;
+}
+
+#early-voting9 {
+    background: #9bffff;
+}
+
+#early-voting10 {
+    background: #9bffff;
+}
+
+#ab-deadline {
+    background-color: #ffb7c8;
+}
+
+#maildueonly5 {
+    background-color: #ffb7c8;
+}
+
+#election-day {
+    background-color: #ffff8e;
+}
+
+/* The Modal (background) */
+.menuPopup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.popupContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.closeX {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeX:hover,
+.closeX:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#maildueonly1{
+/*    margin: 0;*/
+    background: #d6e3ff;
+}
+
+.sidebar-container{
+    float: left;
+    margin: 1%;
+    margin-right: 2%;
+    width: 5%;
+
+}
+
+.calendar-container{
+    float: left;
+    margin-left: 5%;
+    width: 80%;
+}
+
+.legend-row{
+    float: left;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+.legend-1{
+
+    width: 20%;
+    border-radius: 10px;
+}
+
+.legend-2{
+
+    width: 25%;
+    border-radius: 10px;
+}
+
+.legend-3{
+
+    width: 20%;
+    border-radius: 10px;
+}
+
+.legend-container{
+    margin-right: 1%;
+    margin-bottom: 1%;
+/*    background: #000;*/
+}
+
+.legend-header{
+    background: #e5e5e5;
+    padding-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.early-voting{
+    background: rgb(178,255,255);
+
+}
+
+.absentee-ballot{
+    background: rgb(255,186,200);
+}
+
+.election-day{
+    background: rgb(255,255,160);
+}
+
+.vote-reminder{
+    background: rgb(170, 43, 43);
+}
+
+.mail-reminder{
+    background: rgb(25, 111, 25);
+}
+
+.calendar-text{
+    font-size: 80%;
+    margin: 0%;
+
+}
+
+#voteType{
+    margin-bottom: 5%;
+}
+
+.Submit:hover:not([disabled]) {
+  background-color: white;
+  color: #13214C;
+  margin-left: 2vw;
+  height: 5vh;
+  border: 2px solid #13214C;
+  border-radius: 10px;
+}
+
+.Submit {
+    background-color: #13214C;
+    color: white;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    height: 5vh;
+    border: 2px solid #13214C;
+    border-radius: 10px;
+}

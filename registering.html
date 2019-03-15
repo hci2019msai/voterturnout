@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/registering.css">
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
+            <a href="information.html">Why Vote?</a>
+            <a href="registration.html">Registration</a>
+</div>
+
+<!-- Actual Main Content -->
+
+<div id="supercontainer">
+      <span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+<div class="headerContainer">
+        <span style="display: inline-block;" class="zoomInLeft delay-1s">
+          <div id="headerText">
+            <a href="index.html">
+              <img src="css/voterTurnout.png">
+            </a>
+          </div>
+        </span>   
+    </div>
+
+<div class="loader" id="loader"></div>
+
+<div id="bodyContainer" style="display: block">   
+<div class="bodyText">We are processing your information and <br> generating confirmation of your vote.</div></div>   
+
+<div id="body2Container" style="display: none">
+    <div id="greenCheck">&#10003</div>
+    <div id="bodyAfter">Success! - You are now registered to vote. 
+        
+         <br><br>You can add a reminder to your calendar here.
+        
+        <br><a href="calendar.html">
+        <button class=useButton>Add to My Calendar!</button></a>
+        
+        <br><br>Would you like to view more information <br>on the issues or the candidates?</div>
+    <a href="information.html">
+        <button class=useButton>Yes, I would like to learn more about the issues.</button></a>
+    <a href="candidates.html">
+        <button class=useButton>Yes, I would like to learn more about the candidates</button></a>
+    <a href="index.html">
+        <button class=useButton>No, I would like to go back to the home page.</button></a>
+    
+    </div>
+    </div>
+    
+
+</body>
+</html>

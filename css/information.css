@@ -1,0 +1,719 @@
+/*
+Global Variables
+*/
+
+body {
+    background-color: #d6e3ff;
+    height: 100%;
+    margin: 0px;
+    font-family:'Lato', sans-serif;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Color Codes
+Lightest: #0E98BE
+Light: #0D81A6
+Dark: #083A5B
+Darkest: #061E3E */
+
+/* Still suffering from the specific height problem */
+.headerContainer {
+    width: 100%;
+    height: 80px;
+    margin-top: -55px;
+    background-color: #13214C;
+    text-align:right;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerText img {
+  width: 400px;
+  height: auto;
+}
+/* Sidenav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #13214C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0D81A6;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5vw;
+  margin-left: 10%;
+    margin-top: 5%;
+}
+
+#supercontainer {
+  transition: margin-left .5s;
+  /*padding: 2%;*/
+}
+
+#whiteHamburger {
+    color: white;
+    font-size: 40px;
+    margin-left: 2vw;
+}
+
+#whiteHamburger:hover {
+    color: #13214C;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Content */
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    min-width: 700px;
+    margin-left: 1%;
+}
+
+a{
+    background: #000;
+    color: #fff;
+    width: 10%;
+    height: 100%;
+}
+
+
+.btn-primary:hover {
+  background-color: white;
+  color: #13214C;
+  height: 5vh;
+  border: 2px solid #13214C;
+  border-radius: 10px;
+}
+
+.btn-primary{
+    width: 6vw;
+    padding: 3px;
+    background-color: #13214C;
+    color: white;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    height: 6vh;
+    border: 2px solid #13214C;
+    border-radius: 10px;
+
+}
+.button-containers{
+    height: 10vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.filler {
+    width: 100%;
+    height: 10vw;
+    background-color: aliceblue;
+}
+
+.chart_div {
+    height: 800px;
+}
+
+
+#chart_div_state {
+    height: 800px;
+}
+
+
+
+/* Bootstrap Tabs & Pills */
+
+.tabContainer {
+  margin: 15px 0px;
+  text-align: right;
+}
+
+#issuesNavContainer {
+  background-color: lightgray;
+  margin: 0px;
+  text-align:center;
+}
+
+.tabTitle {
+    font-size: 4vw;
+    color: #083A5B;
+}
+
+.nextPage {
+
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #13214C;
+}
+
+.nextPage:hover {
+  background-color: white;
+  color: #13214C;
+  border-radius: 5px;
+  border: 2px solid #13214C;
+
+}
+
+/* Tab Content */
+
+.blueBox {
+    height: 10vh;
+    width: 50%;
+    background-color: skyblue;
+    border-radius: 10px;
+    float: right;
+}
+
+.blueBoxTextContainer {
+    padding: .5vh;
+}
+
+.blueBoxNumber {
+    font: 'Lato', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 3.5vw;
+    font-size: 3.5vh;
+}
+
+.blueBoxText {
+    font: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 3vw;
+    font-size: 3vh;
+}
+
+.bigFont {
+    font: 'Lato', sans-serif;
+    font-size: 2.5vw;
+    background-color: lightgray;
+}
+
+/* Boxes */
+
+#HealthCare {
+    height: 35vh;
+    width: 60%;
+    background-color: #083A5B;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    float: right;
+}
+
+#HealthCare:hover {
+    background-color: midnightblue;
+}
+
+#TheEconomy {
+    height: 35vh;
+    width: 40%;
+    background-color: #0D81A6;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#TheEconomy:hover {
+    background-color: midnightblue;
+}
+
+#Immigration {
+    height: 18vh;
+    width: 40%;
+    background-color: #0D81A6;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#Immigration:hover {
+    background-color: midnightblue;
+}
+
+#GunPolicy {
+    height: 18vh;
+    width: 30%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#GunPolicy:hover {
+    background-color: midnightblue;
+}
+
+#WomensRights {
+    height: 18vh;
+    width: 30%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#WomensRights:hover {
+    background-color: midnightblue;
+}
+
+#GunNumber {
+    font-size: 3vw;
+    font-size: 3vh;
+    font-weight: 500;
+    color: white;
+}
+
+#GunText {
+    font-size: 2.5vw;
+    font-size: 2.5vh;
+    font-weight: 200;
+    color: white;
+}
+
+#Taxes {
+    height: 15vh;
+    width: 38%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#Taxes:hover {
+    background-color: midnightblue;
+}
+
+#ForeignAffairs {
+    height: 15vh;
+    width: 42%;
+    background-color: skyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#ForeignAffairs:hover {
+    background-color: midnightblue;
+}
+
+#ForeignAffairsNumber {
+    font-size: 2.7vw;
+    font-size: 2.7vh;
+    font-weight: 500;
+    color: white;
+}
+
+#ForeignAffairsText {
+    font-size: 2.3vw;
+    font-size: 2.3vh;
+    font-weight: 200;
+    color: white;
+}
+
+#IncomeInequality {
+    height: 11vh;
+    width: 34%;
+    background-color: skyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#IncomeInequality:hover {
+    background-color: white;
+}
+
+#SupremeCourt {
+    height: 11vh;
+    width: 30%;
+    background-color: skyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#SupremeCourt:hover {
+    background-color: white;
+}
+
+#SupremeCourtNumber {
+    font-size: 2.5vw;
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: black;
+}
+
+#SupremeCourtText {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 200;
+    color: black;
+}
+
+#USTrade {
+    height: 8vh;
+    width: 30%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#USTrade:hover {
+    background-color: white;
+}
+
+#USTradeNumber {
+    font-size: 2.5vw;
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: black;
+}
+
+#USTradeText {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 200;
+    color: black;
+}
+
+#Climate {
+    height: 8vh;
+    width: 26%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#Climate:hover {
+    background-color: white;
+}
+
+#ClimateNumber {
+    font-size: 2.3vw;
+    font-size: 2.3vh;
+    font-weight: 500;
+    color: black;
+}
+
+#ClimateText {
+    font-size: 1.8vw;
+    font-size: 1.8vh;
+    font-weight: 200;
+    color: black;
+}
+
+#Mueller {
+    height: 11vh;
+    width: 16%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#Mueller:hover {
+    background-color: white;
+}
+
+#MuellerNumber {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 500;
+    color: black;
+}
+
+#MuellerText {
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    font-weight: 200;
+    color: black;
+}
+
+#Partisanship {
+    height: 8vh;
+    width: 24%;
+    background-color: lightcyan;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+#Partisanship:hover {
+    background-color: white;
+}
+
+#PartisanNumber {
+    font-size: 2vw;
+    font-size: 2vh;
+    font-weight: 500;
+    color: black;
+}
+
+#PartisanText {
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    font-weight: 200;
+    color: black;
+}
+
+#TheEconomy2 {
+    height: 34vh;
+    width: 20%;
+    background-color: azure;
+    border-radius: 10px;
+    float: left;
+     border: 1px solid antiquewhite;
+}
+
+/* State */
+
+#toggleContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toggleButton {
+    padding: 10px;
+    margin-top: 3%;
+    border-radius: 16px;
+    background-color: #083A5B;
+    color: white;
+}
+
+#SocialJusticeReform {
+    height: 35vh;
+    width: 60%;
+    background-color: #8B0000;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    float: left;
+}
+
+#SocialJusticeReform:hover {
+    background-color: #800000;
+}
+
+#Education {
+    height: 35vh;
+    width: 40%;
+    background-color: #B22222;
+    border-radius: 10px;
+    float: left;
+    border: 1px solid antiquewhite;
+}
+
+#Education:hover {
+    background-color: #800000;
+}
+
+#Corruption {
+    height: 18vh;
+    width: 40%;
+    background-color: #B22222;
+    border-radius: 10px;
+    float: left;
+     border: 1px solid antiquewhite;
+}
+
+#Corruption:hover {
+    background-color: #800000;
+}
+
+#DebtCrisis {
+    height: 18vh;
+    width: 30%;
+    background-color: #B22222;
+    border-radius: 10px;
+    float: left;
+    border: 1px solid antiquewhite;
+}
+
+#DebtCrisis:hover {
+    background-color: #800000;
+}
+
+#WomensRights2 {
+        height: 18vh;
+        width: 30%;
+        background-color: #DC143C;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#WomensRights2:hover {
+    background-color: #800000;
+}
+
+#CorruptionNumber {
+    font-size: 3vw;
+    font-size: 3vh;
+    font-weight: 500;
+    color: white;
+}
+
+#CorruptionText {
+    font-size: 2.5vw;
+    font-size: 2.5vh;
+    font-weight: 200;
+    color: white;
+}
+
+#CleanEnergy {
+        height: 15vh;
+        width: 38%;
+        background-color: #DC143C;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#CleanEnergy:hover {
+    background-color: #800000;
+}
+
+#RightToWork {
+        height: 15vh;
+        width: 42%;
+        background-color: #CD5C5C;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#RightToWork:hover {
+    background-color: #800000;
+}
+
+#DrugLegalization {
+    height: 11vh;
+    width: 34%;
+    background-color: #CD5C5C;
+    border-radius: 10px;
+    float: left;
+     border: 1px solid antiquewhite;
+}
+
+#DrugLegalization:hover {
+    background-color: white;
+}
+
+#Infrastructure {
+        height: 11vh;
+        width: 30%;
+        background-color: #CD5C5C;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#Infrastructure:hover {
+    background-color: white;
+}
+
+#SanctuaryCities {
+        height: 8vh;
+        width: 30%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#USTrade:hover {
+    background-color: white;
+}
+
+#SalesTax {
+        height: 8vh;
+        width: 26%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#SalesTax:hover {
+    background-color: white;
+}
+
+#LGBTRights {
+        height: 11vh;
+        width: 16%;
+        background-color: #F08080;
+        border-radius: 10px;
+        float: left;
+        border: 1px solid antiquewhite;
+}
+
+#LGBTRights:hover {
+    background-color: white;
+}
+
+#MinimumWage {
+    height: 8vh;
+    width: 24%;
+    background-color: Salmon;
+    border-radius: 10px;
+    float: left;
+     border: 1px solid antiquewhite;
+}
+
+#MinimumWage:hover {
+    background-color: white;
+}
+
+
+#TheEconomy3 {
+    height: 34vh;
+    width: 20%;
+    background-color: lightpink;
+    border-radius: 10px;
+    float: right;
+     border: 1px solid antiquewhite;
+}
+
+/* Footer */
+
+

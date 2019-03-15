@@ -1,0 +1,165 @@
+body{
+    background-color: #d6e3ff;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin:0px;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 80px;
+    margin-top: -55px;
+    background-color: #13214C;
+    text-align: right;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerText img {
+  width: 400px;
+  height: auto;
+}
+.aheader {
+    margin-top: 4vh;
+    float: left;
+}
+/* Sidenav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #061E3E;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+    margin-top: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0D81A6;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5vw;
+  margin-left: 10%;
+    margin-top: 5%;
+}
+
+#supercontainer {
+  transition: margin-left .5s;
+  padding: 2%;
+}
+
+#whiteHamburger {
+    color: white;
+    font-size: 40px;
+    margin-left: 2vw;
+}
+
+#whiteHamburger:hover {
+    color: #083A5B;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Content */
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    min-width: 700px;
+}
+
+.filler {
+    width: 100%;
+    height: 10vw;
+    background-color: aliceblue;
+}
+
+.Title {
+    font-size: 5vw;
+    color: #083A5B;
+}
+
+.titleInfo {
+    color: white;
+    font-size: 3vh;
+    margin-left: 7vw;
+    float: left;
+    margin-top: 5vh;
+}
+
+.candidateIndex {
+    margin-left: 80px;
+    margin-top: 5vh;
+}
+
+/* Flip Card */
+/* The flip card container - set the width and height to whatever you want. I have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #13214C;
+  color: white;
+  margin: 5px;
+  transform: rotateY(180deg);
+}

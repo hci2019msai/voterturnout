@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
+        <link rel="stylesheet" href="css/calendar.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <script src="js/index.js"></script>
+    </head>
+    <body class="cal-body">
+        <!-- Side Navigation Bar Content -->
+        <div class="sidebar-container">
+
+<!-- Sidebar Navigation Content -->
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
+            <a href="information.html">Why Vote?</a>
+            <a href="registration.html">Registration</a>
+</div>
+            </div>
+    <div class="aheader">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
+
+      <div id="popupHandle" class="menuPopup">
+        <div class="popupContent">
+          <span class="closeX" onclick ="closePopup()">&times;</span>
+          <div class="voteRadioText">
+            <input type="radio" name="eventType" id="voteType" checked="checked"> Remind me to vote!
+          </div>
+          <div class="mailRadioText">
+            <input type="radio" name="eventType" id="mailType"> Remind me to mail my ballot!
+          </div>
+          <button class='Submit' onclick = 'submitPopup()'>Submit</button>
+        </div>
+      </div>
+      <script src="js/calendar.js"></script>
+
+
+
+        <div class="calendar-container">
+        <div class="col span-4-of-5">
+            <div class="row title">
+                        <h1 class="cal-headline">Key Voting Dates</h1>
+                        <p class="instruct">Click on a day to schedule your voting!</p>
+            </div>
+            <div class="row legend-box">
+                <div class="row legend-header">
+                    <h2>Legend</h2>
+                    <div class="row legend-container">
+                        <div class="legend-row legend-1 early-voting">Early Voting Period
+                        </div>
+                        <div class="legend-row legend-2 absentee-ballot">Absentee Ballot Deadline
+                        </div>
+                        <div class="legend-row legend-3 election-day">Election Day
+                        </div>
+
+                    </div>
+                    <div class="row legend-container">
+                        <div class="legend-row legend-1 vote-reminder">My Voting Day
+                        </div>
+                        <div class="legend-row legend-2 mail-reminder">My Absentee Mailing
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        <div class="row calendar top-month">
+            <div class="row month-title">
+                        <h4>October 2019</h4>
+
+            </div>
+            <div class="row weekday-title">
+                    <div class="col span-1-of-7 rb">
+                        <p>Monday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Tuesday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Wednesday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Thursday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Friday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Saturday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb">
+                        <p>Sunday</p>
+                    </div>
+            </div>
+            <div class="row days 1-of-5">
+                    <div class="col span-1-of-7 rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>1</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>2</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>3</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>4</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>5</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>6</p>
+                    </div>
+            </div>
+            <div class="row days 2-of-5">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                        <p>7</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>8</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>9</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)  ">
+                        <p>10</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>11</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>12</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>13</p>
+                    </div>
+            </div>
+            <div class="row days 3-of-5">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                        <p>14</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>15</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>16</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>17</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>18</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>19</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>20</p>
+                    </div>
+            </div>
+            <div class="row days 4-of-5">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                        <p>21</p>
+                    </div>
+                    <div id="early-voting1" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>22</p>
+                    </div>
+                    <div id="early-voting2" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>23</p>
+                    </div>
+                    <div id="early-voting3" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>24</p>
+                    </div>
+                    <div id="early-voting4" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>25</p>
+                    </div>
+                    <div id="early-voting5" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>26</p>
+                    </div>
+                    <div id="early-voting6" class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>27</p>
+                    </div>
+            </div>
+            <div class="row days 5-of-5">
+                    <div id="early-voting7" class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                        <p>28</p>
+                    </div>
+                    <div id="early-voting8" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>29</p>
+                    </div>
+                    <div id="early-voting9" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>30</p>
+                    </div>
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>31</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb empty">
+                        <p>&#160;</p>
+                    </div>
+            </div>
+        </div>
+        <div class="row calendar top-month">
+            <div class="row month-title">
+                        <h4>November 2019</h4>
+            </div>
+            <div class="row weekday-title">
+                    <div class="col span-1-of-7 rb">
+                        <p>Monday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Tuesday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Wednesday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Thursday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Friday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>Saturday</p>
+                    </div>
+                    <div class="col span-1-of-7 lb">
+                        <p>Sunday</p>
+                    </div>
+            </div>
+            <div class="row days 1-of-5">
+                    <div class="col span-1-of-7 rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb empty">
+                        <p>&#160;</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb empty" >
+                        <p>&#160;</p>
+                    </div>
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>1</p>
+                    </div>
+                    <div id="early-voting" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>2</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" onclick="makeCalE(this)">
+                        <p>3</p>
+                    </div>
+            </div>
+            <div class="row days 2-of-5">
+                    <div class="col span-1-of-7 rb" onclick="makeCalE(this)">
+                        <p>4</p>
+                    </div>
+                    <div id="election-day" class="col span-1-of-7 lb rb" onclick="makeCalE(this)">
+                        <p>5<br> <h7 class="calendar-text">Election Day</h7></p>
+                    </div>
+                    <div id= "maildueonly1" class="col span-1-of-7 lb rb hov" onclick="checkingdateasas(this)">
+                        <p>6</p>
+                    </div>
+                    <div id= "maildueonly2" class="col span-1-of-7 lb rb" onclick="checkingdateasas(this)">
+                        <p>7</p>
+                    </div>
+                    <div id= "maildueonly3" class="col span-1-of-7 lb rb" onclick="checkingdateasas(this)">
+                        <p>8</p>
+                    </div>
+                    <div id= "maildueonly4" class="col span-1-of-7 lb rb" onclick="checkingdateasas(this)">
+                        <p>9</p>
+                    </div>
+                    <div id="maildueonly5" class="col span-1-of-7 lb rb" onclick="checkingdateasas(this)">
+                        <p>10<br> <h7 class="calendar-text">Mail-In Due</h7> </p>
+                    </div>
+            </div>
+            <div class="row days 3-of-5">
+                    <div class="col span-1-of-7 rb" >
+                        <p>11</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>12</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>13</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>14</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>15</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>16</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" >
+                        <p>17</p>
+                    </div>
+            </div>
+            <div class="row days 4-of-5">
+                    <div class="col span-1-of-7 rb" >
+                        <p>18</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>19</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>20</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>21</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>22</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>23</p>
+                    </div>
+                    <div class="col span-1-of-7 lb" >
+                        <p>24</p>
+                    </div>
+            </div>
+            <div class="row days 5-of-5">
+                    <div class="col span-1-of-7 rb">
+                        <p>25</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>26</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>27</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb">
+                        <p>28</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>29</p>
+                    </div>
+                    <div class="col span-1-of-7 lb rb" >
+                        <p>30</p>
+                    </div>
+                    <div class="col span-1-of-7 lb empty">
+                        <p>&#160;</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+            </div>
+    </body>
+</html>

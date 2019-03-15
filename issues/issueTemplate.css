@@ -1,0 +1,68 @@
+/* Global Variables */
+body {
+    background-color: white;
+}
+
+/* Color Codes 
+Lightest: #0E98BE
+Light: #0D81A6
+Dark: #083A5B
+Darkest: #061E3E */
+
+/* Content */
+.main {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    padding: 2vh;
+    max-width: 1000px;
+}
+
+.headerContainer {
+    background-color: #083A5B;
+    height: 5.5vh;
+    padding: 2.5vh;
+}
+
+.headerTitle {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: times;
+    font-weight: 100;
+    font-size: 4vh;
+    font-size: 4vw;
+}
+
+.subheader {
+    background-color: #0D81A6;
+    height: 3vh;
+    height: 4vw;
+    padding-top: 1vw;
+}
+
+.ridiculousRightContainer {
+    float: right;
+}
+
+.subheaderText {
+    color: white;
+    text-decoration: underline;
+    font-size: 2.5vh;
+    padding-left: 2vw;
+    font-family: times;
+    font-weight: 200;
+    font-size: 2vw;
+}
+
+.subheaderTextCandidate {
+    color: white;
+    text-decoration: underline;
+    text-align: right;
+    padding-right: 1vw;
+    font-size: 2.5vh;
+    font-family: times;
+    font-weight: 200;
+    font-size: 2vw;
+}
