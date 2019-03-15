@@ -3,16 +3,47 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/loader.css">
-    <script src ="js/loader.js"></script>
-<style>
-
-</style>
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    
 </head>
 <body>
-<h2></h2>
-    <div class="hello" id="hello">hello</div>
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
+            <a href="information.html">Why Vote?</a>
+            <a href="registration.html">Registration</a>
+            <a href="#">FAQs</a>
+</div>
+
+<!-- Actual Main Content -->
+
+<div id="supercontainer">
+      <span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+<div class="headerContainer">
+        <span style="display: inline-block;" class="zoomInLeft delay-1s">
+          <div id="headerText">
+            <a href="index.html">
+              <img src="css/voterTurnout.png">
+            </a>
+          </div>
+        </span>   
+    </div>
 
 <div class="loader" id="loader"></div>
+
+<div id="bodyContainer" style="display: block">   
+<div class="bodyText">We are processing your information and <br>searching the local voting database to find a match.</div></div>   
+
+<div id="body2Container" style="display: none">
+    <div id="redX">&#10007</div>
+    <div id="bodyAfter">We're sorry - we were unable to find a match. <br><br>Would you like to use your <br>information to register to vote?</div>
+        <button class=useButton>Yes, I would like to use this information to register.</button>
+        <button class=useButton>No, I would like to go back to the home page.</button>
+    </div>
+    </div>
+    
 
 </body>
 </html>
