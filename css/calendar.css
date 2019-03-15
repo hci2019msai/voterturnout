@@ -228,6 +228,18 @@ h4 {
     background: #d6e3ff;
 }
 
+.sidebar-container{
+    float: left;
+    margin: 1%;
+    margin-right: 2%;
+
+    
+}
 
 
+.calendar-container{
+    float: left;
+    margin-left: 5%;
+    width: 80%;
+}
 
