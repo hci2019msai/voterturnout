@@ -45,6 +45,7 @@ h1 .cal-headline{
 .calendar {
     border: 1px solid #c5c5c5;
     margin-top: 2%;
+    width: 100%;
 }
 
 h4 {
@@ -232,10 +233,9 @@ h4 {
     float: left;
     margin: 1%;
     margin-right: 2%;
-
+    width: 5%;
     
 }
-
 
 .calendar-container{
     float: left;
@@ -243,3 +243,20 @@ h4 {
     width: 80%;
 }
 
+.legend-row{
+    float: left;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+.early-voting{
+    background: rgb(178,255,255);
+}
+
+.absentee-ballot{
+    background: rgb(255,186,200);
+}
+
+.election-day{
+    background: rgb(255,255,160);
+}
