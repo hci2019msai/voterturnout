@@ -267,6 +267,14 @@ h4 {
 .legend-container{
     margin-right: 1%;
     margin-bottom: 1%;
+/*    background: #000;*/
+}
+
+.legend-header{
+    background: #e5e5e5;
+    padding-left: 2%;
+    margin-top: 1%;
+    border-radius: 10px;
 }
 
 .early-voting{
