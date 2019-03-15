@@ -260,3 +260,7 @@ h4 {
 .election-day{
     background: rgb(255,255,160);
 }
+
+.legend-container{
+    margin: 1%;
+}
