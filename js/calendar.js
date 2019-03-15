@@ -86,7 +86,7 @@ function checkingdateasas(elem){
     if(num ==5){
         //check what the status is
         if(maildate[Number(num)]==0){
-            elem.style.background = 'rgb(0,255,0)';
+            elem.style.background = 'rgb(25, 111, 25)';
             maildate[Number(num)]=1;
         }else{
             elem.style.background = '#ffb7c8';
@@ -95,7 +95,7 @@ function checkingdateasas(elem){
     }else{
         //if the number is 0 that means it is being clicked to set the reminder
         if(maildate[Number(num)]==0){
-            elem.style.background = 'rgb(0,255,0)';
+            elem.style.background = 'rgb(25, 111, 25)';
             maildate[Number(num)]=1;
         }else{
             elem.style.background = '#d6e3ff';
