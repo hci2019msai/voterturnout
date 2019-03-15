@@ -252,16 +252,19 @@ h4 {
 .legend-1{
     
     width: 20%;
+    border-radius: 10px;
 }
 
 .legend-2{
     
     width: 25%;
+    border-radius: 10px;
 }
 
 .legend-3{
     
     width: 20%;
+    border-radius: 10px;
 }
 
 .legend-container{
@@ -279,6 +282,7 @@ h4 {
 
 .early-voting{
     background: rgb(178,255,255);
+    
 }
 
 .absentee-ballot{
