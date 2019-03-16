@@ -27,10 +27,11 @@
 <div class="main">
     <div class="subheader">Getting your Absentee Ballot</div>
     <div class="timeline">
+        <form>
         <div class="container left">
             <div class="content">
                 <h3 class="zipcode-check"  onkeyup="zipcodeCheck(this);">Enter your old zip code.</h3>
-                <span class="centerDiv"><input size="6" class="textInput" type="number" maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
+                <span class="centerDiv"><input class="textInput" type="number" maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
             </div>
         </div>
         <div id="NameContainer" style="display: none">
@@ -45,7 +46,7 @@
             <div class="container left">
                 <div class="content">
                     <h3>Enter your date of birth.</h3>
-                    <div class="centerDiv">Month: <input size="3" class="textInput" type="text" maxlength="2" placeholder="08" required> Day: <input size="3" class="textInput" type="text" maxlength="2" placeholder="16" required> Year: <input class="textInput" type="text" maxlength="4" placeholder="1995" size=5 required><br><button class="SubmitBr" onclick="revealMail()">Submit</button></div>
+                    <div class="centerDiv">Month: <input size="3" class="textInput" type="number" maxlength="2" placeholder="08" required> Day: <input size="3" class="textInput" type="number" maxlength="2" placeholder="16" required> Year: <input class="textInput" type="number" maxlength="4" placeholder="1995" size=5 required><br><button class="SubmitBr" onclick="revealMail()">Submit</button></div>
                 </div>
             </div>
         </div>
@@ -65,6 +66,7 @@
                 </div>
             </div>
         </div>
+            </form>
     </div>
     <a href="sampleConfirmation.html" style="text-decoration: none"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
 </div>
