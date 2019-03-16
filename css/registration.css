@@ -9,9 +9,10 @@ body {
 }
 
 .headerContainer {
-    width: 100%;
+    width: 103%;
     height: 80px;
     margin-top: -69px;
+    margin-left: -30px;
     background-color: #13214C;
     text-align: right;
 }

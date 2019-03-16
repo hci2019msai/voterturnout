@@ -12,7 +12,7 @@
     <script src="js/absentee.js"></script>
 </head>
 <body>
-<body>
+<!-- Sidebar Navigation Content -->
 <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
@@ -21,27 +21,16 @@
             <a href="registration.html">Registration</a>
 </div>
 
-<!-- Header Content -->
-
-<span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+<!-- Content -->
 <div class="headerContainer">
-<span style="display: inline-block;" class="zoomInLeft delay-1s">
-<div id="headerText">
-<a href="index.html">
-<img src="css/voterTurnout.png">
-</a>
-</div>
-</span>
-</div>
-
-<!-- Body Content --> 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
 <div class="main">
-    <div class="subheader">Getting your Absentee Ballot</div>
+    <div class="subheader">Registering to Vote</div>
     <div class="timeline">
         <form>
         <div class="container left">
             <div class="content">
-                <h3>Enter your old zip code.</h3>
+                <h3>Enter your current zip code.</h3>
                 <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" oninput="validateZip(this,'but1')" required><button onclick="revealName()" class="Submit" id="but1" disabled="true">Submit</button></span>
             </div>
         </div>
@@ -91,7 +80,7 @@
         </div>
             </form>
     </div>
-    <a href="sampleConfirmation.html" style="text-decoration: none"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
+    <a href="loader.html" style="text-decoration: none"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
 </div>
 </body>
 <script></script>

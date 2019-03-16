@@ -66,6 +66,7 @@ Darkest: #061E3E */
 #whiteHamburger {
     color: white;
     font-size: 5vh;
+    margin-left: 2vw;
 }
 
 #whiteHamburger:hover {
@@ -216,6 +217,28 @@ Darkest: #061E3E */
   .right {
     left: 0%;
   }
+}
+
+.headerContainer {
+    width: 103%;
+    height: 80px;
+    margin-top: -75px;
+    margin-left: -30px;
+    background-color: #13214C;
+    text-align: right;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerText img {
+  width: 400px;
+  height: auto;
+}
+.aheader {
+    margin-top: 4vh;
+    float: left;
 }
 
 .Submit {
