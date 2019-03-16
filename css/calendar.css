@@ -248,6 +248,7 @@ h4 {
   padding: 20px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
 }
 
 /* The Close Button */
@@ -275,7 +276,7 @@ h4 {
     margin: 1%;
     margin-right: 2%;
     width: 5%;
-    
+
 }
 
 .calendar-container{
@@ -291,19 +292,19 @@ h4 {
 }
 
 .legend-1{
-    
+
     width: 20%;
     border-radius: 10px;
 }
 
 .legend-2{
-    
+
     width: 25%;
     border-radius: 10px;
 }
 
 .legend-3{
-    
+
     width: 20%;
     border-radius: 10px;
 }
@@ -323,7 +324,7 @@ h4 {
 
 .early-voting{
     background: rgb(178,255,255);
-    
+
 }
 
 .absentee-ballot{
@@ -345,9 +346,28 @@ h4 {
 .calendar-text{
     font-size: 80%;
     margin: 0%;
-    
+
 }
 
 #voteType{
     margin-bottom: 5%;
+}
+
+.Submit:hover:not([disabled]) {
+  background-color: white;
+  color: #13214C;
+  margin-left: 2vw;
+  height: 5vh;
+  border: 2px solid #13214C;
+  border-radius: 10px;
+}
+
+.Submit {
+    background-color: #13214C;
+    color: white;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    height: 5vh;
+    border: 2px solid #13214C;
+    border-radius: 10px;
 }
