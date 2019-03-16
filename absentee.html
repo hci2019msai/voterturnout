@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta Tags --> 
+    <!-- Meta Tags -->
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
     <link rel="stylesheet" href="css/absentee.css">
-    <!-- JS (no onchange functions!) --> 
+    <!-- JS (no onchange functions!) -->
     <script src="js/index.js"></script>
     <script src="js/absentee.js"></script>
 </head>
 <body>
-<!-- Sidebar Navigation Content --> 
+<!-- Sidebar Navigation Content -->
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Front Page</a>
@@ -21,7 +21,7 @@
         <a href="FAQ.html">FAQs</a>
 </div>
 
-<!-- Content --> 
+<!-- Content -->
 <div class="headerContainer">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
 <div class="main">
@@ -30,14 +30,16 @@
         <div class="container left">
             <div class="content">
                 <h3>Enter your old zip code.</h3>
-                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
+                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" oninput="validateZip(this,'but1')" required><button onclick="revealName()" class="Submit" id="but1" disabled="true">Submit</button></span>
             </div>
         </div>
         <div id="NameContainer" style="display: none">
             <div class="container right">
                 <div class="content">
                     <h3>Enter your first and last name.</h3>
-                    <div class="leftDiv">First Name: <input size="15" class="textInput" type=text maxlength="20" placeholder="Noah" required><br>Last Name: <input size="15" class="textInput" type=text maxlength="20" placeholder="Caldwell-Gatsos" required><br><button onclick="revealBirth()" class="SubmitBr">Submit</button></div>
+                    <div class="leftDiv">First Name:
+                      <input id="firstname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')" required><br>Last Name:
+                      <input id="lastname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')" required><br><button id="but2" disabled = "true" onclick="revealBirth()" class="SubmitBr">Submit</button></div>
                 </div>
             </div>
         </div>
@@ -45,7 +47,11 @@
             <div class="container left">
                 <div class="content">
                     <h3>Enter your date of birth.</h3>
-                    <div class="centerDiv">Month: <input size="3" class="textInput" type="text" maxlength="2" placeholder="08" required> Day: <input size="3" class="textInput" type="text" maxlength="2" placeholder="16" required> Year: <input class="textInput" type="text" maxlength="4" placeholder="1995" size=5 required><br><button class="SubmitBr" onclick="revealMail()">Submit</button></div>
+                    <div class="centerDiv">
+                      Month: <input id='m' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')" required>
+                      Day: <input id='d' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')" required>
+                      Year: <input id='y' class="textInput" type="text" maxlength="4" size=5 oninput="validateMDY('but3')" required>
+                      <br><button id='but3' class="SubmitBr" onclick="revealMail()" disabled='true'>Submit</button></div>
                 </div>
             </div>
         </div>
@@ -53,7 +59,11 @@
             <div class="container right">
                 <div class="content">
                     <h3>Enter your current mailing address.</h3>
-                    <div class="centerDiv">Street: <input size="52" class="textInput" type="text" maxlength="25" placeholder="1103 Emerson Street" required><br>Street: <input size="52" class="textInput" type="text" maxlength="20" placeholder="N/A" required><br>City: <input size="15" class="textInput" type="text" maxlength="20" placeholder="Evanston" required> State: <select><option>IL</option></select> Zip: <input size="6" class="textInput" type="text" maxlength="6" placeholder="25056" required><br><button class="SubmitBr" onclick="revealLicense()">Submit</button></div>
+                    <div class="centerDiv">Address Line 1: <input id='ad1' size="52" class="textInput" type="text" maxlength="25" oninput="validateAddress('but4')" required>
+                      <br>Address Line 2 (Optional): <input size="52" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')" required><br>
+                      City: <input id='city' size="15" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')" required>
+                      State: <select oninput="validateAddress('but4')" id='st'><option>IL</option></select> Zip: <input id='zipzop' size="6" class="textInput" type="text" maxlength="5" oninput="validateAddress('but4')" required>
+                      <br><button id='but4' class="SubmitBr" onclick="revealLicense()" disabled='true'>Submit</button></div>
                 </div>
             </div>
         </div>
@@ -61,14 +71,15 @@
             <div class="container left">
                 <div class="content">
                     <h3>Enter your ID number.</h3>
-                    <div class="leftDiv">ID Type: <input size="15" class="textInput" type="text" maxlength="16" placeholder="Driver's License" required><br>Number: <input size="10" class="textInput" type="text" maxlength="9" placeholder="333888938" required><br><button class="SubmitBr" onclick="revealNext()">Submit</button></div>
+                    <div class="leftDiv">ID Type: <input id='idType' size="15" class="textInput" type="text" maxlength="16" oninput="validateTwo('idType','idNum','but5')" required>
+                      <br>Number: <input id='idNum' size="10" class="textInput" type="text" maxlength="9" oninput="validateTwo('idType','idNum','but5')" required>
+                      <br><button id='but5' class="SubmitBr" disabled='true' onclick="revealNext()">Submit</button></div>
                 </div>
             </div>
         </div>
     </div>
     <a href="sampleConfirmation.html" style="text-decoration: none"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
 </div>
-</body> 
+</body>
 <script></script>
 </html>
-
