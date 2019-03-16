@@ -159,5 +159,6 @@ body{
 .flip-card-back {
   background-color: #13214C;
   color: white;
+  margin: 5px;
   transform: rotateY(180deg);
 }

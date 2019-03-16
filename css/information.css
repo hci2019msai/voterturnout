@@ -99,6 +99,7 @@ Darkest: #061E3E */
     height: 100vh;
     background-color: white;
     min-width: 700px;
+    margin-left: 1%;
 }
 
 .filler {
