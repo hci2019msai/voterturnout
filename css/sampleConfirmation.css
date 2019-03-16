@@ -14,6 +14,15 @@ body{
     margin-top: 4vh;
 }
 
+.bodyContainer1 {
+    height: 5vh;
+    width: 80%;
+    background-color: clear;
+    border: 3px solid #13214C;
+    margin: auto;
+    margin-top: 9vh;
+}
+
 .title {
     font-size: 3vh;
     text-align: left;
@@ -30,9 +39,10 @@ body{
     color: white;
     border: 3px solid white;
     margin-top: 3vh;
-    margin-right: 1vh;
-    margin-left: 1vh;
+    margin-right: 7vh;
+    margin-left: 16vh;
     border-radius: 10px;
+
 }
 
 .useButton:hover {
@@ -136,5 +146,106 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/* Body Content */
+.oldZipTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.oldZipInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.filler {
+    height: 1.2vh;
+}
+
+.nameTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.nameInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.birthTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.birthInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.addressTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.addressInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 1.9vh;
+    text-align: center;
+}
+
+.idTitle {
+    width: 50%;
+    background: #13214C;
+    height: 5vh;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    float: left;
+}
+
+.idInfo {
+    background: clear;
+    height: 5vh;
+    color: #13214C;
+    font-size: 1.9vh;
+    text-align: center;
+}
+    
+
+
+
+
+
 
 

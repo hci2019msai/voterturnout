@@ -28,6 +28,9 @@ function question1Atoggle() {
         answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
         } }
 
 function question1A2Atoggle() {
@@ -55,6 +58,9 @@ function question1A2Atoggle() {
         answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         question1A2A3.style.display = "none";
@@ -89,6 +95,9 @@ function question1A2Btoggle() {
         answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
             question1A2A3A4.style.display = "none";
+            y.style.display = "none";
+         x.style.display
+         = "none";
         }
     else {
         warning1A2B.style.display = "none";
@@ -121,6 +130,9 @@ function question1A2A3Atoggle() {
         answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         dataEntry1A2A3A.style.display = "none";
@@ -151,6 +163,9 @@ function question1A2A3Btoggle() {
         answer1A2A3A4A.style.backgroundColor = "#13214C";
         answer1A2A3A4A.style.color = "white";
         question1A2A3A4.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         ageWarning.style.display = "none";
@@ -177,6 +192,9 @@ function question1A2A3A4Atoggle() {
         question1A2A3A4A5.style.display = "grid";
         licenseNext.style.display = "none";
         question1A2A3A4C5.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         question1A2A3A4A5.style.display = "none";
@@ -203,6 +221,9 @@ function question1A2A3A4Btoggle() {
         licenseNext.style.display = "grid";
         question1A2A3A4A5.style.display = "none";
         question1A2A3A4C5.style.display = "none";
+        y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         licenseNext.style.display = "none";
@@ -228,12 +249,45 @@ function question1A2A3A4Ctoggle() {
         question1A2A3A4C5.style.display = "grid";
         licenseNext.style.display = "none";
         question1A2A3A4A5.style.display = "none";
+         y.style.display = "none";
+         x.style.display
+         = "none";
     }
     else {
         question1A2A3A4C5.style.display = "none";
         answer1A2A3A4C.style.backgroundColor = "#13214C";
         answer1A2A3A4C.style.color = "white";
     }
+}
+
+function question1A2A3A4C5Atoggle() {
+        var x = document.getElementById("identificationWarning")
+    var y = document.getElementById("identificationOK")
+    var z = document.getElementById("answer1A2A3A4C5B")
+    var a = document.getElementById("answer1A2A3A4C5A")
+if (x.style.display === "none") {
+    x.style.display = "grid";
+    y.style.display = "none";
+}
+
+else {
+    x.style.display = "none";
+}
+}
+
+function question1A2A3A4C5Btoggle() {
+     var x = document.getElementById("identificationWarning")
+    var y = document.getElementById("identificationOK")
+    var z = document.getElementById("answer1A2A3A4C5B")
+    var a = document.getElementById("answer1A2A3A4C5A")
+if (y.style.display === "none") {
+    y.style.display = "grid";
+    x.style.display = "none";
+}
+
+else {
+    y.style.display = "none";
+}
 }
 
 

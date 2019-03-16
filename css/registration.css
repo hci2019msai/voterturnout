@@ -329,11 +329,12 @@ Darkest: #061E3E */
 }
 
 .warningBanner {
-    color: white;
+    color: red;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 2px 2px black;
     margin-top: 2%;
+    margin-bottom: 2vh;
 }
 
 .warningText {
@@ -511,7 +512,7 @@ Darkest: #061E3E */
     width: 80%;
     max-width: 400px;
     margin: auto;
-    background-color: #083A5B;
+    background-color: #13214C;
     margin-top: 2%;
     text-align: center;
     padding: 20px;
@@ -521,7 +522,7 @@ Darkest: #061E3E */
 .nextBanner {
     color: greenyellow;
     text-align: center;
-    font-size: 40px;;
+    font-size: 60px;;
     text-shadow: 2px 2px black;
     margin-top: 2%;
     padding: 10px;
@@ -611,6 +612,30 @@ Darkest: #061E3E */
     background-color: white;
     color: #13214C;
     
+}
+
+#identificationOK {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #13214C;
+    margin-top: 2%;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+#identificationWarning {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #13214C;
+    margin-top: 2%;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 /* Results of Question1A2A3A4A5 */
 /* Results of Question1A2A3A4C5 */
