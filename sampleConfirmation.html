@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <head>
- <!-- Meta Tags --> 
-    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/sampleConfirmation.css">
-    <!-- JS (no onchange functions!) --> 
-    <script src="js/index.js"></script>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/sampleConfirmation.css">
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    
 </head>
 <body>
-<!-- Sidebar Navigation Content --> 
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Front Page</a>
-        <a href="about.html">About</a>
-        <a href="information.html">Why Vote?</a>
-        <a href="registration.html">Registration</a>
-        <a href="FAQ.html">FAQs</a>
-</div>  
-<!-- Content --> 
-<div class="headerContainer">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span></div>
-<div class="main">
-    <div class="topContainer">Confirm Your Information</div>
-    <div class="bodyContainer">
-        <span class="bodyHeader">Old Zip Code:</span>
-        <span class="bodyInformation">27101</span>
-    </div>
-    <div class="bodyContainer2">
-        <span class="bodyHeader">Full Name:</span>
-            <span class="bodyInformation">Noah Caldwell-Gatsos</span>
-
-    </div>
-    <div class="bodyContainer3">
-        <span class="bodyHeader">Current Mailing Address:</span>
-            <span class="bodyInformation3">1103 Emerson St., Evanston, Illinois, </span>
-            <span class="bodyInformation2">25056</span>
-    </div>
-    <div class="bodyContainer2">
-    <span class="bodyHeader">Birthdate:</span>
-            <span class="bodyInformation">August 16th, 1995</span>
-
-    </div>
-    <div class="bodyContainer">
-        <span class="bodyHeader">ID Type & Number:</span>
-        <span class="bodyInformation">Driver's License No: 333555888</span>
-    </div>
-    <div class="footerContainer">
-        <a href="absentee.html"><span id="leftArrow">&#11064 Return to Form</span></a>
-        <a ><span><button id="submitButton" onclick="calendarReminder()">Submit Your Information</button></span></a>
-    </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="candidates.html">Candidates</a>
+            <a href="information.html">Why Vote?</a>
+            <a href="registration.html">Registration</a>
+            <a href="#">FAQs</a>
 </div>
-    <div id="show-confirmation">
-    <div class="info-confirmation">
-        <h2 class="confirmation-text">Your Information Has Been Confirmed!</h2>
-    </div>
-    
-    <div class="reminder">
-        <a href="calendar.html" ><img src="Images/calendar_icon.png" class="reminder-calendar"></a>
-    </div>
-</div>    
-</body>
 
+<!-- Header Content -->
+
+<span style="font-size:40px;cursor:pointer" onclick="openNav()"><span id="whiteHamburger">&#9776;</span></span>
+<div class="headerContainer">
+<span style="display: inline-block;" class="zoomInLeft delay-1s">
+<div id="headerText">
+<a href="index.html">
+<img src="css/voterTurnout.png">
+</a>
+</div>
+</span>
+<div class="title">Please Confirm Your Information</div>
+</div>
+
+<!-- Body Content --> 
+<div class="bodyContainer"></div>
+<div class="bodyContainer"></div>
+<div class="bodyContainer"></div>
+<div class="bodyContainer"></div>
+<div class="bodyContainer"></div>
+
+</body>
 </html>

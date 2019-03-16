@@ -63,8 +63,8 @@ body{
   100% { transform: rotate(360deg); }
 }
 
-#redX {
-    color: rgb(183, 46, 50);
+#greenCheck {
+    color: darkgreen;
     font-size: 8vh;
     margin-bottom: 3vh;
 }
@@ -138,9 +138,6 @@ body{
     color: white;
 }
 
-#whiteHamburger:hover {
-    color: #13214C;
-}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
