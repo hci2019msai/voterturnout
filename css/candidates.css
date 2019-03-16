@@ -1,25 +1,29 @@
-/*
-Global Variables
-*/
-
-body {
-    height: 1;
-    background-color: #0D81A6;
+body{
+    background-color: #d6e3ff;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin:0px;
 }
 
-/* Color Codes
-Lightest: #0E98BE
-Light: #0D81A6
-Dark: #083A5B
-Darkest: #061E3E */
-
-/* Still suffering from the specific height problem */
 .headerContainer {
     width: 100%;
-    height: 3vw;
-    min-height: 65px;
-    max-height: 100px;
-    background-color: #0D81A6;
+    height: 80px;
+    margin-top: -55px;
+    background-color: #13214C;
+    text-align: right;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerText img {
+  width: 400px;
+  height: auto;
+}
+.aheader {
+    margin-top: 4vh;
+    float: left;
 }
 /* Sidenav CSS */
 
@@ -100,13 +104,15 @@ Darkest: #061E3E */
 
 .titleInfo {
     color: white;
-    font-size: 5vh;
-    margin-left: 20vw;
-    font-family: verdana;
+    font-size: 3vh;
+    margin-left: 10vw;
+    float: left;
+    margin-top: 3vh;
 }
 
 .candidateIndex {
     margin-left: 80px;
+    margin-top: 5vh;
 }
 
 /* Flip Card */
@@ -151,7 +157,7 @@ Darkest: #061E3E */
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #13214C;
   color: white;
   transform: rotateY(180deg);
 }

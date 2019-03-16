@@ -9,11 +9,14 @@ body {
     margin:0px;
 }
 
-/* Color Codes
-Lightest: #0E98BE
-Light: #0D81A6
-Dark: #083A5B
-Darkest: #061E3E */
+/*
+
+Kelly's Blue: #13214C;
+- Buttons, Headers, etc. 
+Kelly's Lighter Blue: #d6e3ff;
+Font: Lato;
+
+*/
 
 /* Still suffering from the specific height problem */
 .headerContainer {
@@ -21,7 +24,7 @@ Darkest: #061E3E */
     height: 80px;
     margin-top: -55px;
     background-color: #13214C;
-    text-align:right;
+    text-align: right;
 }
 
 #headerText {
@@ -157,15 +160,6 @@ UPDATE3: I ATE CAKE. Separating the hamburger and the header container DID resul
 .imageContainer img {
   width: 100%;
   height: auto;
-}
-
-
-.filler {
-    max-width: 400px;
-    max-height: 150px;
-    border-right: 1px solid #0D81A6;
-    border-left: 1px solid #0D81A6;
-    background-color: white;
 }
 
 .goVote {
