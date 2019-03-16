@@ -9,12 +9,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/information.css">
     <!-- JS -->
-    <script src="js/index.js"></script>
+    
         <!-- JS for Tab -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/information.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -36,220 +39,37 @@
     </div>
 </div>
 <div class="mainContainer">
-  <!--  <div class="tabContainer row">
-      <div class="col-md-7"></div>
-        <a href="candidates.html" class="col-md-5">
-            <span class="nextPage">See the 2020 Candidates &#8674; </span>
-        </a>
-    </div>-->
-    <div class="row" id="issuesNavContainer">
-        <div class="bigFont col-md-4"><a data-toggle="tab" href="#federal">Federal Issues</a></div>
-        <div class="bigFont col-md-4"><a data-toggle="tab" href="#state">State Issues</a></div>
-        <div class="bigFont col-md-4"><a data-toggle="tab" href="#local">Local Issues</a></div>
+    <h2> Federal Issues </h2>
+      <a href="#" class="btn btn-primary" role="button">Health Care</a>
+      <a href="#" class="btn btn-primary" role="button">The Economy</a>
+      <a href="#" class="btn btn-primary" role="button">Immigration</a>
+      <a href="#" class="btn btn-primary" role="button">Gun Policy</a>
+      <a href="#" class="btn btn-primary" role="button">Women's Rights</a>
+      <a href="#" class="btn btn-primary" role="button">Taxes</a>
+      <a href="#" class="btn btn-primary" role="button">Foreign Affairs</a>
+      <a href="#" class="btn btn-primary" role="button">Income Inequality</a>
+      <a href="#" class="btn btn-primary" role="button">Supreme Court</a>
+      <a href="#" class="btn btn-primary" role="button">U.S. Trade Policy</a>
+      <a href="#" class="btn btn-primary" role="button">Climate</a>
+      <a href="#" class="btn btn-primary" role="button">Mueller Investigation</a>
+      <a href="#" class="btn btn-primary" role="button">Partisanship</a>
+
+   
+          <div id="federal" >
+            <div id="chart_div_federal" class="chart_div"></div>    
+          </div>
+
+<hr>
+<h2> Illinois State Issues </h2>
+          <div id="state">
+            <div id="chart_div_state" class="chart_div"></div>
+          </div>
+
     </div>
-
-<div class="tab-content">
-  <div id="federal" class="tab-pane fade in active">
-<!-- ALL FEDERAL ISSUES CONTENT GOES HERE -->
-      <div class="issueMatrix">
-        <a href="issues/healthcare.html"><div id="HealthCare">
-          <div class="blueBoxTextContainer">
-            <div class="blueBoxNumber">3.3M tweets</div>
-            <div class="blueBoxText">Health Care</div>
-            </div>
-</div></a>
-        <a href="issues/economy.html"><div id="TheEconomy">
-          <div class="blueBoxTextContainer">
-            <div class="blueBoxNumber">1.3M tweets</div>
-            <div class="blueBoxText">The Economy</div>
-            </div>
-</div></a>
-        <div id="Immigration">
-          <div class="blueBoxTextContainer">
-            <div id="GunNumber">1.1M tweets</div>
-            <div id="GunText">Immigration</div>
-            </div>
-          </div>
-        <div id="GunPolicy">
-          <div class="blueBoxTextContainer">
-            <div id="GunNumber">.9M tweets</div>
-            <div id="GunText">Gun Policy</div>
-            </div>
-          </div>
-        <div id="WomensRights">
-          <div class="blueBoxTextContainer">
-            <div id="GunNumber">.8M tweets</div>
-            <div id="GunText">Women's Rights</div>
-            </div>
-          </div>
-        <div id="Taxes">
-          <div class="blueBoxTextContainer">
-            <div id="ForeignAffairsNumber">.5M tweets</div>
-            <div id="ForeignAffairsText">Taxes</div>
-            </div>
-          </div>
-        <div id="ForeignAffairs">
-          <div class="blueBoxTextContainer">
-            <div id="ForeignAffairsNumber">.3M tweets</div>
-            <div id="ForeignAffairsText">Foreign Affairs</div>
-            </div>
-          </div>
-        <div id="TheEconomy2"></div>
-        <div id="IncomeInequality">
-            <div class="blueBoxTextContainer">
-                <div id="SupremeCourtNumber">900K tweets</div>
-                <div id="SupremeCourtText">Income Inequality</div>
-            </div>
-          </div>
-        <div id="SupremeCourt">
-          <div class="blueBoxTextContainer">
-                <div id="SupremeCourtNumber">750K tweets</div>
-                <div id="SupremeCourtText">Supreme Court</div>
-            </div>
-          </div>
-        <div id="Mueller">
-            <div class="blueBoxTextContainer">
-                <div id="MuellerNumber">225K tweets</div>
-                <div id="MuellerText">Mueller Investigation</div>
-            </div>
-          </div>
-        <div id="USTrade">
-          <div class="blueBoxTextContainer">
-                <div id="USTradeNumber">450K tweets</div>
-                <div id="USTradeText">U.S. Trade Policy</div>
-            </div>
-          </div>
-        <div id="Climate">
-          <div class="blueBoxTextContainer">
-                <div id="USTradeNumber">400K tweets</div>
-                <div id="USTradeText">Climate Policy</div>
-            </div>
-          </div>
-        <div id="Partisanship">
-          <div class="blueBoxTextContainer">
-                <div id="PartisanNumber">200K tweets</div>
-                <div id="PartisanText">Partisanship</div>
-            </div>
-          </div>
-      </div>
-
-
-<!-- FED ISSUES END HERE -->
   </div>
 
-  <div id="state" class="tab-pane fade">
-<!-- ALL STATE ISSUES CONTENT GOES HERE -->
-      <!--Pre-Toggle-->
-<div id="toggleContainer" style="display: block">
-    <select class="states">
-        <option>Illinois</option>
-        <option>Ohio</option>
-    </select><br>
-      <button onclick="toggleStateContent()" class=toggleButton>Submit</button>
-</div>
-      <!--Post-Toggle-->
-<div id="PostToggle" style="display: none">
-<button onclick="toggleChoices()" class="toggleButton2">Return to State Choices</button>
-<div class="issueMatrix">
-        <div id="SocialJusticeReform">
-          <div class="blueBoxTextContainer">
-            <div class="blueBoxNumber">1.2M tweets</div>
-            <div class="blueBoxText">Social Justice Reform</div>
-            </div>
-          </div>
-        <div id="Education">
-          <div class="blueBoxTextContainer">
-            <div class="blueBoxNumber">900K tweets</div>
-            <div class="blueBoxText">Education</div>
-            </div>
-          </div>
-        <div id="Corruption">
-          <div class="blueBoxTextContainer">
-            <div id="CorruptionNumber">800K tweets</div>
-            <div id="CorruptionText">Corruption</div>
-            </div>
-          </div>
-        <div id="DebtCrisis">
-          <div class="blueBoxTextContainer">
-            <div id="CorruptionNumber">600K tweets</div>
-            <div id="CorruptionText">Debt Crisis</div>
-            </div>
-          </div>
-        <div id="WomensRights2">
-          <div class="blueBoxTextContainer">
-            <div id="CorruptionNumber">500K tweets</div>
-            <div id="CorruptionText">Women's Rights</div>
-            </div>
-          </div>
-        <div id="CleanEnergy">
-          <div class="blueBoxTextContainer">
-            <div id="ForeignAffairsNumber">350K</div>
-            <div id="ForeignAffairsText">Clean Energy</div>
-            </div>
-          </div>
-        <div id="RightToWork">
-          <div class="blueBoxTextContainer">
-            <div id="ForeignAffairsNumber">200K tweets</div>
-            <div id="ForeignAffairsText">Right to Work</div>
-            </div>
-          </div>
-        <div id="TheEconomy3"></div>
-        <div id="DrugLegalization">
-            <div class="blueBoxTextContainer">
-                <div id="SupremeCourtNumber">90K</div>
-                <div id="SupremeCourtText">Drug Legalization</div>
-            </div>
-          </div>
-        <div id="Infrastructure">
-          <div class="blueBoxTextContainer">
-                <div id="SupremeCourtNumber">50K tweets</div>
-                <div id="SupremeCourtText">Infrastructure</div>
-            </div>
-          </div>
-        <div id="LGBTRights">
-            <div class="blueBoxTextContainer">
-                <div id="MuellerNumber">18K tweets</div>
-                <div id="MuellerText">LGBT Rights</div>
-            </div>
-          </div>
-        <div id="SanctuaryCities">
-          <div class="blueBoxTextContainer">
-                <div id="USTradeNumber">38K tweets</div>
-                <div id="USTradeText">Sanctuary Cities</div>
-            </div>
-          </div>
-        <div id="SalesTax">
-          <div class="blueBoxTextContainer">
-                <div id="USTradeNumber">22K tweets</div>
-                <div id="USTradeText">Sales Tax</div>
-            </div>
-          </div>
-        <div id="MinimumWage">
-          <div class="blueBoxTextContainer">
-                <div id="PartisanNumber">14K tweets</div>
-                <div id="PartisanText">Minimum Wage</div>
-            </div>
-          </div>
-      </div>
-
-  </div>
-</div>
-
-  <div id="local" class="tab-pane fade">
-<!-- ALL LOCAL ISSUES CONTENT GOES HERE -->
 
 
-    <h3>Local Issues</h3>
-    <p>Some content in menu 2.</p>
-
-
-  </div>
-</div>
-
-<!-- Tabbed Content Ends Here -->
-    </div>
-</div>
-</div>
 
 
 

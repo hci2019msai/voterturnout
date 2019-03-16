@@ -26,7 +26,7 @@ body{
     font-size: 2vh;
     padding: 10px;
     width: 20%;
-    background-color:#13214C;
+    background-color: #13214C;
     color: white;
     border: 3px solid white;
     margin-top: 3vh;
@@ -106,7 +106,7 @@ body{
 }
 
 .sidenav a:hover {
-  color: #0D81A6;
+  color: #d6e3ff;
 }
 
 .sidenav .closebtn {
@@ -125,10 +125,11 @@ body{
 
 #whiteHamburger {
     color: white;
+    margin-left: 20px;
 }
 
 #whiteHamburger:hover {
-    color: #13214C;
+    color: #d6e3ff;
 }
 
 @media screen and (max-height: 450px) {

@@ -107,6 +107,17 @@ Darkest: #061E3E */
     background-color: aliceblue;
 }
 
+.chart_div {
+    height: 800px;
+}
+
+
+#chart_div_state {
+    height: 800px;
+}
+
+
+
 /* Bootstrap Tabs & Pills */
 
 .tabContainer {
