@@ -29,8 +29,8 @@
     <div class="timeline">
         <div class="container left">
             <div class="content">
-                <h3 class="zipcode-check">Enter your old zip code.</h3>
-                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
+                <h3 class="zipcode-check"  onkeyup="zipcodeCheck(this);">Enter your old zip code.</h3>
+                <span class="centerDiv"><input size="6" class="textInput" type="number" maxlength="5" placeholder="27101" required><button onclick="revealName()" class="Submit">Submit</button></span>
             </div>
         </div>
         <div id="NameContainer" style="display: none">

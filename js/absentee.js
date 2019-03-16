@@ -22,3 +22,7 @@ function revealNext() {
     var x = document.getElementById("Next");
     x.style.display = "grid";
 }
+
+function zipcodeCheck(){
+    alert('on  key press');
+}
