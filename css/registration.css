@@ -490,6 +490,18 @@ Darkest: #061E3E */
     border-radius: 10px;
     padding: 10px;
 }
+
+.nope-sorry-go-home {
+    text-decoration: none;
+    color: white;
+}
+
+.nope-sorry-go-home:hover {
+    background-color: white;
+    color: #13214C;
+    border: 3px solid #13214C;
+}
+
 .proceed {
     padding: 10px 10px;
     font-size: 20px;
