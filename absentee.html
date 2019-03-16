@@ -38,11 +38,10 @@
 <div class="main">
     <div class="subheader">Getting your Absentee Ballot</div>
     <div class="timeline">
-        <form>
         <div class="container left">
             <div class="content">
                 <h3>Enter your old zip code.</h3>
-                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" oninput="validateZip(this,'but1')" required><button onclick="revealName()" class="Submit" id="but1" disabled="true">Submit</button></span>
+                <span class="centerDiv"><input size="6" class="textInput" type=text maxlength="5" oninput="validateZip(this,'but1')" required><button onclick="revealName()" class="Submit" id="but1" disabled="true" required>Submit</button></span>
             </div>
         </div>
         <div id="NameContainer" style="display: none">
@@ -50,8 +49,8 @@
                 <div class="content">
                     <h3>Enter your first and last name.</h3>
                     <div class="leftDiv">First Name:
-                      <input id="firstname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')"><br>Last Name:
-                      <input id="lastname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')"><br><button id="but2" disabled = "true" onclick="revealBirth()" class="SubmitBr">Submit</button></div>
+                      <input id="firstname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')" required><br>Last Name:
+                      <input id="lastname" size="15" class="textInput" type=text maxlength="20" oninput="validateTwo('firstname','lastname','but2')" required><br><button id="but2" disabled = "true" onclick="revealBirth()" class="SubmitBr" required>Submit</button></div>
                 </div>
             </div>
         </div>
@@ -60,10 +59,10 @@
                 <div class="content">
                     <h3>Enter your date of birth.</h3>
                     <div class="centerDiv">
-                      Month: <input id='m' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')">
-                      Day: <input id='d' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')">
-                      Year: <input id='y' class="textInput" type="text" maxlength="4" size=5 oninput="validateMDY('but3')">
-                      <br><button id='but3' class="SubmitBr" onclick="revealMail()" disabled='true'>Submit</button></div>
+                      Month: <input id='m' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')" required>
+                      Day: <input id='d' size="3" class="textInput" type="text" maxlength="2" oninput="validateMDY('but3')" required>
+                      Year: <input id='y' class="textInput" type="text" maxlength="4" size=5 oninput="validateMDY('but3')" required>
+                      <br><button id='but3' class="SubmitBr" onclick="revealMail()" disabled='true' required>Submit</button></div>
                 </div>
             </div>
         </div>
@@ -71,11 +70,11 @@
             <div class="container right">
                 <div class="content">
                     <h3>Enter your current mailing address.</h3>
-                    <div class="centerDiv">Address Line 1: <input id='ad1' size="52" class="textInput" type="text" maxlength="25" oninput="validateAddress('but4')">
-                      <br>Address Line 2 (Optional): <input size="52" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')"><br>
-                      City: <input id='city' size="15" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')">
-                      State: <select oninput="validateAddress('but4')" id='st'><option>IL</option></select> Zip: <input id='zipzop' size="6" class="textInput" type="text" maxlength="5" oninput="validateAddress('but4')">
-                      <br><button id='but4' class="SubmitBr" onclick="revealLicense()" disabled='true'>Submit</button></div>
+                    <div class="centerDiv">Address Line 1: <input id='ad1' size="52" class="textInput" type="text" maxlength="25" oninput="validateAddress('but4')" required>
+                      <br>Address Line 2 (Optional): <input size="52" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')" required><br>
+                      City: <input id='city' size="15" class="textInput" type="text" maxlength="20" oninput="validateAddress('but4')" required>
+                      State: <select oninput="validateAddress('but4')" id='st'><option>IL</option></select> Zip: <input id='zipzop' size="6" class="textInput" type="text" maxlength="5" oninput="validateAddress('but4')" required>
+                      <br><button id='but4' class="SubmitBr" onclick="revealLicense()" disabled='true' required>Submit</button></div>
                 </div>
             </div>
         </div>
@@ -83,16 +82,15 @@
             <div class="container left">
                 <div class="content">
                     <h3>Enter your ID number.</h3>
-                    <div class="leftDiv">ID Type: <input id='idType' size="15" class="textInput" type="text" maxlength="16" oninput="validateTwo('idType','idNum','but5')">
+                    <div class="leftDiv">ID Type: <input id='idType' size="15" class="textInput" type="text" maxlength="16" oninput="validateTwo('idType','idNum','but5')" required>
                       <br>Number: <input id='idNum' size="10" class="textInput" type="text" maxlength="9" oninput="validateTwo('idType','idNum','but5')" required>
-                      <br><button id='but5' class="SubmitBr" disabled='true' onclick="revealNext()">Submit</button></div>
+                      <br><button id='but5' class="SubmitBr" disabled='true' onclick="revealNext()" required>Submit</button></div>
                 </div>
             </div>
         </div>
-            </form>
     </div>
     <a href="sampleConfirmation.html" style="text-decoration: none"><button class="bigSubmit" id="Next" style="display: none">Review Information</button></a>
 </div>
 </body>
-<script></script>
+
 </html>
