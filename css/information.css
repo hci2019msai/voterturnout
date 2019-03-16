@@ -81,6 +81,7 @@ Darkest: #061E3E */
 #whiteHamburger {
     color: white;
     font-size: 40px;
+    margin-left: 2vw;
 }
 
 #whiteHamburger:hover {
