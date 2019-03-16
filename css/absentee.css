@@ -45,7 +45,7 @@ Darkest: #061E3E */
 }
 
 .sidenav a:hover {
-  color: #0D81A6;
+  color: #13214C;
 }
 
 .sidenav .closebtn {
@@ -217,7 +217,7 @@ Darkest: #061E3E */
 }
 
 .Submit {
-    background-color: #0D81A6;
+    background-color: #13214C;
     color: white;
     margin-left: 2vw;
     height: 5vh;
@@ -235,12 +235,12 @@ Darkest: #061E3E */
 }
 
 h3 {
-    color: #0D81A6;
+    color: #13214C;
     font-family: 'Lato', sans-serif;
 }
 
 .SubmitBr {
-    background-color: #0D81A6;
+    background-color: #13214C;
     color: white;
     margin-left: 2vw;
     margin-top: 2vh;
@@ -260,19 +260,19 @@ h3 {
     border-radius: 10px;
 }
 .SubmitBr:hover:not([disabled]) {background-color: white;
-    color: #0D81A6;
+    color: #13214C;
     border: 1px solid black;}
 
 .Submit:hover:not([disabled]) {
     background-color: white;
-    color: #0D81A6;
+    color: #13214C;
     border: 1px solid black;
 }
 
 .textInput {
     height: 4vh;
     margin-top: 1%;
-    border: 2px solid #0D81A6;
+    border: 2px solid #13214C;
     border-radius: 10px;
 }
 
