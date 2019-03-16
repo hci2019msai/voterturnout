@@ -26,10 +26,11 @@ Darkest: #061E3E */
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #061E3E;
+    background-color: #13214C;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: 'Lato', sans-serif;
 }
 
 .sidenav a {
@@ -37,9 +38,10 @@ Darkest: #061E3E */
   text-decoration: none;
   font-size: 25px;
   color: white;
-    margin-top: 20px;
+  margin-top: 20px;
   display: block;
   transition: 0.3s;
+    text-align: left;
 }
 
 .sidenav a:hover {
@@ -52,8 +54,9 @@ Darkest: #061E3E */
   right: 25px;
   font-size: 5vw;
   margin-left: 10%;
-    margin-top: 5%;
+  margin-top: 5%;
 }
+
 
 .headerContainer {
     width: 100%;
