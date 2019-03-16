@@ -71,6 +71,7 @@ body{
 #whiteHamburger {
     color: white;
     font-size: 40px;
+    margin-left: 2vw;
 }
 
 #whiteHamburger:hover {
@@ -105,9 +106,9 @@ body{
 .titleInfo {
     color: white;
     font-size: 3vh;
-    margin-left: 10vw;
+    margin-left: 7vw;
     float: left;
-    margin-top: 3vh;
+    margin-top: 5vh;
 }
 
 .candidateIndex {

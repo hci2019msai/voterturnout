@@ -88,10 +88,11 @@ Font: Lato;
 
 #whiteHamburger {
     color: white;
+    margin-left: 2vw;
 }
 
 #whiteHamburger:hover {
-    color: #13214C;
+    color: blue;
 }
 
 @media screen and (max-height: 450px) {
